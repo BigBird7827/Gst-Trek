@@ -95,7 +95,7 @@
       letter-spacing:.3px;
     }
 
-    .topActions{
+    .metaRight{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
@@ -103,36 +103,25 @@
       align-items:center;
     }
 
-    .btn{
-      border:2px solid rgba(178,148,51,.8);
-      background:linear-gradient(180deg, rgba(19,26,52,.95), rgba(10,14,30,.9));
-      color:var(--text);
-      padding:10px 12px;
-      border-radius:16px;
-      font-weight:700;
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:6px 12px;
+      border-radius:999px;
+      border:1px solid rgba(118,165,175,.55);
+      background:rgba(8,10,20,.55);
+      color:rgba(233,238,247,.92);
+      font-size:11px;
+      font-weight:800;
       letter-spacing:.25px;
-      cursor:pointer;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), 0 10px 26px rgba(0,0,0,.35);
-      transition:transform .08s ease, filter .12s ease;
-      font-family:Orbitron,system-ui,sans-serif;
-      font-size:12px;
+      white-space:nowrap;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
       text-transform:uppercase;
-    }
-    .btn:hover{filter:brightness(1.08)}
-    .btn:active{transform:translateY(1px)}
-    .btn.secondary{
-      border-color:rgba(118,165,175,.65);
-      background:linear-gradient(180deg, rgba(15,22,44,.92), rgba(10,14,30,.9));
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns: 420px 1fr;
-      gap:16px;
-      margin-top:16px;
     }
 
     .panel{
+      margin-top:16px;
       background:linear-gradient(180deg, rgba(16,21,42,.92), rgba(12,16,33,.86));
       border-radius:var(--radius2);
       border:2px solid rgba(178,148,51,.5);
@@ -152,8 +141,8 @@
     }
 
     .panelTitle{
-      font-family:Orbitron,system-ui,sans-serif;
-      font-weight:800;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-weight:900;
       letter-spacing:.6px;
       text-transform:uppercase;
       font-size:13px;
@@ -163,96 +152,54 @@
       align-items:center;
     }
 
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:4px 10px;
-      border-radius:999px;
-      border:1px solid rgba(118,165,175,.55);
-      background:rgba(8,10,20,.55);
-      color:rgba(233,238,247,.92);
-      font-size:11px;
-      font-weight:700;
-      letter-spacing:.25px;
-      white-space:nowrap;
-    }
-
-    .controls{
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      padding:12px 14px 14px;
+    .roster{
+      padding:14px 14px 8px;
       border-bottom:1px solid rgba(118,165,175,.18);
       background:linear-gradient(180deg, rgba(12,16,33,.65), rgba(12,16,33,.25));
     }
 
-    .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-    .field{
-      flex:1;
-      min-width:160px;
-      position:relative;
-    }
-    .input, .select{
-      width:100%;
-      padding:11px 12px;
-      border-radius:16px;
-      border:2px solid rgba(118,165,175,.35);
-      background:rgba(6,8,18,.55);
-      color:var(--text);
-      font-size:13px;
-      outline:none;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
-    }
-    .input:focus, .select:focus{border-color:rgba(178,148,51,.7)}
-    .label{
-      font-size:11px;
-      color:rgba(169,182,207,.92);
-      margin:0 0 6px 2px;
-      letter-spacing:.2px;
-    }
-
-    .list{
-      max-height: calc(100vh - 260px);
-      overflow:auto;
-      padding:10px 10px 12px;
-    }
-    .item{
+    .rosterGrid{
       display:flex;
-      flex-direction:column;
-      gap:6px;
-      padding:12px 12px;
-      border-radius:18px;
-      border:2px solid rgba(178,148,51,.22);
-      background:linear-gradient(180deg, rgba(10,14,30,.55), rgba(7,9,20,.38));
-      cursor:pointer;
-      transition:transform .08s ease, border-color .12s ease, filter .12s ease;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
-      margin-bottom:10px;
-    }
-    .item:hover{filter:brightness(1.08); border-color:rgba(178,148,51,.38)}
-    .item:active{transform:translateY(1px)}
-    .item.selected{
-      border-color:rgba(178,148,51,.85);
-      box-shadow:0 0 0 1px rgba(0,0,0,.6), 0 0 0 3px rgba(178,148,51,.18), inset 0 0 0 1px rgba(255,255,255,.06);
-    }
-    .itemName{
-      font-family:Orbitron,system-ui,sans-serif;
-      font-weight:800;
-      letter-spacing:.4px;
-      font-size:14px;
-      color:rgba(233,238,247,.98);
-      text-transform:uppercase;
-    }
-    .itemMeta{
-      display:flex;
-      gap:8px;
       flex-wrap:wrap;
+      gap:10px;
       align-items:center;
     }
 
-    .detail{
+    .chip{
+      border:2px solid rgba(178,148,51,.28);
+      background:linear-gradient(180deg, rgba(10,14,30,.60), rgba(7,9,20,.38));
+      color:rgba(233,238,247,.96);
+      padding:10px 12px;
+      border-radius:18px;
+      cursor:pointer;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+      transition:filter .12s ease, transform .08s ease, border-color .12s ease;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-size:12px;
+      letter-spacing:.35px;
+      text-transform:uppercase;
+      user-select:none;
+    }
+    .chip:hover{filter:brightness(1.08); border-color:rgba(178,148,51,.45)}
+    .chip:active{transform:translateY(1px)}
+    .chip.active{
+      border-color:rgba(178,148,51,.9);
+      box-shadow:0 0 0 1px rgba(0,0,0,.6), 0 0 0 3px rgba(178,148,51,.18), inset 0 0 0 1px rgba(255,255,255,.06);
+    }
+
+    .content{
+      display:grid;
+      grid-template-rows: auto 290px;
+    }
+
+    .pane{
       padding:16px;
+      overflow:auto;
+    }
+
+    .divider{
+      height:1px;
+      background:rgba(118,165,175,.18);
     }
 
     .hero{
@@ -261,6 +208,7 @@
       background:linear-gradient(180deg, rgba(10,14,30,.60), rgba(7,9,20,.40));
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
       padding:16px 16px 14px;
+      margin-bottom:14px;
     }
     .heroTop{
       display:flex;
@@ -270,7 +218,7 @@
       flex-wrap:wrap;
     }
     .name{
-      font-family:Orbitron,system-ui,sans-serif;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
       font-weight:900;
       letter-spacing:.55px;
       font-size:22px;
@@ -305,7 +253,7 @@
       background:linear-gradient(180deg, rgba(15,22,44,.70), rgba(12,16,33,.30));
     }
     .sectionTitle{
-      font-family:Orbitron,system-ui,sans-serif;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
       font-weight:900;
       letter-spacing:.5px;
       text-transform:uppercase;
@@ -322,6 +270,7 @@
     .muted{color:rgba(169,182,207,.92)}
     .ul{margin:0; padding-left:18px}
     .ul li{margin:7px 0; line-height:1.45; color:rgba(233,238,247,.92)}
+
     .klist{display:flex; flex-direction:column; gap:10px}
     .kcard{
       border-radius:20px;
@@ -332,7 +281,7 @@
     }
     .krow{display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap}
     .kname{
-      font-family:Orbitron,system-ui,sans-serif;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
       font-weight:900;
       letter-spacing:.35px;
       text-transform:uppercase;
@@ -341,13 +290,41 @@
     }
     .kmeta{color:rgba(169,182,207,.92); font-size:12px}
     .kwhy{margin-top:8px; color:rgba(233,238,247,.92); font-size:13px; line-height:1.5}
+
+    .actorGrid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+    }
+    .actorRow{
+      border-radius:20px;
+      border:2px solid rgba(118,165,175,.18);
+      background:linear-gradient(180deg, rgba(10,14,30,.55), rgba(7,9,20,.38));
+      padding:12px 12px 10px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+    }
+    .actorName{
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-weight:900;
+      letter-spacing:.35px;
+      text-transform:uppercase;
+      font-size:12px;
+      color:rgba(240,210,122,.92);
+    }
+    .actorMeta{
+      margin-top:6px;
+      color:rgba(169,182,207,.92);
+      font-size:13px;
+      line-height:1.45;
+    }
+
     .err{
-      margin-top:14px;
       padding:12px 14px;
       border-radius:18px;
       border:2px solid rgba(255,107,107,.45);
       background:rgba(255,107,107,.08);
       color:rgba(255,220,220,.95);
+      margin:16px;
     }
 
     .footer{
@@ -359,10 +336,31 @@
       justify-content:flex-end;
     }
 
+    .btn{
+      border:2px solid rgba(178,148,51,.8);
+      background:linear-gradient(180deg, rgba(19,26,52,.95), rgba(10,14,30,.9));
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:16px;
+      font-weight:700;
+      letter-spacing:.25px;
+      cursor:pointer;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), 0 10px 26px rgba(0,0,0,.35);
+      transition:transform .08s ease, filter .12s ease;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-size:12px;
+      text-transform:uppercase;
+    }
+    .btn:hover{filter:brightness(1.08)}
+    .btn:active{transform:translateY(1px)}
+    .btn.secondary{
+      border-color:rgba(118,165,175,.65);
+      background:linear-gradient(180deg, rgba(15,22,44,.92), rgba(10,14,30,.9));
+    }
+
     @media (max-width: 980px){
       header{position:static}
-      .grid{grid-template-columns:1fr; }
-      .list{max-height:unset}
+      .content{grid-template-rows: auto 320px;}
     }
   </style>
 </head>
@@ -371,57 +369,28 @@
     <header>
       <div class="titleBlock">
         <h1>GST-TREK</h1>
-        <div class="subtitle">Guest & recurring character profiles • no images • built to cross-link to Epi-Trek & Rel-Trek</div>
+        <div class="subtitle">Guest character profiles • profile + actor panes • no images</div>
       </div>
-      <div class="topActions">
-        <button class="btn secondary" id="btnReload">Reload Data</button>
-        <button class="btn" id="btnExport">Export Current View</button>
+      <div class="metaRight">
+        <span class="badge" id="countBadge">0 Guests</span>
+        <span class="badge" id="activeBadge">Active: —</span>
       </div>
     </header>
 
-    <div class="grid">
-      <div class="panel">
-        <div class="panelHeader">
-          <div class="panelTitle">Roster <span class="badge" id="countBadge">0</span></div>
-          <span class="badge" id="activeBadge">Active: —</span>
-        </div>
-
-        <div class="controls">
-          <div class="row">
-            <div class="field">
-              <div class="label">Search</div>
-              <input class="input" id="searchInput" placeholder="Type a name..." autocomplete="off" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="field" style="min-width:220px">
-              <div class="label">Series Filter</div>
-              <select class="select" id="seriesSelect">
-                <option value="">All series</option>
-              </select>
-            </div>
-            <div class="field" style="min-width:220px">
-              <div class="label">Category Filter</div>
-              <select class="select" id="categorySelect">
-                <option value="">All categories</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <button class="btn secondary" id="btnClear">Clear Filters</button>
-          </div>
-        </div>
-
-        <div class="list" id="roster"></div>
+    <div class="panel">
+      <div class="panelHeader">
+        <div class="panelTitle">Guest Selection</div>
+        <span class="badge" id="dataBadge">Source: Gst-Guests.json</span>
       </div>
 
-      <div class="panel">
-        <div class="panelHeader">
-          <div class="panelTitle">Profile</div>
-          <span class="badge" id="dataBadge">Source: Gst-Guests.json</span>
-        </div>
+      <div class="roster">
+        <div class="rosterGrid" id="roster"></div>
+      </div>
 
-        <div class="detail" id="detail"></div>
+      <div class="content">
+        <div class="pane" id="profilePane"></div>
+        <div class="divider"></div>
+        <div class="pane" id="actorPane"></div>
       </div>
     </div>
 
@@ -433,29 +402,22 @@
   </div>
 
   <script>
-    const DATA_LOCAL = "Gst-Guests.json";
-    const DATA_REMOTE = "https://raw.githubusercontent.com/BigBird7827/Gst-Trek/main/Gst-Guests.json";
-    const STATE_KEY = "gst-trek-state-v1";
+    const DATA_URL = "https://raw.githubusercontent.com/BigBird7827/Gst-Trek/main/Guests.json";
+    const STATE_KEY = "gst-trek-state-v2";
 
     const els = {
       roster: document.getElementById("roster"),
-      detail: document.getElementById("detail"),
-      search: document.getElementById("searchInput"),
-      series: document.getElementById("seriesSelect"),
-      category: document.getElementById("categorySelect"),
+      profile: document.getElementById("profilePane"),
+      actor: document.getElementById("actorPane"),
       count: document.getElementById("countBadge"),
       active: document.getElementById("activeBadge"),
       data: document.getElementById("dataBadge"),
-      btnReload: document.getElementById("btnReload"),
-      btnExport: document.getElementById("btnExport"),
-      btnClear: document.getElementById("btnClear"),
       btnRel: document.getElementById("btnToRel"),
       btnEpi: document.getElementById("btnToEpi"),
       btnTop: document.getElementById("btnTop")
     };
 
     let allGuests = [];
-    let filteredGuests = [];
     let activeId = "";
 
     const safeArr = (v) => Array.isArray(v) ? v : [];
@@ -476,7 +438,18 @@
       return { GuestID, Name, Series, Category, PortrayedBy, InUniverseSummary, KeyAppearances, Connections, ContinuityNotes, BehindTheScenes };
     };
 
-    const uniqueSorted = (arr) => Array.from(new Set(arr.filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+    const escapeHtml = (s) => String(s)
+      .replaceAll("&","&amp;")
+      .replaceAll("<","&lt;")
+      .replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;")
+      .replaceAll("'","&#039;");
+
+    const fetchJson = async (url) => {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return await res.json();
+    };
 
     const loadState = () => {
       try{
@@ -489,191 +462,35 @@
     };
 
     const saveState = () => {
-      const s = {
-        search: els.search.value || "",
-        series: els.series.value || "",
-        category: els.category.value || "",
-        activeId: activeId || ""
-      };
+      const s = { activeId: activeId || "" };
       try{ localStorage.setItem(STATE_KEY, JSON.stringify(s)); }catch{}
     };
 
-    const applyState = (s) => {
-      if (!s) return;
-      if (typeof s.search === "string") els.search.value = s.search;
-      if (typeof s.series === "string") els.series.value = s.series;
-      if (typeof s.category === "string") els.category.value = s.category;
-      if (typeof s.activeId === "string") activeId = s.activeId;
-    };
-
-    const fetchJson = async (url) => {
-      const res = await fetch(url, { cache: "no-store" });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      return await res.json();
-    };
-
-    const loadData = async () => {
-      els.roster.innerHTML = "";
-      els.detail.innerHTML = "";
-      els.count.textContent = "…";
-      els.active.textContent = "Active: —";
-      els.data.textContent = "Loading…";
-
-      let raw;
-      try{
-        raw = await fetchJson(DATA_LOCAL);
-        els.data.textContent = "Source: " + DATA_LOCAL;
-      }catch{
-        raw = await fetchJson(DATA_REMOTE);
-        els.data.textContent = "Source: Remote";
-      }
-
-      const arr = Array.isArray(raw) ? raw : [];
-      allGuests = arr.map(normalize).filter((x)=>x && x.GuestID && x.Name);
-
-      buildFilters();
-      const saved = loadState();
-      applyState(saved);
-
-      runFilter();
-      if (!activeId && filteredGuests[0]) activeId = filteredGuests[0].GuestID;
-      if (activeId && !allGuests.find(g=>g.GuestID===activeId)){
-        activeId = filteredGuests[0] ? filteredGuests[0].GuestID : "";
-      }
-
-      renderRoster();
-      renderDetail();
-      saveState();
-    };
-
-    const buildFilters = () => {
-      const series = uniqueSorted(allGuests.flatMap(g=>g.Series));
-      const categories = uniqueSorted(allGuests.map(g=>g.Category));
-
-      const seriesVal = els.series.value;
-      const catVal = els.category.value;
-
-      els.series.innerHTML = '<option value="">All series</option>' + series.map(s=>'<option value="'+escapeHtml(s)+'">'+escapeHtml(s)+'</option>').join("");
-      els.category.innerHTML = '<option value="">All categories</option>' + categories.map(s=>'<option value="'+escapeHtml(s)+'">'+escapeHtml(s)+'</option>').join("");
-
-      if (series.includes(seriesVal)) els.series.value = seriesVal;
-      if (categories.includes(catVal)) els.category.value = catVal;
-    };
-
-    const runFilter = () => {
-      const q = (els.search.value || "").trim().toLowerCase();
-      const series = els.series.value || "";
-      const cat = els.category.value || "";
-
-      filteredGuests = allGuests.filter(g=>{
-        if (series && !g.Series.includes(series)) return false;
-        if (cat && g.Category !== cat) return false;
-        if (q){
-          const hay = (g.Name + " " + g.GuestID).toLowerCase();
-          if (!hay.includes(q)) return false;
-        }
-        return true;
-      }).sort((a,b)=>a.Name.localeCompare(b.Name));
-
-      els.count.textContent = String(filteredGuests.length);
-      if (activeId && !filteredGuests.find(g=>g.GuestID===activeId)){
-        activeId = filteredGuests[0] ? filteredGuests[0].GuestID : "";
-      }
-    };
-
-    const renderRoster = () => {
-      els.roster.innerHTML = "";
-      if (!filteredGuests.length){
-        els.roster.innerHTML = '<div class="err">No matches. Try clearing filters.</div>';
-        return;
-      }
-
-      const frag = document.createDocumentFragment();
-      for (const g of filteredGuests){
-        const div = document.createElement("div");
-        div.className = "item" + (g.GuestID === activeId ? " selected" : "");
-        div.dataset.id = g.GuestID;
-
-        const metaBadges = [
-          ...g.Series.map(s=>'<span class="badge">'+escapeHtml(s)+'</span>'),
-          g.Category ? '<span class="badge">'+escapeHtml(g.Category)+'</span>' : ''
-        ].filter(Boolean).join("");
-
-        div.innerHTML = '<div class="itemName">'+escapeHtml(g.Name)+'</div><div class="itemMeta">'+metaBadges+'</div>';
-        div.addEventListener("click", ()=>{
-          activeId = g.GuestID;
-          saveState();
-          renderRoster();
-          renderDetail();
-        });
-
-        frag.appendChild(div);
-      }
-
-      els.roster.appendChild(frag);
-      const active = allGuests.find(g=>g.GuestID===activeId);
-      els.active.textContent = "Active: " + (active ? active.Name : "—");
-    };
-
-    const renderDetail = () => {
-      els.detail.innerHTML = "";
-      if (!activeId){
-        els.detail.innerHTML = '<div class="err">No guest selected.</div>';
-        return;
-      }
-      const g = allGuests.find(x=>x.GuestID===activeId);
-      if (!g){
-        els.detail.innerHTML = '<div class="err">Selected guest not found.</div>';
-        return;
-      }
-
-      const seriesBadges = g.Series.map(s=>'<span class="badge">'+escapeHtml(s)+'</span>').join("");
-      const catBadge = g.Category ? '<span class="badge">'+escapeHtml(g.Category)+'</span>' : '';
-      const actorBadge = g.PortrayedBy.length ? '<span class="badge">Portrayed by: '+escapeHtml(renderPortrayedBy(g.PortrayedBy))+'</span>' : '';
-
-      const p1 = safeStr(g.InUniverseSummary.Paragraph1);
-      const p2 = safeStr(g.InUniverseSummary.Paragraph2);
-
-      const keyApps = safeArr(g.KeyAppearances);
-      const conns = safeArr(g.Connections);
-      const cont = safeArr(g.ContinuityNotes);
-      const bts = safeArr(g.BehindTheScenes);
-
-      const hero = document.createElement("div");
-      hero.className = "hero";
-      hero.innerHTML = `
-        <div class="heroTop">
-          <h2 class="name">${escapeHtml(g.Name)}</h2>
-          <span class="badge">${escapeHtml(g.GuestID)}</span>
+    const section = (title, bodyHtml) => {
+      const div = document.createElement("div");
+      div.className = "section";
+      div.innerHTML = `
+        <div class="sectionHead">
+          <div class="sectionTitle">${escapeHtml(title)}</div>
+          <span class="badge"></span>
         </div>
-        <div class="submeta">${seriesBadges} ${catBadge} ${actorBadge}</div>
+        <div class="sectionBody">${bodyHtml}</div>
       `;
-      els.detail.appendChild(hero);
-
-      els.detail.appendChild(section("In-Universe Summary", `
-        ${p1 ? '<div class="p">'+escapeHtml(p1)+'</div>' : '<div class="p muted">Paragraph 1 pending.</div>'}
-        ${p2 ? '<div class="p">'+escapeHtml(p2)+'</div>' : '<div class="p muted">Paragraph 2 pending.</div>'}
-      `));
-
-      els.detail.appendChild(section("Key Appearances", renderKeyAppearances(keyApps)));
-
-      els.detail.appendChild(section("Connections", renderConnections(conns)));
-
-      els.detail.appendChild(section("Continuity Notes", renderBullets(cont, "No continuity notes yet.")));
-
-      els.detail.appendChild(section("Behind the Scenes", renderBullets(bts, "No behind-the-scenes notes yet.")));
+      return div;
     };
 
-    const renderPortrayedBy = (arr) => {
-      return arr.map(p=>{
-        if (typeof p === "string") return p;
-        if (p && typeof p === "object"){
-          const n = safeStr(p.Name);
-          const rt = safeStr(p.RoleType);
-          return rt ? (n + " (" + rt + ")") : n;
+    const renderBullets = (arr, emptyMsg) => {
+      if (!arr.length) return '<div class="p muted">'+escapeHtml(emptyMsg)+'</div>';
+      const li = arr.map(x=>{
+        if (typeof x === "string") return '<li>'+escapeHtml(x)+'</li>';
+        if (x && typeof x === "object"){
+          if (typeof x.Note === "string" && typeof x.Type === "string") return '<li><span class="muted">'+escapeHtml(x.Type)+':</span> '+escapeHtml(x.Note)+'</li>';
+          if (typeof x.Note === "string") return '<li>'+escapeHtml(x.Note)+'</li>';
+          if (typeof x.Text === "string") return '<li>'+escapeHtml(x.Text)+'</li>';
         }
-        return "";
-      }).filter(Boolean).join(", ");
+        return '';
+      }).filter(Boolean).join("");
+      return '<ul class="ul">'+li+'</ul>';
     };
 
     const renderKeyAppearances = (apps) => {
@@ -721,98 +538,160 @@
       return '<div class="klist">'+cards+'</div>';
     };
 
-    const renderBullets = (arr, emptyMsg) => {
-      if (!arr.length) return '<div class="p muted">'+escapeHtml(emptyMsg)+'</div>';
-      const li = arr.map(x=>{
-        if (typeof x === "string") return '<li>'+escapeHtml(x)+'</li>';
-        if (x && typeof x === "object"){
-          if (typeof x.Note === "string") return '<li>'+escapeHtml(x.Note)+'</li>';
-          if (typeof x.Text === "string") return '<li>'+escapeHtml(x.Text)+'</li>';
-          if (typeof x.Type === "string" && typeof x.Note === "string") return '<li><span class="muted">'+escapeHtml(x.Type)+':</span> '+escapeHtml(x.Note)+'</li>';
+    const renderPortrayedBy = (arr) => {
+      return arr.map(p=>{
+        if (typeof p === "string") return { Name: p, RoleType: "" };
+        if (p && typeof p === "object"){
+          return { Name: safeStr(p.Name), RoleType: safeStr(p.RoleType) };
         }
-        return '';
-      }).filter(Boolean).join("");
-      return '<ul class="ul">'+li+'</ul>';
+        return { Name: "", RoleType: "" };
+      }).filter(x=>x.Name);
     };
 
-    const section = (title, bodyHtml) => {
-      const div = document.createElement("div");
-      div.className = "section";
-      div.innerHTML = `
-        <div class="sectionHead">
-          <div class="sectionTitle">${escapeHtml(title)}</div>
-          <span class="badge"></span>
-        </div>
-        <div class="sectionBody">${bodyHtml}</div>
-      `;
-      return div;
+    const renderRoster = () => {
+      els.roster.innerHTML = "";
+      if (!allGuests.length){
+        els.roster.innerHTML = '<div class="err">No guests loaded.</div>';
+        return;
+      }
+
+      const frag = document.createDocumentFragment();
+      for (const g of allGuests){
+        const b = document.createElement("button");
+        b.className = "chip" + (g.GuestID === activeId ? " active" : "");
+        b.type = "button";
+        b.textContent = g.Name;
+        b.addEventListener("click", ()=>{
+          activeId = g.GuestID;
+          saveState();
+          renderRoster();
+          renderProfile();
+          renderActor();
+        });
+        frag.appendChild(b);
+      }
+      els.roster.appendChild(frag);
+
+      const active = allGuests.find(g=>g.GuestID===activeId);
+      els.active.textContent = "Active: " + (active ? active.Name : "—");
     };
 
-    const escapeHtml = (s) => String(s)
-      .replaceAll("&","&amp;")
-      .replaceAll("<","&lt;")
-      .replaceAll(">","&gt;")
-      .replaceAll('"',"&quot;")
-      .replaceAll("'","&#039;");
-
-    const exportCurrent = () => {
+    const renderProfile = () => {
+      els.profile.innerHTML = "";
+      if (!activeId){
+        els.profile.innerHTML = '<div class="err">No guest selected.</div>';
+        return;
+      }
       const g = allGuests.find(x=>x.GuestID===activeId);
-      if (!g) return;
-      const blob = new Blob([JSON.stringify(g, null, 2)], { type: "application/json" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = (g.GuestID || "guest") + ".json";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(()=>URL.revokeObjectURL(a.href), 500);
+      if (!g){
+        els.profile.innerHTML = '<div class="err">Selected guest not found.</div>';
+        return;
+      }
+
+      const seriesBadges = g.Series.map(s=>'<span class="badge">'+escapeHtml(s)+'</span>').join("");
+      const catBadge = g.Category ? '<span class="badge">'+escapeHtml(g.Category)+'</span>' : '';
+
+      const p1 = safeStr(g.InUniverseSummary.Paragraph1);
+      const p2 = safeStr(g.InUniverseSummary.Paragraph2);
+
+      const hero = document.createElement("div");
+      hero.className = "hero";
+      hero.innerHTML = `
+        <div class="heroTop">
+          <h2 class="name">${escapeHtml(g.Name)}</h2>
+          <span class="badge">${escapeHtml(g.GuestID)}</span>
+        </div>
+        <div class="submeta">${seriesBadges} ${catBadge}</div>
+      `;
+      els.profile.appendChild(hero);
+
+      els.profile.appendChild(section("In-Universe Summary", `
+        ${p1 ? '<div class="p">'+escapeHtml(p1)+'</div>' : '<div class="p muted">Paragraph 1 pending.</div>'}
+        ${p2 ? '<div class="p">'+escapeHtml(p2)+'</div>' : '<div class="p muted">Paragraph 2 pending.</div>'}
+      `));
+
+      els.profile.appendChild(section("Key Appearances", renderKeyAppearances(safeArr(g.KeyAppearances))));
+
+      els.profile.appendChild(section("Connections", renderConnections(safeArr(g.Connections))));
+
+      els.profile.appendChild(section("Continuity Notes", renderBullets(safeArr(g.ContinuityNotes), "No continuity notes yet.")));
     };
 
-    els.search.addEventListener("input", ()=>{
-      runFilter();
-      renderRoster();
-      renderDetail();
-      saveState();
-    });
-    els.series.addEventListener("change", ()=>{
-      runFilter();
-      renderRoster();
-      renderDetail();
-      saveState();
-    });
-    els.category.addEventListener("change", ()=>{
-      runFilter();
-      renderRoster();
-      renderDetail();
-      saveState();
-    });
+    const renderActor = () => {
+      els.actor.innerHTML = "";
+      if (!activeId){
+        els.actor.innerHTML = '<div class="err">No guest selected.</div>';
+        return;
+      }
+      const g = allGuests.find(x=>x.GuestID===activeId);
+      if (!g){
+        els.actor.innerHTML = '<div class="err">Selected guest not found.</div>';
+        return;
+      }
 
-    els.btnReload.addEventListener("click", ()=>loadData());
-    els.btnExport.addEventListener("click", ()=>exportCurrent());
+      const portrayed = renderPortrayedBy(safeArr(g.PortrayedBy));
+      const bts = safeArr(g.BehindTheScenes);
 
-    els.btnClear.addEventListener("click", ()=>{
-      els.search.value = "";
-      els.series.value = "";
-      els.category.value = "";
-      activeId = "";
-      runFilter();
-      if (!activeId && filteredGuests[0]) activeId = filteredGuests[0].GuestID;
+      const top = document.createElement("div");
+      top.className = "hero";
+      top.innerHTML = `
+        <div class="heroTop">
+          <h2 class="name">Actor Information</h2>
+          <span class="badge">No bio</span>
+        </div>
+        <div class="submeta"><span class="badge">From Gst-Guests.json</span></div>
+      `;
+      els.actor.appendChild(top);
+
+      if (!portrayed.length){
+        els.actor.appendChild(section("Portrayed By", '<div class="p muted">Casting pending.</div>'));
+      }else{
+        const rows = portrayed.map(p=>{
+          const meta = p.RoleType ? ('Role: ' + p.RoleType) : 'Role: —';
+          return '<div class="actorRow"><div class="actorName">'+escapeHtml(p.Name)+'</div><div class="actorMeta">'+escapeHtml(meta)+'</div></div>';
+        }).join("");
+        els.actor.appendChild(section("Portrayed By", '<div class="actorGrid">'+rows+'</div>'));
+      }
+
+      els.actor.appendChild(section("Behind the Scenes", renderBullets(bts, "No behind-the-scenes notes yet.")));
+    };
+
+    const init = async () => {
+      els.roster.innerHTML = "";
+      els.profile.innerHTML = "";
+      els.actor.innerHTML = "";
+      els.count.textContent = "0 Guests";
+      els.active.textContent = "Active: —";
+      els.data.textContent = "Loading…";
+
+      const raw = await fetchJson(DATA_URL);
+
+      els.data.textContent = "Source: Guests.json";
+
+      const arr = Array.isArray(raw) ? raw : [];
+      allGuests = arr.map(normalize).filter((x)=>x && x.GuestID && x.Name).sort((a,b)=>a.Name.localeCompare(b.Name));
+
+      els.count.textContent = allGuests.length + " Guests";
+
+      const saved = loadState();
+      if (saved && typeof saved.activeId === "string") activeId = saved.activeId;
+
+      if (!activeId && allGuests[0]) activeId = allGuests[0].GuestID;
+      if (activeId && !allGuests.find(g=>g.GuestID===activeId)){
+        activeId = allGuests[0] ? allGuests[0].GuestID : "";
+      }
+
       renderRoster();
-      renderDetail();
+      renderProfile();
+      renderActor();
       saveState();
-    });
+    };
 
-    els.btnRel.addEventListener("click", ()=>{
-      window.location.href = "Rel-Trek.html";
-    });
-    els.btnEpi.addEventListener("click", ()=>{
-      window.location.href = "Epi-Trek.html";
-    });
-    els.btnTop.addEventListener("click", ()=>{
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+    els.btnRel.addEventListener("click", ()=>{ window.location.href = "Rel-Trek.html"; });
+    els.btnEpi.addEventListener("click", ()=>{ window.location.href = "Epi-Trek.html"; });
+    els.btnTop.addEventListener("click", ()=>{ window.scrollTo({ top: 0, behavior: "smooth" }); });
 
-    loadData();
+    init();
   </script>
 </body>
 </html>
