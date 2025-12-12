@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gst-Trek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg0:#050611;
+      --bg1:#0b0e1e;
+      --panel:#10152a;
+      --panel2:#0c1021;
+      --line:rgba(178,148,51,.85);
+      --line2:rgba(118,165,175,.55);
+      --gold1:#f0d27a;
+      --gold2:#b29433;
+      --gold3:#7c6114;
+      --text:#e9eef7;
+      --muted:#a9b6cf;
+      --danger:#ff6b6b;
+      --shadow:rgba(0,0,0,.55);
+      --radius:18px;
+      --radius2:26px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(118,165,175,.12), transparent 55%),
+        radial-gradient(900px 500px at 85% 20%, rgba(178,148,51,.10), transparent 60%),
+        radial-gradient(1200px 700px at 60% 120%, rgba(93,128,194,.10), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    .wrap{
+      width:min(1400px, calc(100% - 28px));
+      margin:18px auto 40px;
+    }
+
+    header{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      padding:18px 18px 16px;
+      border-radius:var(--radius2);
+      background:linear-gradient(180deg, rgba(16,21,42,.92), rgba(12,16,33,.86));
+      border:2px solid rgba(178,148,51,.55);
+      box-shadow:0 18px 45px var(--shadow);
+      position:sticky;
+      top:14px;
+      z-index:10;
+      backdrop-filter: blur(10px);
+    }
+
+    .titleBlock{display:flex; flex-direction:column; gap:6px; min-width:320px}
+    h1{
+      margin:0;
+      font-family:Orbitron,system-ui,sans-serif;
+      letter-spacing:1px;
+      font-weight:800;
+      font-size:34px;
+      line-height:1.05;
+      background:linear-gradient(180deg, var(--gold1), var(--gold2), var(--gold3));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      -webkit-text-stroke:2px rgba(0,0,0,.75);
+      text-shadow:0 0 14px rgba(178,148,51,.18);
+      position:relative;
+      padding-bottom:10px;
+    }
+    h1::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:0;
+      width:280px;
+      height:4px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(178,148,51,.95), rgba(240,210,122,.65), rgba(178,148,51,.2));
+      box-shadow:0 0 14px rgba(178,148,51,.22);
+    }
+    .subtitle{
+      color:var(--muted);
+      font-size:13px;
+      letter-spacing:.3px;
+    }
+
+    .topActions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
+    }
+
+    .btn{
+      border:2px solid rgba(178,148,51,.8);
+      background:linear-gradient(180deg, rgba(19,26,52,.95), rgba(10,14,30,.9));
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:16px;
+      font-weight:700;
+      letter-spacing:.25px;
+      cursor:pointer;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), 0 10px 26px rgba(0,0,0,.35);
+      transition:transform .08s ease, filter .12s ease;
+      font-family:Orbitron,system-ui,sans-serif;
+      font-size:12px;
+      text-transform:uppercase;
+    }
+    .btn:hover{filter:brightness(1.08)}
+    .btn:active{transform:translateY(1px)}
+    .btn.secondary{
+      border-color:rgba(118,165,175,.65);
+      background:linear-gradient(180deg, rgba(15,22,44,.92), rgba(10,14,30,.9));
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 420px 1fr;
+      gap:16px;
+      margin-top:16px;
+    }
+
+    .panel{
+      background:linear-gradient(180deg, rgba(16,21,42,.92), rgba(12,16,33,.86));
+      border-radius:var(--radius2);
+      border:2px solid rgba(178,148,51,.5);
+      box-shadow:0 18px 45px var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .panelHeader{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px 14px 12px;
+      border-bottom:1px solid rgba(178,148,51,.22);
+      background:linear-gradient(180deg, rgba(18,24,48,.95), rgba(14,18,36,.88));
+    }
+
+    .panelTitle{
+      font-family:Orbitron,system-ui,sans-serif;
+      font-weight:800;
+      letter-spacing:.6px;
+      text-transform:uppercase;
+      font-size:13px;
+      color:rgba(240,210,122,.95);
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid rgba(118,165,175,.55);
+      background:rgba(8,10,20,.55);
+      color:rgba(233,238,247,.92);
+      font-size:11px;
+      font-weight:700;
+      letter-spacing:.25px;
+      white-space:nowrap;
+    }
+
+    .controls{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      padding:12px 14px 14px;
+      border-bottom:1px solid rgba(118,165,175,.18);
+      background:linear-gradient(180deg, rgba(12,16,33,.65), rgba(12,16,33,.25));
+    }
+
+    .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .field{
+      flex:1;
+      min-width:160px;
+      position:relative;
+    }
+    .input, .select{
+      width:100%;
+      padding:11px 12px;
+      border-radius:16px;
+      border:2px solid rgba(118,165,175,.35);
+      background:rgba(6,8,18,.55);
+      color:var(--text);
+      font-size:13px;
+      outline:none;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+    }
+    .input:focus, .select:focus{border-color:rgba(178,148,51,.7)}
+    .label{
+      font-size:11px;
+      color:rgba(169,182,207,.92);
+      margin:0 0 6px 2px;
+      letter-spacing:.2px;
+    }
+
+    .list{
+      max-height: calc(100vh - 260px);
+      overflow:auto;
+      padding:10px 10px 12px;
+    }
+    .item{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      padding:12px 12px;
+      border-radius:18px;
+      border:2px solid rgba(178,148,51,.22);
+      background:linear-gradient(180deg, rgba(10,14,30,.55), rgba(7,9,20,.38));
+      cursor:pointer;
+      transition:transform .08s ease, border-color .12s ease, filter .12s ease;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+      margin-bottom:10px;
+    }
+    .item:hover{filter:brightness(1.08); border-color:rgba(178,148,51,.38)}
+    .item:active{transform:translateY(1px)}
+    .item.selected{
+      border-color:rgba(178,148,51,.85);
+      box-shadow:0 0 0 1px rgba(0,0,0,.6), 0 0 0 3px rgba(178,148,51,.18), inset 0 0 0 1px rgba(255,255,255,.06);
+    }
+    .itemName{
+      font-family:Orbitron,system-ui,sans-serif;
+      font-weight:800;
+      letter-spacing:.4px;
+      font-size:14px;
+      color:rgba(233,238,247,.98);
+      text-transform:uppercase;
+    }
+    .itemMeta{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .detail{
+      padding:16px;
+    }
+
+    .hero{
+      border-radius:24px;
+      border:2px solid rgba(178,148,51,.55);
+      background:linear-gradient(180deg, rgba(10,14,30,.60), rgba(7,9,20,.40));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+      padding:16px 16px 14px;
+    }
+    .heroTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .name{
+      font-family:Orbitron,system-ui,sans-serif;
+      font-weight:900;
+      letter-spacing:.55px;
+      font-size:22px;
+      text-transform:uppercase;
+      margin:0;
+      color:rgba(240,210,122,.98);
+      text-shadow:0 0 12px rgba(178,148,51,.12);
+    }
+    .submeta{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:10px;
+    }
+
+    .section{
+      margin-top:14px;
+      border-radius:24px;
+      border:2px solid rgba(118,165,175,.18);
+      background:linear-gradient(180deg, rgba(12,16,33,.55), rgba(7,9,20,.30));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+      overflow:hidden;
+    }
+    .sectionHead{
+      padding:12px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      border-bottom:1px solid rgba(118,165,175,.14);
+      background:linear-gradient(180deg, rgba(15,22,44,.70), rgba(12,16,33,.30));
+    }
+    .sectionTitle{
+      font-family:Orbitron,system-ui,sans-serif;
+      font-weight:900;
+      letter-spacing:.5px;
+      text-transform:uppercase;
+      font-size:12px;
+      color:rgba(233,238,247,.92);
+    }
+    .sectionBody{padding:12px 14px 14px}
+    .p{
+      margin:0 0 10px 0;
+      line-height:1.55;
+      color:rgba(233,238,247,.92);
+      font-size:14px;
+    }
+    .muted{color:rgba(169,182,207,.92)}
+    .ul{margin:0; padding-left:18px}
+    .ul li{margin:7px 0; line-height:1.45; color:rgba(233,238,247,.92)}
+    .klist{display:flex; flex-direction:column; gap:10px}
+    .kcard{
+      border-radius:20px;
+      border:2px solid rgba(178,148,51,.22);
+      background:linear-gradient(180deg, rgba(10,14,30,.55), rgba(7,9,20,.38));
+      padding:12px 12px 10px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+    }
+    .krow{display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap}
+    .kname{
+      font-family:Orbitron,system-ui,sans-serif;
+      font-weight:900;
+      letter-spacing:.35px;
+      text-transform:uppercase;
+      font-size:12px;
+      color:rgba(240,210,122,.92);
+    }
+    .kmeta{color:rgba(169,182,207,.92); font-size:12px}
+    .kwhy{margin-top:8px; color:rgba(233,238,247,.92); font-size:13px; line-height:1.5}
+    .err{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:18px;
+      border:2px solid rgba(255,107,107,.45);
+      background:rgba(255,107,107,.08);
+      color:rgba(255,220,220,.95);
+    }
+
+    .footer{
+      margin-top:16px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-end;
+    }
+
+    @media (max-width: 980px){
+      header{position:static}
+      .grid{grid-template-columns:1fr; }
+      .list{max-height:unset}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="titleBlock">
+        <h1>GST-TREK</h1>
+        <div class="subtitle">Guest & recurring character profiles • no images • built to cross-link to Epi-Trek & Rel-Trek</div>
+      </div>
+      <div class="topActions">
+        <button class="btn secondary" id="btnReload">Reload Data</button>
+        <button class="btn" id="btnExport">Export Current View</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div class="panel">
+        <div class="panelHeader">
+          <div class="panelTitle">Roster <span class="badge" id="countBadge">0</span></div>
+          <span class="badge" id="activeBadge">Active: —</span>
+        </div>
+
+        <div class="controls">
+          <div class="row">
+            <div class="field">
+              <div class="label">Search</div>
+              <input class="input" id="searchInput" placeholder="Type a name..." autocomplete="off" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="field" style="min-width:220px">
+              <div class="label">Series Filter</div>
+              <select class="select" id="seriesSelect">
+                <option value="">All series</option>
+              </select>
+            </div>
+            <div class="field" style="min-width:220px">
+              <div class="label">Category Filter</div>
+              <select class="select" id="categorySelect">
+                <option value="">All categories</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn secondary" id="btnClear">Clear Filters</button>
+          </div>
+        </div>
+
+        <div class="list" id="roster"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panelHeader">
+          <div class="panelTitle">Profile</div>
+          <span class="badge" id="dataBadge">Source: Gst-Guests.json</span>
+        </div>
+
+        <div class="detail" id="detail"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button class="btn secondary" id="btnToRel">Go to Rel-Trek</button>
+      <button class="btn secondary" id="btnToEpi">Go to Epi-Trek</button>
+      <button class="btn secondary" id="btnTop">Back to Top</button>
+    </div>
+  </div>
+
+  <script>
+    const DATA_LOCAL = "Gst-Guests.json";
+    const DATA_REMOTE = "https://raw.githubusercontent.com/BigBird7827/Gst-Trek/main/Gst-Guests.json";
+    const STATE_KEY = "gst-trek-state-v1";
+
+    const els = {
+      roster: document.getElementById("roster"),
+      detail: document.getElementById("detail"),
+      search: document.getElementById("searchInput"),
+      series: document.getElementById("seriesSelect"),
+      category: document.getElementById("categorySelect"),
+      count: document.getElementById("countBadge"),
+      active: document.getElementById("activeBadge"),
+      data: document.getElementById("dataBadge"),
+      btnReload: document.getElementById("btnReload"),
+      btnExport: document.getElementById("btnExport"),
+      btnClear: document.getElementById("btnClear"),
+      btnRel: document.getElementById("btnToRel"),
+      btnEpi: document.getElementById("btnToEpi"),
+      btnTop: document.getElementById("btnTop")
+    };
+
+    let allGuests = [];
+    let filteredGuests = [];
+    let activeId = "";
+
+    const safeArr = (v) => Array.isArray(v) ? v : [];
+    const safeStr = (v) => typeof v === "string" ? v : "";
+
+    const normalize = (g) => {
+      if (!g || typeof g !== "object") return null;
+      const GuestID = safeStr(g.GuestID);
+      const Name = safeStr(g.DisplayName || g.Name);
+      const Series = safeArr(g.Series).filter(Boolean);
+      const Category = safeStr(g.Category);
+      const PortrayedBy = safeArr(g.PortrayedBy).filter(Boolean);
+      const InUniverseSummary = g.InUniverseSummary && typeof g.InUniverseSummary === "object" ? g.InUniverseSummary : { Paragraph1:"", Paragraph2:"" };
+      const KeyAppearances = safeArr(g.KeyAppearances).filter(Boolean);
+      const Connections = safeArr(g.Connections).filter(Boolean);
+      const ContinuityNotes = safeArr(g.ContinuityNotes).filter(Boolean);
+      const BehindTheScenes = safeArr(g.BehindTheScenes).filter(Boolean);
+      return { GuestID, Name, Series, Category, PortrayedBy, InUniverseSummary, KeyAppearances, Connections, ContinuityNotes, BehindTheScenes };
+    };
+
+    const uniqueSorted = (arr) => Array.from(new Set(arr.filter(Boolean))).sort((a,b)=>a.localeCompare(b));
+
+    const loadState = () => {
+      try{
+        const raw = localStorage.getItem(STATE_KEY);
+        if (!raw) return null;
+        return JSON.parse(raw);
+      }catch{
+        return null;
+      }
+    };
+
+    const saveState = () => {
+      const s = {
+        search: els.search.value || "",
+        series: els.series.value || "",
+        category: els.category.value || "",
+        activeId: activeId || ""
+      };
+      try{ localStorage.setItem(STATE_KEY, JSON.stringify(s)); }catch{}
+    };
+
+    const applyState = (s) => {
+      if (!s) return;
+      if (typeof s.search === "string") els.search.value = s.search;
+      if (typeof s.series === "string") els.series.value = s.series;
+      if (typeof s.category === "string") els.category.value = s.category;
+      if (typeof s.activeId === "string") activeId = s.activeId;
+    };
+
+    const fetchJson = async (url) => {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return await res.json();
+    };
+
+    const loadData = async () => {
+      els.roster.innerHTML = "";
+      els.detail.innerHTML = "";
+      els.count.textContent = "…";
+      els.active.textContent = "Active: —";
+      els.data.textContent = "Loading…";
+
+      let raw;
+      try{
+        raw = await fetchJson(DATA_LOCAL);
+        els.data.textContent = "Source: " + DATA_LOCAL;
+      }catch{
+        raw = await fetchJson(DATA_REMOTE);
+        els.data.textContent = "Source: Remote";
+      }
+
+      const arr = Array.isArray(raw) ? raw : [];
+      allGuests = arr.map(normalize).filter((x)=>x && x.GuestID && x.Name);
+
+      buildFilters();
+      const saved = loadState();
+      applyState(saved);
+
+      runFilter();
+      if (!activeId && filteredGuests[0]) activeId = filteredGuests[0].GuestID;
+      if (activeId && !allGuests.find(g=>g.GuestID===activeId)){
+        activeId = filteredGuests[0] ? filteredGuests[0].GuestID : "";
+      }
+
+      renderRoster();
+      renderDetail();
+      saveState();
+    };
+
+    const buildFilters = () => {
+      const series = uniqueSorted(allGuests.flatMap(g=>g.Series));
+      const categories = uniqueSorted(allGuests.map(g=>g.Category));
+
+      const seriesVal = els.series.value;
+      const catVal = els.category.value;
+
+      els.series.innerHTML = '<option value="">All series</option>' + series.map(s=>'<option value="'+escapeHtml(s)+'">'+escapeHtml(s)+'</option>').join("");
+      els.category.innerHTML = '<option value="">All categories</option>' + categories.map(s=>'<option value="'+escapeHtml(s)+'">'+escapeHtml(s)+'</option>').join("");
+
+      if (series.includes(seriesVal)) els.series.value = seriesVal;
+      if (categories.includes(catVal)) els.category.value = catVal;
+    };
+
+    const runFilter = () => {
+      const q = (els.search.value || "").trim().toLowerCase();
+      const series = els.series.value || "";
+      const cat = els.category.value || "";
+
+      filteredGuests = allGuests.filter(g=>{
+        if (series && !g.Series.includes(series)) return false;
+        if (cat && g.Category !== cat) return false;
+        if (q){
+          const hay = (g.Name + " " + g.GuestID).toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      }).sort((a,b)=>a.Name.localeCompare(b.Name));
+
+      els.count.textContent = String(filteredGuests.length);
+      if (activeId && !filteredGuests.find(g=>g.GuestID===activeId)){
+        activeId = filteredGuests[0] ? filteredGuests[0].GuestID : "";
+      }
+    };
+
+    const renderRoster = () => {
+      els.roster.innerHTML = "";
+      if (!filteredGuests.length){
+        els.roster.innerHTML = '<div class="err">No matches. Try clearing filters.</div>';
+        return;
+      }
+
+      const frag = document.createDocumentFragment();
+      for (const g of filteredGuests){
+        const div = document.createElement("div");
+        div.className = "item" + (g.GuestID === activeId ? " selected" : "");
+        div.dataset.id = g.GuestID;
+
+        const metaBadges = [
+          ...g.Series.map(s=>'<span class="badge">'+escapeHtml(s)+'</span>'),
+          g.Category ? '<span class="badge">'+escapeHtml(g.Category)+'</span>' : ''
+        ].filter(Boolean).join("");
+
+        div.innerHTML = '<div class="itemName">'+escapeHtml(g.Name)+'</div><div class="itemMeta">'+metaBadges+'</div>';
+        div.addEventListener("click", ()=>{
+          activeId = g.GuestID;
+          saveState();
+          renderRoster();
+          renderDetail();
+        });
+
+        frag.appendChild(div);
+      }
+
+      els.roster.appendChild(frag);
+      const active = allGuests.find(g=>g.GuestID===activeId);
+      els.active.textContent = "Active: " + (active ? active.Name : "—");
+    };
+
+    const renderDetail = () => {
+      els.detail.innerHTML = "";
+      if (!activeId){
+        els.detail.innerHTML = '<div class="err">No guest selected.</div>';
+        return;
+      }
+      const g = allGuests.find(x=>x.GuestID===activeId);
+      if (!g){
+        els.detail.innerHTML = '<div class="err">Selected guest not found.</div>';
+        return;
+      }
+
+      const seriesBadges = g.Series.map(s=>'<span class="badge">'+escapeHtml(s)+'</span>').join("");
+      const catBadge = g.Category ? '<span class="badge">'+escapeHtml(g.Category)+'</span>' : '';
+      const actorBadge = g.PortrayedBy.length ? '<span class="badge">Portrayed by: '+escapeHtml(renderPortrayedBy(g.PortrayedBy))+'</span>' : '';
+
+      const p1 = safeStr(g.InUniverseSummary.Paragraph1);
+      const p2 = safeStr(g.InUniverseSummary.Paragraph2);
+
+      const keyApps = safeArr(g.KeyAppearances);
+      const conns = safeArr(g.Connections);
+      const cont = safeArr(g.ContinuityNotes);
+      const bts = safeArr(g.BehindTheScenes);
+
+      const hero = document.createElement("div");
+      hero.className = "hero";
+      hero.innerHTML = `
+        <div class="heroTop">
+          <h2 class="name">${escapeHtml(g.Name)}</h2>
+          <span class="badge">${escapeHtml(g.GuestID)}</span>
+        </div>
+        <div class="submeta">${seriesBadges} ${catBadge} ${actorBadge}</div>
+      `;
+      els.detail.appendChild(hero);
+
+      els.detail.appendChild(section("In-Universe Summary", `
+        ${p1 ? '<div class="p">'+escapeHtml(p1)+'</div>' : '<div class="p muted">Paragraph 1 pending.</div>'}
+        ${p2 ? '<div class="p">'+escapeHtml(p2)+'</div>' : '<div class="p muted">Paragraph 2 pending.</div>'}
+      `));
+
+      els.detail.appendChild(section("Key Appearances", renderKeyAppearances(keyApps)));
+
+      els.detail.appendChild(section("Connections", renderConnections(conns)));
+
+      els.detail.appendChild(section("Continuity Notes", renderBullets(cont, "No continuity notes yet.")));
+
+      els.detail.appendChild(section("Behind the Scenes", renderBullets(bts, "No behind-the-scenes notes yet.")));
+    };
+
+    const renderPortrayedBy = (arr) => {
+      return arr.map(p=>{
+        if (typeof p === "string") return p;
+        if (p && typeof p === "object"){
+          const n = safeStr(p.Name);
+          const rt = safeStr(p.RoleType);
+          return rt ? (n + " (" + rt + ")") : n;
+        }
+        return "";
+      }).filter(Boolean).join(", ");
+    };
+
+    const renderKeyAppearances = (apps) => {
+      if (!apps.length) return '<div class="p muted">No key appearances yet.</div>';
+      const cards = apps.map(a=>{
+        const title = safeStr(a.Title);
+        const eid = safeStr(a.EpisodeID);
+        const series = safeStr(a.Series);
+        const season = a.Season ?? "";
+        const ep = a.Episode ?? "";
+        const why = safeStr(a.WhyItMatters);
+        const meta = [series, season !== "" ? ("S" + season) : "", ep !== "" ? ("E" + ep) : "", eid ? eid : ""].filter(Boolean).join(" • ");
+        return `
+          <div class="kcard">
+            <div class="krow">
+              <div class="kname">${escapeHtml(title || "Untitled appearance")}</div>
+              <div class="kmeta">${escapeHtml(meta)}</div>
+            </div>
+            <div class="kwhy">${why ? escapeHtml(why) : '<span class="muted">Why it matters pending.</span>'}</div>
+          </div>
+        `;
+      }).join("");
+      return '<div class="klist">'+cards+'</div>';
+    };
+
+    const renderConnections = (conns) => {
+      if (!conns.length) return '<div class="p muted">No connections yet.</div>';
+      const cards = conns.map(c=>{
+        const name = safeStr(c.Name);
+        const series = safeStr(c.Series);
+        const type = safeStr(c.ConnectionType);
+        const rel = safeStr(c.RelTrekRelationshipID);
+        const sum = safeStr(c.Summary);
+        const meta = [series, type, rel].filter(Boolean).join(" • ");
+        return `
+          <div class="kcard">
+            <div class="krow">
+              <div class="kname">${escapeHtml(name || "Unnamed connection")}</div>
+              <div class="kmeta">${escapeHtml(meta)}</div>
+            </div>
+            <div class="kwhy">${sum ? escapeHtml(sum) : '<span class="muted">Summary pending.</span>'}</div>
+          </div>
+        `;
+      }).join("");
+      return '<div class="klist">'+cards+'</div>';
+    };
+
+    const renderBullets = (arr, emptyMsg) => {
+      if (!arr.length) return '<div class="p muted">'+escapeHtml(emptyMsg)+'</div>';
+      const li = arr.map(x=>{
+        if (typeof x === "string") return '<li>'+escapeHtml(x)+'</li>';
+        if (x && typeof x === "object"){
+          if (typeof x.Note === "string") return '<li>'+escapeHtml(x.Note)+'</li>';
+          if (typeof x.Text === "string") return '<li>'+escapeHtml(x.Text)+'</li>';
+          if (typeof x.Type === "string" && typeof x.Note === "string") return '<li><span class="muted">'+escapeHtml(x.Type)+':</span> '+escapeHtml(x.Note)+'</li>';
+        }
+        return '';
+      }).filter(Boolean).join("");
+      return '<ul class="ul">'+li+'</ul>';
+    };
+
+    const section = (title, bodyHtml) => {
+      const div = document.createElement("div");
+      div.className = "section";
+      div.innerHTML = `
+        <div class="sectionHead">
+          <div class="sectionTitle">${escapeHtml(title)}</div>
+          <span class="badge"></span>
+        </div>
+        <div class="sectionBody">${bodyHtml}</div>
+      `;
+      return div;
+    };
+
+    const escapeHtml = (s) => String(s)
+      .replaceAll("&","&amp;")
+      .replaceAll("<","&lt;")
+      .replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;")
+      .replaceAll("'","&#039;");
+
+    const exportCurrent = () => {
+      const g = allGuests.find(x=>x.GuestID===activeId);
+      if (!g) return;
+      const blob = new Blob([JSON.stringify(g, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = (g.GuestID || "guest") + ".json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(()=>URL.revokeObjectURL(a.href), 500);
+    };
+
+    els.search.addEventListener("input", ()=>{
+      runFilter();
+      renderRoster();
+      renderDetail();
+      saveState();
+    });
+    els.series.addEventListener("change", ()=>{
+      runFilter();
+      renderRoster();
+      renderDetail();
+      saveState();
+    });
+    els.category.addEventListener("change", ()=>{
+      runFilter();
+      renderRoster();
+      renderDetail();
+      saveState();
+    });
+
+    els.btnReload.addEventListener("click", ()=>loadData());
+    els.btnExport.addEventListener("click", ()=>exportCurrent());
+
+    els.btnClear.addEventListener("click", ()=>{
+      els.search.value = "";
+      els.series.value = "";
+      els.category.value = "";
+      activeId = "";
+      runFilter();
+      if (!activeId && filteredGuests[0]) activeId = filteredGuests[0].GuestID;
+      renderRoster();
+      renderDetail();
+      saveState();
+    });
+
+    els.btnRel.addEventListener("click", ()=>{
+      window.location.href = "Rel-Trek.html";
+    });
+    els.btnEpi.addEventListener("click", ()=>{
+      window.location.href = "Epi-Trek.html";
+    });
+    els.btnTop.addEventListener("click", ()=>{
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    loadData();
+  </script>
+</body>
+</html>

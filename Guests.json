@@ -1,0 +1,273 @@
+[
+  {
+    "GuestID": "gst-balok",
+    "Name": "Balok",
+    "DisplayName": "Balok",
+    "Series": [
+      "TOS"
+    ],
+    "Category": "One-Off Icon",
+    "PortrayedBy": [
+      {
+        "Name": "Clint Howard",
+        "RoleType": "Balok"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Balok is the commander of the First Federation starship Fesarius, encountered by the USS Enterprise during a tense first-contact test. Presenting himself through a frightening puppet visage and issuing increasingly dire ultimatums, he creates the impression of an implacable alien power ready to destroy Kirk’s ship for trespassing in First Federation space.",
+      "Paragraph2": "The threat is a deliberate trial of intentions: Balok believes a starship’s records can lie, but its crew’s choices under pressure reveal the truth. Kirk’s willingness to risk himself for his crew—and to de-escalate rather than strike—wins Balok’s respect, turning an apparent death sentence into an unexpected invitation to friendship and future contact between their peoples."
+    },
+    "KeyAppearances": [
+      {
+        "EpisodeID": "toss1e10",
+        "Title": "The Corbomite Maneuver",
+        "Series": "TOS",
+        "Season": 1,
+        "Episode": 10,
+        "WhyItMatters": "Balok’s encounter is Star Trek’s purest “first contact as a moral test”: the Enterprise is pushed to the brink, and Kirk’s calm deception and refusal to meet intimidation with violence reframes the crisis. The episode ends by pivoting from terror to diplomacy, establishing that understanding—and not firepower—is the real victory condition."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "James T. Kirk",
+        "Series": "TOS",
+        "ConnectionType": "First contact / Diplomacy under threat",
+        "RelTrekRelationshipID": "",
+        "Summary": "Kirk and Balok begin as adversaries in a deadly standoff, but Kirk’s nerve and restraint convince Balok the Enterprise is not a warship seeking conquest. Their conversation becomes the turning point that transforms a manufactured terror scenario into the beginning of interstellar goodwill."
+      }
+    ],
+    "ContinuityNotes": [
+      "Introduces the First Federation and the Fesarius as a powerful but ultimately non-hostile civilization.",
+      "Balok’s puppet/illusion tactic frames the confrontation as an intentional character test rather than a territorial war.",
+      "Ends with an explicit promise of future contact, leaving Balok as a rare “one-and-done” ally with major diplomatic implications."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Casting",
+        "Note": "Balok is played on-screen by Clint Howard in \"The Corbomite Maneuver\"."
+      },
+      {
+        "Type": "Credits",
+        "Note": "The episode credits separate performers for Balok’s portrayal and voice work (including voice credits for Balok)."
+      }
+    ]
+  },
+  {
+    "GuestID": "gst-trelane",
+    "Name": "Trelane",
+    "DisplayName": "Trelane",
+    "Series": [
+      "TOS"
+    ],
+    "Category": "One-Off Icon",
+    "PortrayedBy": [
+      {
+        "Name": "William Campbell",
+        "RoleType": "Trelane"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Trelane is the self-styled “Squire of Gothos,” an immensely powerful, childish being who seizes the Enterprise crew and forces them into a bizarre theatrical playworld modeled on his romanticized view of Earth’s past. Treating reality like a toybox, he stages trials, duels, and punishments as entertainment, with little regard for the crew’s autonomy or safety.",
+      "Paragraph2": "Kirk confronts Trelane not with brute force but by challenging the immaturity behind the spectacle—refusing to validate him as a noble ruler and instead exposing the cruelty of his games. The crisis ends when even more powerful parental beings intervene, recasting Trelane as a dangerous child rather than a god, and underscoring Star Trek’s recurring idea that power without empathy is simply irresponsibility."
+    },
+    "KeyAppearances": [
+      {
+        "EpisodeID": "toss1e17",
+        "Title": "The Squire of Gothos",
+        "Series": "TOS",
+        "Season": 1,
+        "Episode": 17,
+        "WhyItMatters": "Trelane gives the Enterprise a “Q-like” opponent years before Q existed: a capricious being who tests the crew by turning their lives into a game. The episode spotlights Kirk’s ability to win by reframing the contest—attacking the premise and the psychology of the adversary rather than trading shots."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "James T. Kirk",
+        "Series": "TOS",
+        "ConnectionType": "Captor vs. challenger",
+        "RelTrekRelationshipID": "",
+        "Summary": "Trelane’s obsession with ‘civilized’ Earth spectacle makes Kirk both a lead actor and a primary target. Kirk counters by denying Trelane the dignity he craves, baiting him into revealing childish impulses and forcing the confrontation onto moral and emotional ground where Trelane is least mature."
+      }
+    ],
+    "ContinuityNotes": [
+      "Positions Gothos as a domain controlled by a being whose abilities far exceed known technology, blurring the line between science and godlike power.",
+      "Introduces the idea of higher-order beings policing their own—Trelane’s ‘parents’ remove him when he becomes too dangerous.",
+      "Often remembered as an early template for later omnipotent-trickster antagonists."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Casting",
+        "Note": "Trelane is played by William Campbell in \"The Squire of Gothos\"."
+      }
+    ]
+  },
+  {
+    "GuestID": "gst-kurros",
+    "Name": "Kurros",
+    "DisplayName": "Kurros",
+    "Series": [
+      "VOY"
+    ],
+    "Category": "One-Off Antagonist",
+    "PortrayedBy": [
+      {
+        "Name": "Jason Alexander",
+        "RoleType": "Kurros"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Kurros is the spokesman for the Think Tank, a roaming collective of intellectuals who offer solutions to seemingly unsolvable problems—for a price. When Voyager is hunted by relentless Hazari, Kurros approaches Janeway with effortless confidence, selling his group as neutral saviors who can outthink any threat in the Delta Quadrant.",
+      "Paragraph2": "The catch is predatory: Kurros treats people as assets, not lives, and his ‘payment’ escalates from technology and curiosities to the ultimate commodity—Seven of Nine. The episode turns into a battle of wits, with Voyager exploiting the Think Tank’s arrogance and dependence on their telepathic matrix, leaving Kurros’ crew exposed to the same dangers they casually manipulate for profit."
+    },
+    "KeyAppearances": [
+      {
+        "EpisodeID": "voys5e20",
+        "Title": "Think Tank",
+        "Series": "VOY",
+        "Season": 5,
+        "Episode": 20,
+        "WhyItMatters": "Kurros embodies a different kind of threat: not conquest, but transactional exploitation disguised as benevolence. The story spotlights Seven’s vulnerability to being treated as property again—and Janeway’s refusal to ‘buy’ survival at the cost of a crewmate, even when the alternative looks grim."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "Kathryn Janeway",
+        "Series": "VOY",
+        "ConnectionType": "Negotiation / Moral line in the sand",
+        "RelTrekRelationshipID": "",
+        "Summary": "Kurros courts Janeway as a client, pushing her toward a compromise that would trade away principles for safety. Janeway’s final move—using Seven and Voyager’s ingenuity to cripple the Think Tank’s advantage—turns Kurros’ pitch into a lesson: some prices aren’t negotiable."
+      },
+      {
+        "Name": "Seven of Nine",
+        "Series": "VOY",
+        "ConnectionType": "Target / attempted acquisition",
+        "RelTrekRelationshipID": "",
+        "Summary": "Kurros views Seven as the Think Tank’s ideal ‘unique resource’ and attempts to isolate her from Voyager through flattery and intellectual temptation. Seven’s link to the crew becomes the fulcrum of Voyager’s counterattack, proving her loyalty and forcing Kurros to confront a variable he can’t reduce to an equation."
+      }
+    ],
+    "ContinuityNotes": [
+      "Introduces the Think Tank as a roaming power broker in the Delta Quadrant that profits from other peoples’ crises.",
+      "Highlights the Hazari pursuit as the immediate pressure that makes Kurros’ ‘help’ tempting.",
+      "Ends with the Think Tank left vulnerable to Hazari retaliation, implying severe consequences without returning to the thread on-screen."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Casting",
+        "Note": "Kurros is played by Jason Alexander in Voyager’s \"Think Tank\"."
+      }
+    ]
+  },
+  {
+    "GuestID": "gst-kivas-fajo",
+    "Name": "Kivas Fajo",
+    "DisplayName": "Kivas Fajo",
+    "Series": [
+      "TNG"
+    ],
+    "Category": "One-Off Antagonist",
+    "PortrayedBy": [
+      {
+        "Name": "Saul Rubinek",
+        "RoleType": "Kivas Fajo"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Kivas Fajo is an obsessive collector of rare artifacts—and rare beings—whose polished manners mask a predatory entitlement. When Data is believed lost in a shuttle accident, Fajo reveals the truth: he has staged the disaster and taken Data as the crown jewel of his private menagerie, treating a sentient officer as a display piece he legally and personally owns.",
+      "Paragraph2": "Fajo’s control is psychological as much as physical: he alternates charm, intimidation, and manipulation to test Data’s boundaries and to provoke a violent ‘proof’ that Data is dangerous and therefore justifies captivity. The episode becomes a moral pressure cooker for Data—forcing him to confront the edges of ethics, autonomy, and self-defense—while the Enterprise races to expose the deception and rescue their crewmate."
+    },
+    "KeyAppearances": [
+      {
+        "EpisodeID": "tngs3e22",
+        "Title": "The Most Toys",
+        "Series": "TNG",
+        "Season": 3,
+        "Episode": 22,
+        "WhyItMatters": "Fajo’s abduction of Data reframes personhood as a target: even in the Federation era, a being can be reduced to property by a determined predator. The story pushes Data to a breaking point—testing whether his ethics are truly internalized or merely programmed—and makes the Enterprise’s search a fight for the principle that sentience cannot be ‘collected.’"
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "Data",
+        "Series": "TNG",
+        "ConnectionType": "Captor vs. captive / Ethical brinkmanship",
+        "RelTrekRelationshipID": "",
+        "Summary": "Fajo is fascinated by Data precisely because he is both valuable and morally constrained; he believes he can own him and shape his behavior like an exhibit. Data’s resistance—and the episode’s climactic confrontation—turn the relationship into a stark examination of autonomy, coercion, and what it takes to defend oneself without becoming what the captor claims you are."
+      },
+      {
+        "Name": "Jean-Luc Picard",
+        "Series": "TNG",
+        "ConnectionType": "Investigation / Rescue",
+        "RelTrekRelationshipID": "",
+        "Summary": "Picard’s contact with Fajo is a duel of civility and suspicion: he must play along long enough to extract proof while knowing Fajo is lying. Their interaction spotlights Picard’s insistence on truth and accountability, even when the adversary hides behind wealth and polished performance."
+      }
+    ],
+    "ContinuityNotes": [
+      "Establishes Data’s value—and vulnerability—as a sentient individual who can still be targeted by exploitation outside Federation protection.",
+      "Frames Data’s moral development through extreme coercion, raising questions about self-defense and responsibility.",
+      "Fajo’s downfall comes through exposure and rescue rather than negotiation, highlighting the limits of diplomacy with predators."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Casting",
+        "Note": "Kivas Fajo is played by Saul Rubinek in \"The Most Toys\"."
+      }
+    ]
+  },
+  {
+    "GuestID": "gst-annorax",
+    "Name": "Annorax",
+    "DisplayName": "Annorax",
+    "Series": [
+      "VOY"
+    ],
+    "Category": "Two-Part Antagonist",
+    "PortrayedBy": [
+      {
+        "Name": "Kurtwood Smith",
+        "RoleType": "Annorax"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Annorax is a Krenim temporal scientist and strategist who commands a weaponized timeship designed to rewrite history through targeted temporal incursions. Driven by the collapse of his civilization’s ‘ideal’ timeline, he wages a methodical campaign of erasure—removing entire worlds and species from existence—believing the casualties are acceptable if the Krenim Imperium can be restored to its former glory.",
+      "Paragraph2": "What makes Annorax chilling is the personal obsession beneath the grand design: each correction is also an attempt to reclaim a life he lost, including the wife who should exist in the timeline he’s trying to rebuild. As Voyager becomes trapped in the cascading “year of hell,” Annorax’ war turns into a duel of endurance and will against Janeway—until his own machine, the symbol of control, becomes the instrument of undoing and the timeline snaps back to erase the horrors he caused."
+    },
+    "KeyAppearances": [
+      {
+        "EpisodeID": "voys4e8",
+        "Title": "Year of Hell, Part I",
+        "Series": "VOY",
+        "Season": 4,
+        "Episode": 8,
+        "WhyItMatters": "Annorax’ timeship introduces temporal warfare as an existential threat: the universe itself becomes a battlefield where victories erase victims from ever having lived. Voyager’s gradual degradation—physically and psychologically—starts here, setting a rare tone of sustained desperation that forces Janeway into survival leadership rather than exploration."
+      },
+      {
+        "EpisodeID": "voys4e9",
+        "Title": "Year of Hell, Part II",
+        "Series": "VOY",
+        "Season": 4,
+        "Episode": 9,
+        "WhyItMatters": "Annorax’ obsession finally collides with consequences: his ‘perfect’ corrections keep failing because reality resists being controlled like an equation. The resolution—using the timeship’s core against itself—turns the arc into a warning about sunk-cost obsession: the more Annorax sacrifices, the farther he moves from the very future he claims to be saving."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "Kathryn Janeway",
+        "Series": "VOY",
+        "ConnectionType": "War of attrition / Ideology clash",
+        "RelTrekRelationshipID": "",
+        "Summary": "Janeway refuses to become a bargaining chip in Annorax’ calculus and rejects his premise that lives can be traded for an abstract ‘right’ history. Their conflict is less about tactics than values—Janeway fighting for her crew’s reality as it exists, Annorax fighting for a reality he thinks he can resurrect through relentless deletion."
+      }
+    ],
+    "ContinuityNotes": [
+      "Defines the Krenim timeship as a temporal weapon capable of erasing entire civilizations from history.",
+      "Shows Voyager in one of its most prolonged ‘battle-damaged’ states, emphasizing attrition rather than episodic reset.",
+      "Resolves by restoring the timeline, effectively nullifying the events in-universe while preserving their impact on the audience."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Casting",
+        "Note": "Annorax is played by Kurtwood Smith in the two-part Voyager episode \"Year of Hell\"."
+      }
+    ]
+  }
+]
