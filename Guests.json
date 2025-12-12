@@ -10,20 +10,12 @@
     "PortrayedBy": [
       {
         "Name": "Clint Howard",
-        "RoleType": "Balok (on-screen)"
-      },
-      {
-        "Name": "Walker Edmiston",
-        "RoleType": "Balok (voice)"
-      },
-      {
-        "Name": "Ted Cassidy",
-        "RoleType": "Balok puppet (voice)"
+        "RoleType": "Balok"
       }
     ],
     "InUniverseSummary": {
-      "Paragraph1": "Balok is presented as the commander of the First Federation starship Fesarius during the Enterprise’s tense encounter at the edge of First Federation space. Through a combination of remote communications, a sinister puppet “representative,” and escalating ultimatums, he projects the image of an advanced power that will destroy Kirk’s ship unless the crew submits to judgment.",
-      "Paragraph2": "The confrontation is ultimately a deliberate test of intent rather than a straightforward border conflict. Balok’s aim is to determine what kind of people command the Enterprise by watching how they behave under existential pressure—whether they bluff, panic, lash out, or try to protect one another. When Kirk refuses to surrender his crew to fear and chooses de‑escalation over a first strike, Balok reveals himself as an open, curious contact, recasting the incident as a hard-edged but hopeful first step toward diplomacy."
+      "Paragraph1": "Balok is the commander of the First Federation starship Fesarius, encountered by the USS Enterprise during a tense first-contact test. Presenting himself through a frightening puppet visage and issuing increasingly dire ultimatums, he creates the impression of an implacable alien power ready to destroy Kirk’s ship for trespassing in First Federation space.",
+      "Paragraph2": "The threat is a deliberate trial of intentions: Balok believes a starship’s records can lie, but its crew’s choices under pressure reveal the truth. Kirk’s willingness to risk himself for his crew—and to de-escalate rather than strike—wins Balok’s respect, turning an apparent death sentence into an unexpected invitation to friendship and future contact between their peoples."
     },
     "KeyAppearances": [
       {
@@ -32,145 +24,51 @@
         "Series": "TOS",
         "Season": 1,
         "Episode": 10,
-        "WhyItMatters": "Balok turns a seemingly fatal standoff into a character test, pushing Kirk to win by nerve, restraint, and creative bluffing rather than superior firepower. The resolution reframes the episode’s terror tactics as an intentional screening process that ends with an explicit offer of friendship and future contact with the First Federation."
+        "WhyItMatters": "Balok’s encounter is Star Trek’s purest “first contact as a moral test”: the Enterprise is pushed to the brink, and Kirk’s calm deception and refusal to meet intimidation with violence reframes the crisis. The episode ends by pivoting from terror to diplomacy, establishing that understanding—and not firepower—is the real victory condition."
       }
     ],
     "Connections": [
       {
         "Name": "James T. Kirk",
         "Series": "TOS",
-        "ConnectionType": "First contact / crisis diplomacy",
+        "ConnectionType": "First contact / Diplomacy under threat",
         "RelTrekRelationshipID": "",
-        "Summary": "Kirk meets Balok as a threatening, unseen authority and responds with a calculated bluff designed to stop a fight neither side can afford. Balok’s evaluation hinges on Kirk’s willingness to protect his crew and to reduce harm, turning Kirk’s command style into the very evidence Balok was seeking."
-      },
-      {
-        "Name": "Leonard McCoy",
-        "Series": "TOS",
-        "ConnectionType": "Medical assessment / humanizing contact",
-        "RelTrekRelationshipID": "",
-        "Summary": "McCoy’s blunt skepticism helps keep the crew grounded while the situation spirals toward disaster. After Balok reveals himself, McCoy’s practical reactions—treating the moment like an encounter with an odd but real person, not a myth—help shift the tone from fear to cautious dialogue."
-      },
-      {
-        "Name": "Spock",
-        "Series": "TOS",
-        "ConnectionType": "Logic under uncertainty",
-        "RelTrekRelationshipID": "",
-        "Summary": "Spock’s analysis of the encounter provides Kirk with a rational counterweight to the mounting psychological pressure. Balok’s test forces the bridge officers to operate with limited information, and Spock’s insistence on disciplined inference supports Kirk’s decision-making when the obvious responses are all traps."
-      },
-      {
-        "Name": "First Federation",
-        "Series": "TOS",
-        "ConnectionType": "Representative / gatekeeper",
-        "RelTrekRelationshipID": "",
-        "Summary": "Balok’s actions define the First Federation’s first on-screen posture: powerful, secretive, and cautious, yet ultimately willing to engage when convinced the Federation’s explorers are not conquerors. He functions as both a warning and an invitation—the first face of a civilization that chooses contact on its own terms."
+        "Summary": "Kirk and Balok begin as adversaries in a deadly standoff, but Kirk’s nerve and restraint convince Balok the Enterprise is not a warship seeking conquest. Their conversation becomes the turning point that transforms a manufactured terror scenario into the beginning of interstellar goodwill."
       }
     ],
     "ContinuityNotes": [
-      "Introduces the First Federation and the starship Fesarius as a powerful, previously unknown political actor beyond Federation space.",
-      "Uses psychological theater (a puppet intermediary and manufactured ultimata) as a screening method for first contact rather than an act of war.",
-      "The offer of tranya and Balok’s invitation to friendship shifts the story from imminent destruction to diplomatic possibility within minutes.",
-      "Kirk’s corbomite bluff becomes a notable example of winning by deterrence and perception management rather than combat.",
-      "Balok’s civilization remains an intentionally open thread—an ally or counterpart implied by the ending but not revisited on-screen in TOS."
+      "Introduces the First Federation and the Fesarius as a powerful but ultimately non-hostile civilization.",
+      "Balok’s puppet/illusion tactic frames the confrontation as an intentional character test rather than a territorial war.",
+      "Ends with an explicit promise of future contact, leaving Balok as a rare “one-and-done” ally with major diplomatic implications."
     ],
     "BehindTheScenes": [
       {
         "Type": "Casting",
-        "Note": "Balok is portrayed on-screen by Clint Howard; the character’s voice was provided by Walker Edmiston."
+        "Note": "Balok is played on-screen by Clint Howard in \"The Corbomite Maneuver\"."
       },
       {
-        "Type": "Performance",
-        "Note": "The puppet representative is credited separately, with Ted Cassidy providing the puppet’s voice."
-      },
-      {
-        "Type": "Episode",
-        "Note": "Balok appears in the TOS season 1 episode \"The Corbomite Maneuver\" as the First Federation commander behind the encounter."
+        "Type": "Credits",
+        "Note": "The episode credits separate performers for Balok’s portrayal and voice work (including voice credits for Balok)."
       }
-    ],
-    "CharacterProfileSections": [
-      {
-        "Title": "Overview",
-        "Text": [
-          "Balok is the public face of a first-contact encounter that initially looks like a classic Star Trek “superior alien” threat. The Enterprise enters a region claimed by the First Federation and is immediately confronted by a voice of authority that demands obedience, threatens annihilation, and refuses meaningful negotiation. Balok’s power is never demonstrated through direct battle; instead, it is implied through confident assertions, an intimidating presentation, and the crew’s sense that they are outmatched.",
-          "What makes Balok distinctive is that the menace is a controlled experiment. The encounter is staged to elicit fear, reveal priorities, and measure whether the Enterprise behaves like a scientific vessel, a diplomatic mission, or a raider. The episode positions Balok as both antagonist and examiner: dangerous in method, but not in ultimate intention."
-        ]
-      },
-      {
-        "Title": "Role in the Story",
-        "Text": [
-          "Balok functions as the fulcrum for the episode’s core question: how does a captain act when the obvious options are all bad? Kirk’s bluff about “corbomite” is designed to stop a fight by making the cost of aggression appear unacceptable, buying time in a scenario engineered to remove time and certainty.",
-          "The reveal—Balok as a young First Federation being rather than a monstrous puppet—recasts the story’s events as a deliberate filter. Balok’s decision to show his true face only after Kirk’s choices impress him underscores a recurring Star Trek idea: first contact is as much about character as it is about technology."
-        ]
-      },
-      {
-        "Title": "Personality and Methods",
-        "Text": [
-          "Balok’s method is theatrical intimidation. He chooses a frightening avatar, manufactures a sequence of ever-worsening consequences, and forces the Enterprise to respond with incomplete information. The approach suggests a mind that values controlled outcomes and prefers observation to improvisation—an examiner setting conditions rather than an equal negotiating partner.",
-          "Yet Balok is also curious and capable of genuine warmth once his test is satisfied. His invitation to friendship and the almost celebratory tone of the final conversation imply that the cruelty of the setup is, to him, an acceptable cost in exchange for certainty about an unknown visitor’s intentions."
-        ]
-      },
-      {
-        "Title": "Key Conflicts and Turning Points",
-        "Text": [
-          "The central conflict is not a battle but a psychological contest: can Kirk keep his crew from panicking, keep the bridge functional, and avoid escalating into violence that might doom them? The turning point is the corbomite bluff itself—Kirk’s decision to invent an unbeatable deterrent rather than accept a lose‑lose choice offered by a superior force.",
-          "Balok’s reveal is the second turning point. By shifting from puppet authority to personal conversation, he signals that Kirk has passed the test. The story’s emotional reversal—terror to diplomacy—lands because the audience has already lived through the standoff with the crew."
-        ]
-      },
-      {
-        "Title": "Themes",
-        "Text": [
-          "Balok’s episode is about deterrence, perception, and the ethics of first contact. It argues that courage is not only the willingness to fight, but the willingness to refuse a fight when the situation is designed to bait one.",
-          "It also explores the risk of treating fear as a tool. Balok achieves his goal, but only because Kirk is unusually steady under pressure; the same method could just as easily provoke a tragic overreaction. The episode leaves the viewer with the question of whether ends that are ‘peaceful’ justify means that are terrifying."
-        ]
-      }
-    ],
-    "ActorInfo": {
-      "Performers": [
-        {
-          "Name": "Clint Howard",
-          "RoleInThisEntry": "Balok (on-screen)",
-          "PerformanceNotes": "Howard’s on-screen Balok is deliberately disarming: a youthful, open expression and friendly demeanor that sharply contrasts the puppet’s menace, selling the episode’s dramatic pivot from horror to diplomacy."
-        },
-        {
-          "Name": "Walker Edmiston",
-          "RoleInThisEntry": "Balok (voice)",
-          "PerformanceNotes": "Edmiston’s vocal performance provides the authoritative ‘commander’ presence that keeps the standoff credible, projecting confidence and superiority without showing a face."
-        },
-        {
-          "Name": "Ted Cassidy",
-          "RoleInThisEntry": "Balok puppet (voice)",
-          "PerformanceNotes": "Cassidy’s puppet voice leans into the uncanny, helping the episode sustain dread and uncertainty before the reveal reframes the situation."
-        }
-      ],
-      "CastingAndProductionContext": "Balok’s presentation relies on split performance: an intimidating puppet persona to heighten fear, then a calm, personable reveal to reframe the encounter as a test. The casting and voice choices are central to making that reversal feel earned rather than arbitrary.",
-      "TrekCreditsSummary": "Clint Howard is a recurring Star Trek guest performer across multiple later series, while Edmiston and Cassidy are among the franchise’s notable voice and character performers in the original era."
-    }
+    ]
   },
   {
     "GuestID": "gst-trelane",
     "Name": "Trelane",
     "DisplayName": "Trelane",
     "Series": [
-      "TOS",
-      "SNW"
+      "TOS"
     ],
-    "Category": "Recurring Trickster",
+    "Category": "One-Off Icon",
     "PortrayedBy": [
       {
         "Name": "William Campbell",
-        "RoleType": "Trelane (TOS)"
-      },
-      {
-        "Name": "Rhys Darby",
-        "RoleType": "Trelane (SNW)"
-      },
-      {
-        "Name": "Myles Dobson",
-        "RoleType": "Trelane (disguise: Vulcan bartender)"
+        "RoleType": "Trelane"
       }
     ],
     "InUniverseSummary": {
-      "Paragraph1": "Trelane is an immensely powerful, capricious being who styles himself the “Squire of Gothos,” trapping Starfleet officers inside elaborate fantasies that reflect his obsession with idealized images of Earth history. He treats reality like a stage set—summoning props, changing environments, and staging “trials” for amusement—while reacting with childish outrage when his play is disrupted.",
-      "Paragraph2": "The danger of Trelane is not brute hostility so much as irresponsibility: he can punish or endanger people on a whim, driven by vanity and boredom. When confronted, he resists moral reasoning and instead demands admiration, forcing Kirk and Spock to win by undermining the premise of his game rather than by matching his power. Later appearances recontextualize him as a juvenile member of the Q continuum, making his theatrical cruelty and curiosity read as the behavior of a cosmic child testing limits."
+      "Paragraph1": "Trelane is the self-styled “Squire of Gothos,” an immensely powerful, childish being who seizes the Enterprise crew and forces them into a bizarre theatrical playworld modeled on his romanticized view of Earth’s past. Treating reality like a toybox, he stages trials, duels, and punishments as entertainment, with little regard for the crew’s autonomy or safety.",
+      "Paragraph2": "Kirk confronts Trelane not with brute force but by challenging the immaturity behind the spectacle—refusing to validate him as a noble ruler and instead exposing the cruelty of his games. The crisis ends when even more powerful parental beings intervene, recasting Trelane as a dangerous child rather than a god, and underscoring Star Trek’s recurring idea that power without empathy is simply irresponsibility."
     },
     "KeyAppearances": [
       {
@@ -179,15 +77,7 @@
         "Series": "TOS",
         "Season": 1,
         "Episode": 17,
-        "WhyItMatters": "Trelane is a prototype for Star Trek’s omnipotent trickster antagonists: he challenges the crew through reality-bending theatrics and forces Kirk to win by psychology and principle. The episode spotlights the fragility of ‘civilization’ when power is treated as play."
-      },
-      {
-        "EpisodeID": "snws3e2",
-        "Title": "Wedding Bell Blues",
-        "Series": "SNW",
-        "Season": 3,
-        "Episode": 2,
-        "WhyItMatters": "The Strange New Worlds appearance explicitly links Trelane’s behavior to the Q continuum and shows him operating through disguises and social manipulation rather than direct spectacle. It reframes the ‘Squire’ persona as one mask among many for a being who enjoys reshaping people’s lives as an experiment."
+        "WhyItMatters": "Trelane gives the Enterprise a “Q-like” opponent years before Q existed: a capricious being who tests the crew by turning their lives into a game. The episode spotlights Kirk’s ability to win by reframing the contest—attacking the premise and the psychology of the adversary rather than trading shots."
       }
     ],
     "Connections": [
@@ -196,109 +86,20 @@
         "Series": "TOS",
         "ConnectionType": "Captor vs. challenger",
         "RelTrekRelationshipID": "",
-        "Summary": "Kirk refuses to dignify Trelane’s self-mythology, treating him as a childish bully rather than a noble ruler. By attacking Trelane’s need for admiration, Kirk shifts the contest from raw power to emotional maturity—an arena where Trelane is vulnerable."
-      },
-      {
-        "Name": "Spock",
-        "Series": "TOS",
-        "ConnectionType": "Strategic counter / technical vulnerability",
-        "RelTrekRelationshipID": "",
-        "Summary": "Spock helps identify that Trelane’s power depends on an external device, turning the encounter into a problem that can be disrupted rather than endured. His logic and restraint serve as the crew’s anchor when Trelane attempts to bait them into panic or submission."
-      },
-      {
-        "Name": "Q Continuum",
-        "Series": "SNW",
-        "ConnectionType": "Juvenile member / oversight",
-        "RelTrekRelationshipID": "",
-        "Summary": "Later material frames Trelane as a young Q whose behavior requires intervention by more mature members of his species. This context explains his combination of omnipotent capability and emotional immaturity—power without the discipline to use it responsibly."
-      },
-      {
-        "Name": "USS Enterprise crew",
-        "Series": "TOS",
-        "ConnectionType": "Unwilling participants",
-        "RelTrekRelationshipID": "",
-        "Summary": "Trelane’s fixation on ‘civilized’ roles turns officers into cast members, forcing them to perform against their will. His games are structured to preserve his control and his ego, making resistance less about escape and more about denying him the reaction he wants."
+        "Summary": "Trelane’s obsession with ‘civilized’ Earth spectacle makes Kirk both a lead actor and a primary target. Kirk counters by denying Trelane the dignity he craves, baiting him into revealing childish impulses and forcing the confrontation onto moral and emotional ground where Trelane is least mature."
       }
     ],
     "ContinuityNotes": [
-      "Trelane’s Gothos environment is built around curated artifacts and theatrical recreations of Earth history, reflecting observation and mimicry rather than true cultural understanding.",
-      "His apparent omnipotence is presented as technology-like: the Enterprise crew can disrupt aspects of his control by targeting the mechanism behind his illusions.",
-      "The episode ends with intervention by ‘parents’ who remove him, defining him as dangerous but also as a being subject to higher authority.",
-      "Strange New Worlds later links Trelane to the Q continuum and depicts him operating through disguises and social interference.",
-      "Across appearances, Trelane’s defining trait remains the same: immense ability paired with juvenile emotional development."
+      "Positions Gothos as a domain controlled by a being whose abilities far exceed known technology, blurring the line between science and godlike power.",
+      "Introduces the idea of higher-order beings policing their own—Trelane’s ‘parents’ remove him when he becomes too dangerous.",
+      "Often remembered as an early template for later omnipotent-trickster antagonists."
     ],
     "BehindTheScenes": [
       {
         "Type": "Casting",
-        "Note": "Trelane is played by William Campbell in TOS and by Rhys Darby in Strange New Worlds."
-      },
-      {
-        "Type": "Production",
-        "Note": "Memory Alpha identifies additional performers used for Trelane’s disguises in \"Wedding Bell Blues,\" including Myles Dobson."
-      },
-      {
-        "Type": "Episode",
-        "Note": "Trelane’s core appearances are \"The Squire of Gothos\" (TOS) and \"Wedding Bell Blues\" (SNW)."
+        "Note": "Trelane is played by William Campbell in \"The Squire of Gothos\"."
       }
-    ],
-    "CharacterProfileSections": [
-      {
-        "Title": "Overview",
-        "Text": [
-          "Trelane is introduced as the self-appointed “Squire of Gothos,” a being with reality-bending capabilities who treats a Starfleet crew as toys in an elaborate private theater. He does not seek territory or resources; his motivation is attention, novelty, and the thrill of forcing competent adults to play roles in his fantasy.",
-          "His most distinctive characteristic is the mismatch between ability and maturity. Trelane’s power is vast, but his emotional responses are impulsive—delight when indulged, fury when contradicted, and petulance when deprived of control."
-        ]
-      },
-      {
-        "Title": "Role in the Story",
-        "Text": [
-          "In his TOS appearance, Trelane functions as a ‘trial by absurdity’: he strips away the normal rules of negotiation and combat and replaces them with a social game where the stakes are real but the structure is arbitrary. This forces Kirk and Spock to compete on unfamiliar ground, where courage is expressed as composure and where victory depends on refusing the narrative Trelane is trying to impose.",
-          "In Strange New Worlds, the concept evolves from overt spectacle to social manipulation. The same underlying impulse remains—Trelane rearranges lives for entertainment—but the tools become subtler, emphasizing that his core threat is interference with agency rather than physical harm alone."
-        ]
-      },
-      {
-        "Title": "Personality and Methods",
-        "Text": [
-          "Trelane’s personality is performative. He speaks like a romantic caricature, surrounds himself with trophies, and stages confrontations that resemble period dramas. The performance is not mere aesthetics; it is how he validates his identity, turning other people into props that confirm his status.",
-          "His methods include coercive hospitality—forcing guests into his environment, dictating costumes and behavior, and escalating punishments when defied. Even when he seems playful, the underlying premise is possession: if he can command your reality, he believes he can command you."
-        ]
-      },
-      {
-        "Title": "Key Conflicts and Turning Points",
-        "Text": [
-          "The key conflict is the crew’s attempt to retain dignity and autonomy in a situation where physical resistance is nearly meaningless. The turning point comes when the Enterprise identifies a vulnerability in Trelane’s control and realizes that ‘omnipotence’ may be mediated by something external and therefore disruptable.",
-          "A second turning point is the moral reframing. Kirk does not try to outgun Trelane; he tries to expose him. By treating Trelane as an immature child rather than a rightful sovereign, Kirk deprives him of the validation he craves—and forces the confrontation into the realm of self-image."
-        ]
-      },
-      {
-        "Title": "Themes",
-        "Text": [
-          "Trelane stories explore power without responsibility. Star Trek frames him as a cautionary figure: the ability to reshape reality does not automatically come with the empathy needed to respect other minds.",
-          "They also probe the idea of ‘civilization’ as performance. Trelane imitates the trappings of culture while missing its ethical core, suggesting that manners and aesthetics are meaningless if they exist only to justify domination."
-        ]
-      }
-    ],
-    "ActorInfo": {
-      "Performers": [
-        {
-          "Name": "William Campbell",
-          "RoleInThisEntry": "Trelane (TOS)",
-          "PerformanceNotes": "Campbell plays Trelane with theatrical charm and sudden tantrums, making the character simultaneously amusing and unsettling—an adult actor embodying a being with a child’s emotional range."
-        },
-        {
-          "Name": "Rhys Darby",
-          "RoleInThisEntry": "Trelane (SNW)",
-          "PerformanceNotes": "Darby leans into the character’s mischief and social disruption, presenting Trelane as a manipulator who can weaponize charm and whimsy rather than relying solely on overt displays of power."
-        },
-        {
-          "Name": "Myles Dobson",
-          "RoleInThisEntry": "Trelane (disguise)",
-          "PerformanceNotes": "Dobson supports the ‘mask’ aspect of Trelane’s later portrayal, reinforcing that the character can blend into a setting and steer events invisibly before revealing himself."
-        }
-      ],
-      "CastingAndProductionContext": "Trelane’s effectiveness depends on performers who can pivot from comedic flourish to genuine menace within a single scene. The role works best when the audience enjoys the showmanship while still sensing that the situation is dangerous precisely because the ‘host’ is immature.",
-      "TrekCreditsSummary": "William Campbell is also known within Star Trek for portraying Koloth in TOS and DS9, while Rhys Darby’s Trek work includes Strange New Worlds. The multi-performer approach in later material emphasizes Trelane’s use of disguises."
-    }
+    ]
   },
   {
     "GuestID": "gst-kurros",
@@ -315,8 +116,8 @@
       }
     ],
     "InUniverseSummary": {
-      "Paragraph1": "Kurros is the spokesperson and strategist of the Think Tank, a mobile collective of intellectuals who sell solutions to other peoples’ crises. He approaches Voyager during a lethal pursuit by the Hazari with the calm certainty of a professional negotiator, presenting his group as neutral problem-solvers whose brilliance can end any threat—if the price is right.",
-      "Paragraph2": "The price reveals Kurros’ predatory core. He treats individuals as tradable assets and regards consent as another variable to manipulate, eventually attempting to claim Seven of Nine as payment. Kurros’ confidence rests on the Think Tank’s informational advantages and the telepathic and computational resources that support their work, but Voyager turns that arrogance against them—exposing that Kurros’ ‘help’ is not benevolence, but a business model that collapses when a client refuses to become a commodity."
+      "Paragraph1": "Kurros is the spokesman for the Think Tank, a roaming collective of intellectuals who offer solutions to seemingly unsolvable problems—for a price. When Voyager is hunted by relentless Hazari, Kurros approaches Janeway with effortless confidence, selling his group as neutral saviors who can outthink any threat in the Delta Quadrant.",
+      "Paragraph2": "The catch is predatory: Kurros treats people as assets, not lives, and his ‘payment’ escalates from technology and curiosities to the ultimate commodity—Seven of Nine. The episode turns into a battle of wits, with Voyager exploiting the Think Tank’s arrogance and dependence on their telepathic matrix, leaving Kurros’ crew exposed to the same dangers they casually manipulate for profit."
     },
     "KeyAppearances": [
       {
@@ -325,101 +126,36 @@
         "Series": "VOY",
         "Season": 5,
         "Episode": 20,
-        "WhyItMatters": "Kurros embodies a transactional, exploitative version of “help”: he offers salvation from the Hazari only as leverage to acquire Seven. The episode pits Janeway’s ethics against Kurros’ utilitarian commerce and frames intelligence itself as a weapon when it’s used to coerce rather than to understand."
+        "WhyItMatters": "Kurros embodies a different kind of threat: not conquest, but transactional exploitation disguised as benevolence. The story spotlights Seven’s vulnerability to being treated as property again—and Janeway’s refusal to ‘buy’ survival at the cost of a crewmate, even when the alternative looks grim."
       }
     ],
     "Connections": [
       {
         "Name": "Kathryn Janeway",
         "Series": "VOY",
-        "ConnectionType": "Negotiation / moral refusal",
+        "ConnectionType": "Negotiation / Moral line in the sand",
         "RelTrekRelationshipID": "",
-        "Summary": "Kurros tries to corner Janeway with a seemingly impossible choice—accept the Think Tank’s terms or lose the ship to the Hazari. Janeway rejects the premise that survival can be purchased with a crewmate’s freedom, turning the negotiation into a contest over what counts as an acceptable cost."
+        "Summary": "Kurros courts Janeway as a client, pushing her toward a compromise that would trade away principles for safety. Janeway’s final move—using Seven and Voyager’s ingenuity to cripple the Think Tank’s advantage—turns Kurros’ pitch into a lesson: some prices aren’t negotiable."
       },
       {
         "Name": "Seven of Nine",
         "Series": "VOY",
         "ConnectionType": "Target / attempted acquisition",
         "RelTrekRelationshipID": "",
-        "Summary": "Kurros identifies Seven as a unique intellectual asset and attempts to entice her with validation and opportunity while minimizing Voyager’s claim on her as a person. Seven’s resistance—paired with her tactical value to Janeway—becomes the key variable Kurros fails to control."
-      },
-      {
-        "Name": "Hazari",
-        "Series": "VOY",
-        "ConnectionType": "Leverage / external threat",
-        "RelTrekRelationshipID": "",
-        "Summary": "The Hazari pursuit is the pressure Kurros exploits to make his offer irresistible. By letting another predator set the stakes, Kurros positions himself as the ‘reasonable’ alternative, even though his aim is ultimately possession rather than rescue."
+        "Summary": "Kurros views Seven as the Think Tank’s ideal ‘unique resource’ and attempts to isolate her from Voyager through flattery and intellectual temptation. Seven’s link to the crew becomes the fulcrum of Voyager’s counterattack, proving her loyalty and forcing Kurros to confront a variable he can’t reduce to an equation."
       }
     ],
     "ContinuityNotes": [
-      "Introduces the Think Tank as a roaming problem-solving consortium that exchanges solutions for payment, treating crises as market opportunities.",
-      "Kurros’ backstory includes being traded as ‘payment’ at a young age, shaping his pragmatic and transactional worldview.",
-      "The Think Tank’s vessel and resources give Kurros an informational edge that he uses as coercion rather than as diplomacy.",
-      "The Hazari provide the immediate external threat that makes Kurros’ offer tempting and defines the episode’s countdown pressure.",
-      "The episode ends with the Think Tank exposed to Hazari retaliation, implying consequences for Kurros’ tactics without revisiting them on-screen."
+      "Introduces the Think Tank as a roaming power broker in the Delta Quadrant that profits from other peoples’ crises.",
+      "Highlights the Hazari pursuit as the immediate pressure that makes Kurros’ ‘help’ tempting.",
+      "Ends with the Think Tank left vulnerable to Hazari retaliation, implying severe consequences without returning to the thread on-screen."
     ],
     "BehindTheScenes": [
       {
         "Type": "Casting",
         "Note": "Kurros is played by Jason Alexander in Voyager’s \"Think Tank\"."
-      },
-      {
-        "Type": "Production",
-        "Note": "Memory Alpha notes Alexander’s humorously difficult experience with technical dialogue during filming, reflecting the episode’s dense ‘problem-solver’ tone."
-      },
-      {
-        "Type": "Episode",
-        "Note": "Kurros appears in VOY season 5, episode 20, first broadcast in 1999."
       }
-    ],
-    "CharacterProfileSections": [
-      {
-        "Title": "Overview",
-        "Text": [
-          "Kurros represents a threat built around intellect as commerce. He is not a warlord or a fanatic; he is a broker who understands that desperation creates leverage and that the appearance of neutrality can disguise exploitation.",
-          "Unlike many antagonists, Kurros does not need to destroy Voyager to win. He needs only to convince Janeway that there are no alternatives—then present his price as the inevitable solution."
-        ]
-      },
-      {
-        "Title": "Role in the Story",
-        "Text": [
-          "Kurros’ role is to embody the seductive danger of ‘help’ that comes with strings attached. By arriving at the moment Voyager is cornered, he reframes a tactical crisis into an ethical one: can a captain protect her crew if the cost is surrendering one of them as property?",
-          "He also functions as a mirror for Seven’s ongoing story. Kurros sees her as an asset to be acquired, echoing earlier forms of dehumanization, and the episode uses his offer to underline that Seven’s identity is not negotiable."
-        ]
-      },
-      {
-        "Title": "Personality and Methods",
-        "Text": [
-          "Kurros is polished, witty, and confident—traits that make him persuasive even when his requests are outrageous. He relies on charm and certainty, presenting himself as someone who has already solved the problem and is simply waiting for the client to recognize the obvious.",
-          "His method is incremental escalation. He begins with manageable trades, then shifts to a demand that crosses a moral line, testing whether the other party’s principles are firm or merely situational."
-        ]
-      },
-      {
-        "Title": "Key Conflicts and Turning Points",
-        "Text": [
-          "The key conflict is Janeway’s refusal to accept Kurros’ framing of the situation. If she accepts his premise that survival can be purchased, she has already lost the ethical battle before any deal is signed.",
-          "The turning point arrives when Voyager exposes the Think Tank’s dependencies and uses Kurros’ own arrogance against him. The episode resolves by demonstrating that a ‘perfect solution’ offered by a predator is usually just a trap with better marketing."
-        ]
-      },
-      {
-        "Title": "Themes",
-        "Text": [
-          "Kurros’ story explores commodification: the way intelligence, technology, and even people can be treated as tradable goods when the marketplace replaces ethics.",
-          "It also emphasizes informed consent as a boundary. Kurros believes consent can be engineered through pressure; Voyager counters by showing that refusing a coerced choice is itself a form of power."
-        ]
-      }
-    ],
-    "ActorInfo": {
-      "Performers": [
-        {
-          "Name": "Jason Alexander",
-          "RoleInThisEntry": "Kurros",
-          "PerformanceNotes": "Alexander plays Kurros as affable and quick, using comic rhythm to make coercion feel conversational. The friendliness is part of the threat: Kurros sounds reasonable even when he’s proposing the ownership of a person."
-        }
-      ],
-      "CastingAndProductionContext": "Kurros requires an actor who can blend charm with menace and who can sell dense, idea-heavy dialogue without losing the character’s predatory edge. The performance works because Kurros feels like someone who truly believes he is offering a fair deal—he just defines ‘fair’ in purely transactional terms.",
-      "TrekCreditsSummary": "Jason Alexander’s Star Trek work includes his on-screen role as Kurros in Voyager and later voice performance within the franchise."
-    }
+    ]
   },
   {
     "GuestID": "gst-kivas-fajo",
@@ -436,8 +172,8 @@
       }
     ],
     "InUniverseSummary": {
-      "Paragraph1": "Kivas Fajo is a Zibalian trader and obsessive collector whose wealth enables him to acquire artifacts that belong in museums—and, eventually, living beings he considers ‘unique.’ When Data is presumed destroyed in a shuttle accident, the truth is that Fajo engineered the incident and abducted Data, making a Starfleet officer the centerpiece of his private gallery.",
-      "Paragraph2": "Fajo’s danger lies in his entitlement and his need to control. He alternates hospitality and cruelty to keep Data off balance, while surrounding himself with guards and technology designed to neutralize resistance. The story becomes a sustained exploration of coercion: Fajo tries to force Data into an act of violence that would justify permanent imprisonment, while Data is pushed to the brink of what self-defense and moral autonomy mean for an artificial lifeform."
+      "Paragraph1": "Kivas Fajo is an obsessive collector of rare artifacts—and rare beings—whose polished manners mask a predatory entitlement. When Data is believed lost in a shuttle accident, Fajo reveals the truth: he has staged the disaster and taken Data as the crown jewel of his private menagerie, treating a sentient officer as a display piece he legally and personally owns.",
+      "Paragraph2": "Fajo’s control is psychological as much as physical: he alternates charm, intimidation, and manipulation to test Data’s boundaries and to provoke a violent ‘proof’ that Data is dangerous and therefore justifies captivity. The episode becomes a moral pressure cooker for Data—forcing him to confront the edges of ethics, autonomy, and self-defense—while the Enterprise races to expose the deception and rescue their crewmate."
     },
     "KeyAppearances": [
       {
@@ -446,101 +182,36 @@
         "Series": "TNG",
         "Season": 3,
         "Episode": 22,
-        "WhyItMatters": "Fajo turns Data’s personhood into a target by treating him as property and attempting to provoke ‘proof’ that Data is dangerous. The episode is one of Data’s most intense moral tests, forcing him to confront the boundary between ethical restraint and the right to resist captivity."
+        "WhyItMatters": "Fajo’s abduction of Data reframes personhood as a target: even in the Federation era, a being can be reduced to property by a determined predator. The story pushes Data to a breaking point—testing whether his ethics are truly internalized or merely programmed—and makes the Enterprise’s search a fight for the principle that sentience cannot be ‘collected.’"
       }
     ],
     "Connections": [
       {
         "Name": "Data",
         "Series": "TNG",
-        "ConnectionType": "Captor vs. captive / coercion",
+        "ConnectionType": "Captor vs. captive / Ethical brinkmanship",
         "RelTrekRelationshipID": "",
-        "Summary": "Fajo is fascinated by Data precisely because Data is rare, intelligent, and ethically constrained. He attempts to exploit those constraints by creating situations where Data can either submit indefinitely or violate his own principles, turning morality into a mechanism of control."
+        "Summary": "Fajo is fascinated by Data precisely because he is both valuable and morally constrained; he believes he can own him and shape his behavior like an exhibit. Data’s resistance—and the episode’s climactic confrontation—turn the relationship into a stark examination of autonomy, coercion, and what it takes to defend oneself without becoming what the captor claims you are."
       },
       {
         "Name": "Jean-Luc Picard",
         "Series": "TNG",
-        "ConnectionType": "Investigation / confrontation",
+        "ConnectionType": "Investigation / Rescue",
         "RelTrekRelationshipID": "",
-        "Summary": "Picard’s engagement with Fajo is a duel of civility and suspicion. Fajo hides behind charm and commerce, while Picard insists on accountability—treating the disappearance of a crewmate as a matter of rights, not negotiation."
-      },
-      {
-        "Name": "Varria",
-        "Series": "TNG",
-        "ConnectionType": "Enabler vs. conscience",
-        "RelTrekRelationshipID": "",
-        "Summary": "As Fajo’s assistant, Varria becomes the human mirror of Data’s situation: someone caught inside Fajo’s control system. Her shifting response to Fajo’s cruelty highlights the social infrastructure that allows predators like Fajo to operate."
+        "Summary": "Picard’s contact with Fajo is a duel of civility and suspicion: he must play along long enough to extract proof while knowing Fajo is lying. Their interaction spotlights Picard’s insistence on truth and accountability, even when the adversary hides behind wealth and polished performance."
       }
     ],
     "ContinuityNotes": [
-      "Frames Data as vulnerable to exploitation outside Federation jurisdiction despite his status as a Starfleet officer and recognized sentient being.",
-      "Fajo’s ‘collector’ mindset treats living beings as extensions of property, making personhood itself the thematic battleground of the episode.",
-      "Data’s ethical programming is tested under extreme coercion, emphasizing that restraint can be used against someone as a tool of captivity.",
-      "Picard’s rescue effort underscores that legal and moral claims still matter even when the adversary operates through wealth and private force.",
-      "The episode’s climax hinges on Data’s capacity to choose, reinforcing that autonomy—not physical strength—is the core of his identity."
+      "Establishes Data’s value—and vulnerability—as a sentient individual who can still be targeted by exploitation outside Federation protection.",
+      "Frames Data’s moral development through extreme coercion, raising questions about self-defense and responsibility.",
+      "Fajo’s downfall comes through exposure and rescue rather than negotiation, highlighting the limits of diplomacy with predators."
     ],
     "BehindTheScenes": [
       {
         "Type": "Casting",
         "Note": "Kivas Fajo is played by Saul Rubinek in \"The Most Toys\"."
-      },
-      {
-        "Type": "Production",
-        "Note": "Memory Alpha notes a minor in-episode line variation where Fajo’s Zibalian origin is mispronounced during dialogue."
-      },
-      {
-        "Type": "Episode",
-        "Note": "Fajo appears in TNG season 3, episode 22, a Data-centered story about captivity and personhood."
       }
-    ],
-    "CharacterProfileSections": [
-      {
-        "Title": "Overview",
-        "Text": [
-          "Kivas Fajo is a civilian antagonist who weaponizes wealth, taste, and private security rather than fleets or ideology. He is charismatic and articulate, but his defining trait is ownership: he believes rarity confers entitlement, and that acquisition is a moral act because it ‘preserves’ what he values.",
-          "Fajo’s obsession escalates naturally from objects to people. In his worldview, a sentient being can be cataloged, displayed, and controlled if the collector has the means to enforce the arrangement."
-        ]
-      },
-      {
-        "Title": "Role in the Story",
-        "Text": [
-          "Fajo’s role is to place Data into a situation where rules and protections vanish. The Enterprise cannot simply declare jurisdiction, and Data cannot rely on rank or law; his safety depends on his ability to endure manipulation and to make choices under coercion.",
-          "Because Data is both powerful and ethically bound, Fajo tries to turn virtue into vulnerability. The episode’s tension comes from watching a character defined by restraint confront a captor who understands that restraint can be exploited."
-        ]
-      },
-      {
-        "Title": "Personality and Methods",
-        "Text": [
-          "Fajo performs civility as part of control. He offers comfort, compliments, and conversation—then pivots to threats and humiliation when he is challenged. The friendliness is not empathy; it is a leash that tightens the moment the captive forgets who holds power.",
-          "His methods include isolation, surveillance, and staged ‘tests’ designed to corner Data into appearing dangerous. He wants not only possession, but justification—proof that his possession is necessary."
-        ]
-      },
-      {
-        "Title": "Key Conflicts and Turning Points",
-        "Text": [
-          "The central conflict is Data’s struggle to retain autonomy while trapped in an environment engineered to remove options. Fajo’s ultimate tactic is provocation: to push Data into violence that would validate Fajo’s narrative that Data cannot be trusted with freedom.",
-          "The turning point is the collapse of that narrative. The more Fajo pushes, the clearer his own cruelty becomes, undermining the moral veneer he uses to rationalize ownership. The rescue is not just physical; it is the restoration of Data’s status as a person rather than an exhibit."
-        ]
-      },
-      {
-        "Title": "Themes",
-        "Text": [
-          "Fajo’s story is about personhood and commodification. It argues that the language of ‘collection’ can be used to launder exploitation into culture and taste.",
-          "It also examines coercion as a form of engineering: a captor can create conditions that make ‘choice’ feel impossible. The episode’s tension comes from whether ethical restraint is a genuine value when it carries a potentially fatal cost."
-        ]
-      }
-    ],
-    "ActorInfo": {
-      "Performers": [
-        {
-          "Name": "Saul Rubinek",
-          "RoleInThisEntry": "Kivas Fajo",
-          "PerformanceNotes": "Rubinek plays Fajo as charming and cultured with a hair-trigger pivot into rage, making the character’s politeness feel like a mask that slips whenever control is threatened."
-        }
-      ],
-      "CastingAndProductionContext": "Fajo requires an actor who can credibly embody refined taste and social fluency while revealing the insecurity and cruelty that drive the obsession. The performance works because Fajo never stops believing he is the hero of his own story—he sees himself as a preserver, not a thief.",
-      "TrekCreditsSummary": "Saul Rubinek’s primary Star Trek on-screen role is Kivas Fajo in TNG, remembered for anchoring one of Data’s most psychologically intense episodes."
-    }
+    ]
   },
   {
     "GuestID": "gst-annorax",
@@ -557,8 +228,8 @@
       }
     ],
     "InUniverseSummary": {
-      "Paragraph1": "Annorax is a Krenim temporal scientist and military strategist who designs and commands a weapon ship capable of rewriting history through targeted temporal incursions. His campaign is framed as restoration: he believes the Krenim Imperium has been diminished by changes to the timeline and that it can be rebuilt if the ‘right’ historical path is forced back into place, regardless of collateral damage.",
-      "Paragraph2": "The human core of Annorax’ obsession is grief and control. Each incursion is not only a political correction but a personal attempt to recover a life—especially the wife he lost in an altered history. As the so-called “Year of Hell” grinds Voyager down through repeated erasures and shifting realities, Annorax becomes a study in sunk-cost fanaticism: the more he sacrifices, the more he interprets failure as proof that he must sacrifice again, until the machine he built to dominate time becomes the instrument that undoes his work."
+      "Paragraph1": "Annorax is a Krenim temporal scientist and strategist who commands a weaponized timeship designed to rewrite history through targeted temporal incursions. Driven by the collapse of his civilization’s ‘ideal’ timeline, he wages a methodical campaign of erasure—removing entire worlds and species from existence—believing the casualties are acceptable if the Krenim Imperium can be restored to its former glory.",
+      "Paragraph2": "What makes Annorax chilling is the personal obsession beneath the grand design: each correction is also an attempt to reclaim a life he lost, including the wife who should exist in the timeline he’s trying to rebuild. As Voyager becomes trapped in the cascading “year of hell,” Annorax’ war turns into a duel of endurance and will against Janeway—until his own machine, the symbol of control, becomes the instrument of undoing and the timeline snaps back to erase the horrors he caused."
     },
     "KeyAppearances": [
       {
@@ -567,7 +238,7 @@
         "Series": "VOY",
         "Season": 4,
         "Episode": 8,
-        "WhyItMatters": "Annorax turns time itself into a battlefield, erasing civilizations and forcing Voyager into prolonged attrition. Part I establishes the terrifying logic of temporal warfare: the enemy can ‘win’ without conquering territory by simply removing you from history."
+        "WhyItMatters": "Annorax’ timeship introduces temporal warfare as an existential threat: the universe itself becomes a battlefield where victories erase victims from ever having lived. Voyager’s gradual degradation—physically and psychologically—starts here, setting a rare tone of sustained desperation that forces Janeway into survival leadership rather than exploration."
       },
       {
         "EpisodeID": "voys4e9",
@@ -575,93 +246,795 @@
         "Series": "VOY",
         "Season": 4,
         "Episode": 9,
-        "WhyItMatters": "Part II crystallizes Annorax’ obsession as his greatest weakness. As Janeway commits to stopping the weapon ship at any cost, Annorax’ inability to accept limits culminates in the destruction of his own temporal core, restoring the timeline and revealing how close his ‘restoration’ was to total moral collapse."
+        "WhyItMatters": "Annorax’ obsession finally collides with consequences: his ‘perfect’ corrections keep failing because reality resists being controlled like an equation. The resolution—using the timeship’s core against itself—turns the arc into a warning about sunk-cost obsession: the more Annorax sacrifices, the farther he moves from the very future he claims to be saving."
       }
     ],
     "Connections": [
       {
         "Name": "Kathryn Janeway",
         "Series": "VOY",
-        "ConnectionType": "War of attrition / ideology clash",
+        "ConnectionType": "War of attrition / Ideology clash",
         "RelTrekRelationshipID": "",
-        "Summary": "Janeway becomes Annorax’ most persistent obstacle because she refuses his utilitarian calculus. He treats lives as variables that can be erased and reinserted; Janeway insists that moral choices matter even when time can be rewritten, and she ultimately bets everything on ending his ability to manipulate history."
-      },
-      {
-        "Name": "Krenim Imperium",
-        "Series": "VOY",
-        "ConnectionType": "Architect / self-appointed savior",
-        "RelTrekRelationshipID": "",
-        "Summary": "Annorax positions himself as the Imperium’s restorer, using temporal incursions to rebuild an idealized version of his civilization. The relationship is paradoxical: he destroys countless lives in the name of saving a society that, in many timelines, no longer exists."
+        "Summary": "Janeway refuses to become a bargaining chip in Annorax’ calculus and rejects his premise that lives can be traded for an abstract ‘right’ history. Their conflict is less about tactics than values—Janeway fighting for her crew’s reality as it exists, Annorax fighting for a reality he thinks he can resurrect through relentless deletion."
       }
     ],
     "ContinuityNotes": [
-      "Annorax spearheads the design and use of the Krenim weapon ship, capable of erasing targets from history through temporal incursions.",
-      "The “Year of Hell” arc depicts Voyager in a sustained state of damage and resource depletion, emphasizing survival over exploration.",
-      "Annorax’ goal is restoration of an ‘ideal’ Krenim timeline, but each incursion creates cascading unintended consequences that undermine certainty.",
-      "The resolution resets the timeline, nullifying the events in-universe while preserving their narrative impact as a vision of what Voyager could endure.",
-      "Annorax is defined by obsession: personal loss fuels political crusade, making the antagonist’s motivation both intimate and catastrophic."
+      "Defines the Krenim timeship as a temporal weapon capable of erasing entire civilizations from history.",
+      "Shows Voyager in one of its most prolonged ‘battle-damaged’ states, emphasizing attrition rather than episodic reset.",
+      "Resolves by restoring the timeline, effectively nullifying the events in-universe while preserving their impact on the audience."
     ],
     "BehindTheScenes": [
       {
         "Type": "Casting",
-        "Note": "Annorax is played by Kurtwood Smith in Voyager’s two-part episode \"Year of Hell\"."
+        "Note": "Annorax is played by Kurtwood Smith in the two-part Voyager episode \"Year of Hell\"."
+      }
+    ]
+  },
+  {
+    "GuestID": "khan-noonien-singh",
+    "Name": "Khan Noonien Singh",
+    "DisplayName": "Khan Noonien Singh",
+    "Series": [
+      "TOS",
+      "Films",
+      "Kelvin"
+    ],
+    "Category": "Iconic Antagonist",
+    "PortrayedBy": [
+      {
+        "Name": "Ricardo Montalbán",
+        "RoleType": "Khan Noonien Singh (Prime timeline)"
       },
       {
-        "Type": "Production",
-        "Note": "Memory Alpha summarizes Annorax as a Krenim temporal scientist obsessed with restoring the Imperium ‘no matter the cost,’ reflecting the arc’s central premise."
-      },
-      {
-        "Type": "Episode",
-        "Note": "Annorax appears across \"Year of Hell\" Parts I and II (VOY season 4)."
+        "Name": "Benedict Cumberbatch",
+        "RoleType": "Khan Noonien Singh / “John Harrison” (Kelvin timeline)"
       }
     ],
+    "InUniverseSummary": {
+      "Paragraph1": "Khan Noonien Singh is a genetically engineered Human “Augment” from Earth’s eugenics era who rises from historical infamy into the 23rd century as a living, calculating reminder of how easily “improvement” rhetoric can become authoritarian rule. When the USS Enterprise discovers the sleeper ship SS Botany Bay and revives its charismatic leader, Khan’s superiority is immediately practical: he recovers quickly, tests the ship’s people and systems, and builds influence by offering admiration, purpose, and a vision of ordered greatness. In short order, the crew is forced to treat him not as a curiosity but as an active political threat.",
+      "Paragraph2": "Across his major appearances, Khan’s story turns on a consistent pattern: he interprets compromise as weakness, loyalty as ownership, and mercy as an opening for future revenge. In the prime timeline, his exile with fellow Augments becomes the seed of a personal war that later collides with the Genesis project, transforming scientific aspiration into coercion and retaliation. In the Kelvin timeline, he is revived and coerced into weapons development, then breaks free and retaliates against the institutions that attempted to use him. Whether he is seizing a ship, exploiting a secret program, or turning a rival’s empathy into leverage, Khan’s central drive remains control—over outcomes, over people, and over the story that explains his actions."
+    },
     "CharacterProfileSections": [
       {
         "Title": "Overview",
         "Text": [
-          "Annorax is a villain built from two intertwined ambitions: to restore a civilization and to reverse a personal loss. He is not portrayed as a chaotic destroyer; he is methodical, scientific, and convinced that he is performing necessary corrections to reality.",
-          "His uniqueness comes from scale. Annorax’ weapon is not a fleet or a virus but history itself, allowing him to inflict consequences that ordinary enemies cannot—erasing entire worlds in ways that cannot be mourned by those who never remember them."
+          "Khan is presented as an “exceptional man” built by design rather than circumstance: stronger, faster, and more cognitively formidable than ordinary Humans, yet defined less by his enhancements than by the political imagination attached to them. He embodies a seductive argument—if superior ability exists, shouldn’t it rule?—and Star Trek frames that argument as the beginning of a moral slide rather than a solution to human conflict.",
+          "What makes Khan enduring is the combination of discipline and theatricality. He can be patient enough to wait for the right opening, but he also performs dominance: he speaks in absolutes, demands ritual acknowledgment, and treats resistance as both insult and invitation. The result is an antagonist who doesn’t merely threaten lives; he threatens the Federation’s ethical grammar by trying to replace consent with command."
         ]
       },
       {
         "Title": "Role in the Story",
         "Text": [
-          "Annorax functions as the engine of Voyager’s most sustained survival narrative. The arc places Voyager under pressure for an extended period, forcing the crew into a posture of endurance and sacrifice rather than exploration and problem-solving of the week.",
-          "He also serves as an ideological counterpoint to Janeway. Annorax believes that a ‘correct’ history can justify any cost, while Janeway’s resistance asserts that moral boundaries remain real even when time can be manipulated."
+          "In his Original Series debut, Khan functions as a stress test for the Enterprise’s chain of command and the Federation’s self-image. The crew encounters a relic of Earth’s darkest “progress” narrative and must decide whether curiosity and compassion can coexist with vigilance. Khan’s role is to demonstrate how quickly a charismatic authoritarian can exploit openness—turning hospitality into access, access into influence, and influence into an attempted takeover.",
+          "In Star Trek II: The Wrath of Khan, his role expands from adversary-of-the-week into the long-shadow consequence of a single command decision. The film treats Khan as the human face of blowback: a leader who was spared and exiled rather than imprisoned, who then interprets abandonment and suffering as proof that he is entitled to revenge. The plot hinges on his ability to weaponize both a stolen starship and stolen identities, making deception and personal grievance as dangerous as any photon torpedo.",
+          "In the Kelvin timeline, Khan is repurposed as a high-level “asset” whose capabilities are treated as strategically indispensable—until he refuses to remain owned. His story becomes a critique of institutional shortcuts: Starfleet leadership attempts to buy safety by coercing a monster into building the tools of war, and the monster predictably escapes the leash. Khan’s presence reframes the narrative from a simple hunt for a terrorist into a confrontation with the ethics of militarization, secrecy, and the belief that ends can justify corrupt means."
         ]
       },
       {
         "Title": "Personality and Methods",
         "Text": [
-          "Annorax is persuasive and disciplined, capable of speaking about genocide in the calm language of experiments and calculations. His certainty is part of the horror: he does not rage at the suffering he causes because he believes that suffering will be erased when the ‘right’ timeline is achieved.",
-          "His method relies on iteration. When a change produces unexpected results, he does not question the project; he doubles down, interpreting unpredictability as evidence that he must apply more force and more ‘corrections.’"
+          "Khan’s defining personality trait is controlled supremacy: he is not merely confident, he is convinced that hierarchy is the natural order and that he stands at its peak. He can appear courteous and even appreciative, but those moments function as strategy—an assessment of who can be recruited, who can be intimidated, and who must be crushed. He is capable of genuine loyalty to his followers, yet that loyalty is inseparable from possessiveness; he expects devotion in return and reacts to dissent as betrayal rather than disagreement.",
+          "His method is a blend of persuasion and inevitability. He often begins with a reasonable-seeming appeal—shared ambition, shared destiny, shared admiration—before shifting to coercion once the target is emotionally entangled. In “Space Seed,” he exploits a sympathetic officer’s fascination with history; in The Wrath of Khan, he uses psychological torture and forced complicity to seize control of a starship; in Into Darkness, he manipulates institutions and public fear, then leverages superior planning to stay ahead of pursuit. In each case, he treats people as variables to be arranged rather than partners to be convinced.",
+          "Khan’s violence is typically instrumental rather than impulsive. He prefers outcomes that demonstrate control: turning an opponent’s resources against them, forcing choices that compromise integrity, and engineering situations where his enemy must acknowledge him on his terms. Even when he is driven by rage, the rage expresses itself as precision—revenge as architecture."
         ]
       },
       {
         "Title": "Key Conflicts and Turning Points",
         "Text": [
-          "The central conflict is attrition: Voyager cannot defeat Annorax in a conventional battle because the enemy can rewrite conditions until the battle is favorable. Instead, the crew must survive long enough to find a way to attack the temporal mechanism itself.",
-          "The turning point is the revelation that Annorax’ project has become self-defeating. The more he tampers, the farther he drifts from the reality he claims to be restoring, until his inability to accept limits creates the opening Janeway exploits to end the temporal incursions."
+          "Khan’s core conflict with James T. Kirk begins as a contest of command styles. Kirk leads through earned authority and the consent of a professional crew; Khan leads through domination and the expectation of obedience. The turning point in their first encounter is not a fistfight but a decision: Kirk refuses to normalize Khan’s worldview and chooses exile over integration into the Federation’s structure, separating “mercy” from “trust.”",
+          "The Wrath of Khan reframes that earlier decision into an unstable foundation. Khan’s suffering in exile—compounded by environmental catastrophe and deaths within his community—hardens into a story in which Kirk is responsible for everything that follows. Khan’s turning points in the film are defined by escalation: he captures and uses Starfleet officers as instruments, hijacks the Reliant, and pursues the Genesis device not simply as power but as a stage on which to force Kirk into a no-win emotional dilemma. Each step is designed to make Kirk feel watched, cornered, and personally accountable.",
+          "Khan’s final turning point is the collision between obsession and reality. He is brilliant, but he is also trapped by the need to make revenge meaningful; he repeatedly chooses personal payoff over strategic retreat. The story frames this as self-defeat: the more he tries to control fate, the more he commits himself to a path with no exit.",
+          "In Into Darkness, the key conflict is between institutional authority and the threat created by that authority’s own compromises. Khan’s turning point is his refusal to remain a controlled specialist: once he believes his fellow Augments have been used as leverage—or placed in immediate danger—he pivots from coerced collaboration into open retaliation. The story then becomes a chase in which Khan’s advantages are significant but not absolute, forcing him into direct confrontation where superior ability meets coordinated resistance and moral scrutiny."
         ]
       },
       {
         "Title": "Themes",
         "Text": [
-          "Annorax’ story explores obsession and the illusion of control. It portrays the attempt to ‘fix’ history as a form of moral corrosion: every sacrifice makes the next one easier to justify.",
-          "It also examines grief as a catalyst for catastrophe. Annorax’ personal loss gives the arc its emotional weight, but the narrative insists that grief cannot be permitted to erase other people’s lives in the pursuit of an idealized past."
+          "Khan’s stories examine the seduction of “better” people and the political violence that follows from believing some lives are intrinsically more valuable than others. He is a cautionary figure not because he is a unique monster, but because his logic is familiar: efficiency over freedom, order over pluralism, greatness over dignity. Star Trek uses him to argue that enhancement without ethics doesn’t elevate a civilization—it concentrates cruelty.",
+          "A second theme is responsibility across time: what a captain or institution does in one moment can create consequences that return when the original decision-makers have forgotten the details. Khan is not only a villain; he is a reminder that solving a problem by removing it from view (exile, secrecy, off-the-books coercion) is not the same as resolving it. When the bill comes due, it arrives with faces and names.",
+          "Finally, Khan foregrounds the difference between loyalty and love. He is capable of attachment, but it is attachment filtered through ownership and destiny. The franchise repeatedly contrasts his model—followers as instruments of a “superior” leader—with Starfleet’s model of chosen service, mutual respect, and the possibility that strength is measured by restraint rather than dominance."
         ]
+      }
+    ],
+    "KeyAppearances": [
+      {
+        "EpisodeID": "toss1e22",
+        "Title": "Space Seed",
+        "Series": "TOS",
+        "Season": 1,
+        "Episode": 22,
+        "WhyItMatters": "Khan is introduced as an Augment tyrant revived from the SS Botany Bay, and the episode establishes his core pattern: rapid social manipulation, attempted seizure of command, and a worldview that treats hierarchy as destiny. It also sets the franchise’s long-running tension between curiosity and vigilance by showing how easily admiration can be converted into complicity."
+      },
+      {
+        "EpisodeID": "film-02",
+        "Title": "Star Trek II: The Wrath of Khan",
+        "Series": "Films",
+        "Season": null,
+        "Episode": null,
+        "WhyItMatters": "The film transforms Khan from a single-episode adversary into a defining personal nemesis for Kirk, using the aftermath of exile to drive a revenge narrative that collides with the Genesis project. Khan’s tactical brilliance, psychological cruelty, and obsession with making Kirk suffer turn the story into a lesson about consequences, command decisions, and the price of victory."
+      },
+      {
+        "EpisodeID": "kelvin-film-02",
+        "Title": "Star Trek Into Darkness",
+        "Series": "Kelvin",
+        "Season": null,
+        "Episode": null,
+        "WhyItMatters": "This reimagining positions Khan as a captive genius coerced into weapons development and then unleashed when control fails. The story uses his escape and retaliation to critique militarization, secrecy, and the fantasy that a morally compromised shortcut can be safely contained."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "James T. Kirk",
+        "Series": "TOS",
+        "ConnectionType": "Nemesis / Command philosophies in conflict",
+        "RelTrekRelationshipID": "",
+        "Summary": "Kirk is the opponent Khan cannot dismiss because Kirk defeats him without adopting Khan’s values. Their conflict is not simply physical; it is a clash between earned authority and imposed rule. Khan experiences Kirk’s refusal to yield—and Kirk’s decision to exile rather than kill him—as humiliation that he later reframes as injustice, fueling the revenge campaign that defines The Wrath of Khan."
+      },
+      {
+        "Name": "Spock",
+        "Series": "TOS",
+        "ConnectionType": "Strategic counterweight / Moral contrast",
+        "RelTrekRelationshipID": "",
+        "Summary": "Spock represents the disciplined, ethical application of intellect that Khan claims as his birthright. Where Khan treats superiority as justification for domination, Spock treats ability as responsibility. Across the Khan stories, Spock functions as both an analytical counter to Khan’s planning and a thematic rebuttal to the belief that power must rule."
+      },
+      {
+        "Name": "Marla McGivers",
+        "Series": "TOS",
+        "ConnectionType": "Recruited ally / Manipulation through admiration",
+        "RelTrekRelationshipID": "",
+        "Summary": "McGivers’ fascination with history and “great men” becomes Khan’s most effective entry point into the Enterprise’s social fabric. He offers her a romanticized vision of destiny and significance, and she briefly mistakes his charisma for nobility. Later dialogue and reference material describe Khan losing a “beloved wife” during exile; it is commonly interpreted as McGivers, but the identification is not confirmed on-screen."
+      },
+      {
+        "Name": "Project Genesis",
+        "Series": "Films",
+        "ConnectionType": "Catalyst / Power sought as leverage",
+        "RelTrekRelationshipID": "",
+        "Summary": "Genesis is the instrument Khan uses to turn personal revenge into existential threat. He pursues it not merely as a weapon, but as a means to control the terms of the final confrontation—forcing Starfleet and Kirk to react inside a trap designed to convert tactical victory into emotional loss."
+      },
+      {
+        "Name": "Alexander Marcus",
+        "Series": "Kelvin",
+        "ConnectionType": "Controller vs. asset / Coercion and betrayal",
+        "RelTrekRelationshipID": "",
+        "Summary": "In the Kelvin timeline, Marcus treats Khan as a captive genius—revived and compelled to build weapons under the threat of harm to the other Augments. Their connection is transactional coercion disguised as strategy: Marcus believes he can contain Khan’s capabilities, while Khan rejects the premise of being owned and retaliates once he believes his people have been used as leverage."
+      }
+    ],
+    "ContinuityNotes": [
+      "Khan is established as a genetically engineered Human Augment from Earth’s eugenics-era conflicts, revived after long cryogenic stasis aboard the SS Botany Bay.",
+      "“Space Seed” presents Khan as both historically notorious and personally compelling, emphasizing how authoritarian charisma can blur moral judgment even in a disciplined organization.",
+      "Kirk’s resolution to exile Khan and his followers to Ceti Alpha V becomes the narrative hinge for later revenge, turning a command decision into long-term consequence.",
+      "The Wrath of Khan ties Khan’s vendetta to disaster and suffering in exile, including the loss of a ‘beloved wife’ referenced on-screen but not conclusively identified by name.",
+      "Khan’s campaign in Star Trek II intersects with the Genesis project, making a scientific breakthrough the centerpiece of coercion and retaliation.",
+      "The Kelvin timeline reworks Khan’s return as a covert militarization effort: he is revived and coerced into weapons development, then breaks free and becomes the catalyst for institutional reckoning.",
+      "Across versions, Khan’s consistent throughline is ideology—superiority as entitlement—rather than a single grievance, which is why he remains dangerous in multiple eras."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Source material",
+        "Note": "Khan debuted in TOS “Space Seed,” where the Enterprise discovers the sleeper ship SS Botany Bay carrying genetically engineered ‘supermen’ from Earth’s late-20th-century Eugenics Wars era."
+      },
+      {
+        "Type": "Casting",
+        "Note": "Ricardo Montalbán originated the role in “Space Seed” and returned to reprise Khan in Star Trek II: The Wrath of Khan."
+      },
+      {
+        "Type": "Sequel design",
+        "Note": "Star Trek II is structured as a continuation of “Space Seed,” turning Kirk’s earlier decision to exile Khan into the foundation for a revenge plot centered on the Genesis project."
+      },
+      {
+        "Type": "Kelvin reimagining",
+        "Note": "Star Trek Into Darkness reinterprets Khan for the Kelvin timeline and initially presents the character under the alias “John Harrison” before revealing his true identity."
+      },
+      {
+        "Type": "On-screen ambiguity",
+        "Note": "Star Trek II refers to Khan losing a ‘beloved wife’ during exile; behind-the-scenes intent and common interpretation often link this to Marla McGivers, but the film itself does not confirm the name."
+      },
+      {
+        "Type": "Character focus",
+        "Note": "Across portrayals, the writing emphasizes Khan’s ability to manipulate systems and people, making him a threat through strategy and ideology as much as through physical prowess."
       }
     ],
     "ActorInfo": {
       "Performers": [
         {
-          "Name": "Kurtwood Smith",
-          "RoleInThisEntry": "Annorax",
-          "PerformanceNotes": "Smith plays Annorax with controlled intensity, balancing intellect and obsession. The calm delivery of horrific decisions makes Annorax feel credible as a scientist who has convinced himself that morality is a temporary inconvenience."
+          "Name": "Ricardo Montalbán",
+          "RoleInThisEntry": "Khan Noonien Singh (Prime timeline)",
+          "PerformanceNotes": "Montalbán plays Khan as an aristocratic authoritarian—calmly articulate, physically imposing, and utterly certain of his right to rule. The performance’s power comes from contrast: Khan can sound reasonable while describing domination as destiny, and the courtesy only makes the underlying menace sharper. In Star Trek II, the role deepens into a portrait of obsession, with anger expressed not as chaos but as focused, ritualized vengeance.",
+          "CastingAndProductionContext": "Khan was written as a charismatic ‘superman’ whose appeal could plausibly sway a modern Starfleet officer as well as threaten a starship’s command hierarchy. Casting therefore prioritized presence and command of language, allowing the character to dominate scenes through persuasion as much as through strength. Montalbán’s return in Star Trek II anchored the filmmakers’ decision to make continuity matter: the sequel depends on the audience believing this is the same man from “Space Seed,” older in circumstance rather than diminished, and still capable of turning rhetoric into domination.",
+          "TrekCreditsSummary": "Montalbán’s Star Trek work centers on Khan Noonien Singh in TOS (“Space Seed”) and Star Trek II: The Wrath of Khan, where his reprise helped define the franchise’s most famous adversarial relationship."
+        },
+        {
+          "Name": "Benedict Cumberbatch",
+          "RoleInThisEntry": "Khan Noonien Singh / “John Harrison” (Kelvin timeline)",
+          "PerformanceNotes": "Cumberbatch’s Khan is colder and more clandestine, shaped by a story that frames the character as both captive asset and insurgent threat. He emphasizes calculation and restraint—an intelligence that measures rooms, probabilities, and vulnerabilities before acting. When the mask drops, the performance leans into single-minded determination rather than operatic rage, presenting Khan as a weapon forged by coercion who refuses to remain controlled.",
+          "CastingAndProductionContext": "The Kelvin-film approach positions Khan within a plot about militarization and secrecy, so the role was designed to carry ambiguity for much of the film—functioning first as a credible operative figure and then as the unveiled Augment. Casting emphasized a performer who could project strategic brilliance under pressure and sell the pivot from controlled collaboration to retaliatory autonomy once the character’s leverage—his frozen crew—is threatened. The production also used the concealed-identity structure to shift the audience’s understanding of the conflict, reframing the chase as a confrontation with the ethics of the system that created and exploited him.",
+          "TrekCreditsSummary": "Cumberbatch’s primary Star Trek role is Khan Noonien Singh in Star Trek Into Darkness, where the character is reinterpreted for the Kelvin timeline’s continuity and tone."
         }
-      ],
-      "CastingAndProductionContext": "Annorax works because the performance treats him as rational rather than flamboyant. The character is most frightening when he sounds like a professional explaining a plan—because it implies he has repeated these decisions so many times that they have become routine.",
-      "TrekCreditsSummary": "Kurtwood Smith’s notable Star Trek on-screen role is Annorax in Voyager’s \"Year of Hell\" two-parter, a performance frequently cited for giving the arc its moral and emotional center."
+      ]
+    }
+  },
+  {
+    "GuestID": "edith-keeler",
+    "Name": "Edith Keeler",
+    "DisplayName": "Edith Keeler",
+    "Series": [
+      "TOS"
+    ],
+    "Category": "Tragic One-Off Icon",
+    "PortrayedBy": [
+      {
+        "Name": "Joan Collins",
+        "RoleType": "Edith Keeler"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Edith Keeler is a Depression‑era New York social worker and the public face of the 21st Street Mission, where she combines practical relief work with an unusually articulate moral vision. In the story, she is encountered by James T. Kirk and Spock during a crisis of temporal displacement, when the Enterprise’s doctor, Leonard McCoy, inadvertently alters the past. Keeler’s compassion is not framed as naïveté: she manages a real institution, makes hard choices about scarce resources, and still insists that the poor and displaced deserve dignity rather than blame.",
+      "Paragraph2": "Keeler becomes pivotal because her survival in an altered history leads to a different global trajectory: she lives long enough to build a major peace movement whose influence delays the United States’ entry into World War II, with catastrophic consequences for the future that Kirk and Spock know. The central tragedy is that Keeler herself is presented as fundamentally right about peace and human solidarity, yet the timing of her influence in that specific timeline creates an outcome that cannot be allowed to stand. Her death restores history, but it leaves Kirk with a lasting, personal understanding that “doing the right thing” can still be an act of profound loss."
+    },
+    "CharacterProfileSections": [
+      {
+        "Title": "Overview",
+        "Text": [
+          "Edith Keeler appears as an ordinary Human with no special technology, rank, or hidden agenda, and that is precisely what makes her consequential. She is introduced through the daily mechanics of social work during the Great Depression: a mission that needs donations, volunteers, and leadership that can keep despair from hardening into cruelty. The episode treats her as credible in her milieu—someone who understands poverty not as a moral failing but as a social reality that demands organized care.",
+          "Within the time‑travel framework, Keeler functions as a hinge point between private goodness and public history. The narrative does not reduce her to “the woman the hero loves”; instead it presents her as a person whose values are substantial enough to shape institutions and movements. Her moral clarity creates the episode’s core tension: the more convincing her principles are, the more painful it becomes to accept that history, as presented, requires her to die."
+        ]
+      },
+      {
+        "Title": "Role in the Story",
+        "Text": [
+          "Keeler’s role is to make a philosophical problem emotionally unavoidable. Kirk and Spock arrive in 1930s New York with a tactical mission—find McCoy, repair the timeline, and restore the Federation’s existence—but Keeler turns their assignment into a lived dilemma. By offering them shelter and community at the mission, she places them in direct contact with the social realities their own century has largely moved beyond, and she does so without romanticizing hardship.",
+          "Keeler also serves as the story’s public‑history catalyst. The temporal mechanics are straightforward: McCoy’s intervention prevents her death, and her extended life changes the course of World War II. The narrative stakes are therefore not abstract; they are measurable in the disappearance of the Enterprise’s future and the implied collapse of everything that future built. Keeler becomes the point where “one life” is not a metaphor, but an explicit causal lever.",
+          "Finally, Keeler’s presence reframes Kirk’s leadership. Kirk is typically defined by improvisation and command confidence, but in this story he is asked to endure a solution that offers no triumph. Keeler’s role is to expose the difference between competence and wisdom: even a capable captain can be forced into choices that are correct in outcome and devastating in cost."
+        ]
+      },
+      {
+        "Title": "Personality and Methods",
+        "Text": [
+          "Keeler is portrayed as warm, intelligent, and direct, with a public‑facing charisma that can persuade donors and organize volunteers without turning the mission into a performance. Her empathy is active rather than sentimental: she notices people, asks questions, and translates moral concern into concrete help. The writing emphasizes that she has learned to speak to hardship without becoming hardened herself, a balance that reads as discipline as much as kindness.",
+          "Her political and ethical language is idealistic, but it is not detached from experience. She argues for peace and human solidarity as practical necessities, not as fashionable opinions. This makes her persuasive to Kirk, who recognizes that her hope is not ignorance of evil but resistance to it. The tragedy is that her effectiveness—the very thing that makes her admirable—also makes her historically dangerous in the altered timeline.",
+          "Keeler’s “methods” are those of civic life: running a mission, building a community network, and using speech to make people imagine better futures. In a franchise filled with starships and weapons, she demonstrates a different kind of agency, one built from care, persuasion, and persistence."
+        ]
+      },
+      {
+        "Title": "Key Conflicts and Turning Points",
+        "Text": [
+          "The story’s turning point arrives when Spock confirms that Keeler’s death is required for history to proceed along its known path. The conflict is not between Keeler and the protagonists; it is between their private attachments and their public responsibilities. Keeler becomes the human face of that conflict precisely because she is not culpable for the consequences attached to her survival.",
+          "A second conflict develops through Kirk’s attempt to reconcile his feelings with the mission’s necessity. As Kirk grows closer to Keeler, he also becomes more aware of the lives around her: the people the mission feeds, the veterans and displaced workers, and the fragile community she protects. The narrative ensures that his affection is not a shallow infatuation but an attachment built on shared experience and respect, which raises the moral cost of the decision he must ultimately make.",
+          "The final turning point is brutally simple: at the moment Keeler would have died in the original timeline, McCoy moves to save her, and Kirk prevents him. The episode frames this not as heroism but as burden. Kirk’s action restores reality for billions, yet it is depicted as a kind of self‑inflicted wound, because the person he stops McCoy from saving is someone the story has shown to be genuinely good and historically meaningful."
+        ]
+      },
+      {
+        "Title": "Themes",
+        "Text": [
+          "Keeler’s story concentrates several of Star Trek’s recurring themes into a single, intimate tragedy. One is the ethics of time and consequence: good intentions do not guarantee good outcomes, and the moral weight of an action can depend on context that the actor cannot control. Keeler is “right” about peace in principle, but the episode argues that timing and circumstance can weaponize even the most humane ideals when they interact with larger historical forces.",
+          "Another theme is the cost of duty. Starfleet officers are trained to prioritize the many over the few, but the story insists that this principle is not meant to make sacrifice easy. By making Keeler both admirable and believable, the episode rejects the comforting idea that hard choices are only hard because the sacrificed person is flawed or expendable. Here the loss is terrible precisely because it is undeserved.",
+          "A final theme is the power of ordinary people. Keeler is not a commander or a scientist; she is a social worker whose influence is rooted in everyday service and moral clarity. The episode treats that kind of influence as real history‑making power, and it uses that power to remind the audience that civilizations are not only shaped by wars and inventions, but by who is listened to and who is allowed to live long enough to be heard."
+        ]
+      }
+    ],
+    "KeyAppearances": [
+      {
+        "EpisodeID": "toss1e28",
+        "Title": "The City on the Edge of Forever",
+        "Series": "TOS",
+        "Season": 1,
+        "Episode": 28,
+        "WhyItMatters": "This is the sole on‑screen story centered on Edith Keeler, and it establishes her as a historically pivotal figure whose survival changes the outcome of World War II and erases the Federation’s future. The episode’s emotional core depends on Keeler being portrayed as credible, effective, and morally compelling, so that the restoration of the timeline requires a genuine sacrifice rather than a convenient plot fix."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "James T. Kirk",
+        "Series": "TOS",
+        "ConnectionType": "Romantic bond / Moral dilemma",
+        "RelTrekRelationshipID": "",
+        "Summary": "Kirk’s relationship with Keeler is built on respect for her intellect and compassion as much as affection, and it becomes the episode’s human test of duty. Kirk learns that restoring the timeline requires allowing Keeler to die, forcing him to choose between personal love and the survival of the future he is responsible for preserving."
+      },
+      {
+        "Name": "Spock",
+        "Series": "TOS",
+        "ConnectionType": "Mission partner / Ethical anchor",
+        "RelTrekRelationshipID": "",
+        "Summary": "Spock functions as the analytical counterweight who confirms, through research and reasoning, that Keeler’s death is the necessary fixed point in the restored timeline. His insistence is not cold indifference; it is a disciplined commitment to the mission’s stakes, which in turn forces Kirk to confront what duty requires when logic and emotion collide."
+      },
+      {
+        "Name": "Leonard McCoy",
+        "Series": "TOS",
+        "ConnectionType": "Accidental catalyst / Final trigger",
+        "RelTrekRelationshipID": "",
+        "Summary": "McCoy unintentionally creates the altered timeline when he arrives in the past in a disoriented state and intervenes at the moment of Keeler’s death. By trying to save her, he becomes the immediate cause of history’s divergence, and his instinctive compassion must be stopped at the critical moment in order to restore the future."
+      },
+      {
+        "Name": "Guardian of Forever",
+        "Series": "TOS",
+        "ConnectionType": "Temporal mechanism / Point of return",
+        "RelTrekRelationshipID": "",
+        "Summary": "The Guardian of Forever provides the means for Kirk and Spock to reach Keeler’s era and the observational frame that shows what the altered timeline produces. It is less a character connection than a structural one: Keeler’s life and death are presented through a portal that makes time travel feel like entry into a recorded past, raising the stakes of “correction” into a direct confrontation with a living person."
+      }
+    ],
+    "ContinuityNotes": [
+      "Edith Keeler is identified as a social worker associated with the 21st Street Mission in Depression‑era New York City.",
+      "In the altered timeline, Keeler survives a fatal accident and later founds a major peace movement whose influence delays U.S. entry into World War II, changing the outcome of the war and the future timeline.",
+      "Kirk and Spock travel to Keeler’s era to repair history after McCoy’s actions prevent her death and erase the Enterprise’s future.",
+      "Spock determines that history requires Keeler to die at the original moment, making the restoration of the timeline dependent on allowing an innocent person’s death to occur.",
+      "Keeler and Kirk develop a close relationship before the required moment arrives, intensifying the moral conflict between duty and personal attachment.",
+      "At the critical moment, Kirk prevents McCoy from saving Keeler, restoring the timeline but leaving Kirk with a lasting sense of loss.",
+      "Keeler’s story is framed as a demonstration that compassion and idealism can be correct in principle while still producing disastrous outcomes when paired with specific historical contingencies."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Casting",
+        "Note": "Edith Keeler was portrayed by Joan Collins, whose performance was designed to make the character’s warmth and moral intelligence believable enough to carry the episode’s central dilemma."
+      },
+      {
+        "Type": "Writing",
+        "Note": "The episode originated from a story by Harlan Ellison, with significant script work and revision credited to series staff including D. C. Fontana and Gene L. Coon in the produced version."
+      },
+      {
+        "Type": "Direction and tone",
+        "Note": "The production emphasizes a grounded 1930s setting and a restrained romantic arc to ensure the time‑travel choice feels like an ethical problem rather than a genre twist."
+      },
+      {
+        "Type": "Character function",
+        "Note": "Keeler was written as a public‑impact figure whose continued life plausibly changes broad political history, allowing the narrative to connect one individual’s fate to the survival of the Enterprise’s future."
+      },
+      {
+        "Type": "Guardian voice",
+        "Note": "The Guardian of Forever’s voice in the episode was provided by Bartell LaRue, a detail sometimes misattributed in secondary discussions."
+      }
+    ],
+    "ActorInfo": {
+      "Performers": [
+        {
+          "Name": "Joan Collins",
+          "RoleInThisEntry": "Edith Keeler",
+          "PerformanceNotes": "Collins plays Keeler with a blend of charisma and steadiness that makes the character feel like a capable community leader rather than a symbolic “angel of history.” The performance keeps Keeler’s optimism from becoming abstract by grounding it in small moments of attention and responsibility, which is crucial for the episode’s impact: the audience must believe that Keeler is both lovable and effective, and that losing her is not merely tragic for Kirk but a real loss for the world around her.",
+          "CastingAndProductionContext": "Keeler required an actor who could carry a period setting, convey moral conviction without melodrama, and plausibly draw Kirk into a serious attachment quickly. The production uses Keeler as the emotional center of a time‑travel narrative, so casting emphasized screen presence, warmth, and an ability to deliver idealistic dialogue as sincere civic belief rather than rhetoric. The episode’s staging supports this by letting Collins interact with the mission’s environment and its residents, making her leadership feel observed rather than announced.",
+          "TrekCreditsSummary": "Collins’ Star Trek work is defined by this single appearance as Edith Keeler in “The City on the Edge of Forever,” one of the franchise’s most influential time‑travel stories. Her performance is central to why Keeler is remembered as more than a love interest: the character is written and played as a historically consequential person whose ideals and actions shape the episode’s moral and narrative stakes."
+        }
+      ]
+    }
+  },
+  {
+    "GuestID": "gary-seven",
+    "Name": "Gary Seven",
+    "DisplayName": "Gary Seven",
+    "Series": [
+      "TOS"
+    ],
+    "Category": "Backdoor-Pilot Enigma",
+    "PortrayedBy": [
+      {
+        "Name": "Robert Lansing",
+        "RoleType": "Gary Seven"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Gary Seven is introduced in 1968 New York City as a highly trained operative working under strict instructions to influence key moments in Earth’s development without revealing the larger program behind his mission. He identifies himself as a “Supervisor” assigned to Earth and implies that he has been educated and conditioned for this work by an advanced society that monitors humanity’s progress. Although he appears human and operates comfortably within contemporary institutions, he carries technology far beyond the era and treats secrecy as an operational requirement rather than a preference.",
+      "Paragraph2": "Seven’s covert work collides with the USS Enterprise when Captain Kirk and Spock arrive in the same period and cannot verify Seven’s authority or intentions. Seven sees Starfleet as a dangerous variable that could expose or disrupt a time‑sensitive operation, while the Enterprise crew sees Seven as a possible threat whose secrecy violates their standards of accountability. The episode’s tension comes from this clash of frameworks: Seven measures success by outcomes achieved in silence, while Starfleet measures legitimacy by transparent authority and responsibility."
+    },
+    "CharacterProfileSections": [
+      {
+        "Title": "Overview",
+        "Text": [
+          "Gary Seven stands out in Star Trek because he does not fit neatly into the franchise’s familiar categories of starship officer, alien diplomat, or conventional antagonist. He is presented as a clandestine agent operating on 20th‑century Earth with capabilities that resemble advanced Federation technology, yet his organization is neither Starfleet nor any known Federation institution. The episode frames him as someone positioned between humanity’s present and a larger, mostly unseen effort to steer history away from disaster.",
+          "The narrative keeps Seven deliberately opaque. He is competent and purposeful, but he withholds information as a matter of doctrine and expects others to accept his authority without the normal checks Starfleet relies on. This makes him difficult to classify as either ally or villain. He is trying to prevent catastrophe, yet his willingness to restrain people, manipulate systems, and act unilaterally places him in direct tension with the Federation’s preference for consent, due process, and openness.",
+          "Seven’s credibility is built through practical detail rather than lengthy exposition. He maintains a secured office configured like a field station, interacts with a mission computer through a voice interface, and uses specialized devices to bypass security or neutralize immediate threats. His companion, the black cat Isis, behaves with an intelligence and agency that suggests she is more than an ordinary animal. Together, these elements create a portrait of someone who lives by mission discipline and expects a crisis to be managed with speed, compartmentalization, and control."
+        ]
+      },
+      {
+        "Title": "Role in the Story",
+        "Text": [
+          "In “Assignment: Earth,” Seven functions as the story’s central mystery and its operational engine. Kirk and Spock arrive in 1968 expecting to observe history, but Seven forces them into a question that cannot be resolved by procedure alone: what should Starfleet do when the person acting most decisively to protect Earth is operating outside any framework Starfleet recognizes? The episode uses that uncertainty to create friction between duty and restraint, because Kirk must protect his crew while also minimizing interference with the past.",
+          "Seven’s role also repositions the Enterprise crew as the outsiders. In many stories, Starfleet arrives with superior technology and the ability to set terms. Here, the Enterprise is displaced in time and constrained by the need for secrecy, and its authority is limited by ignorance of the local crisis’s precise structure and timing. Seven knows the social landscape of 1968, the operational environment he has prepared, and the narrow window in which a single failure could spiral into much larger consequences.",
+          "Finally, Seven proposes a different kind of Star Trek premise: not exploration of deep space, but covert stewardship of Earth’s near history. His mission resembles an intelligence operation rather than a starship assignment, and the story’s tools are infiltration, misdirection, and rapid correction rather than diplomacy or battle. Even as the episode resolves its immediate threat, it leaves Seven’s larger context open-ended, treating him as a lead figure whose work plausibly extends beyond this single encounter."
+        ]
+      },
+      {
+        "Title": "Personality and Methods",
+        "Text": [
+          "Seven is portrayed as calm under pressure, intensely focused, and impatient with obstacles that do not serve the mission. He speaks with controlled confidence and treats most conversation as either a means of gathering information or a way to remove barriers. This makes him efficient, but it also makes him difficult to trust. He does not offer transparency as reassurance; he offers urgency and expects others to accept it.",
+          "His methods combine surveillance, planning, and selective manipulation. He uses his base of operations to monitor developments, deploys technology to bypass physical security, and relies on speed to stay ahead of institutions that must operate within ordinary legal and bureaucratic constraints. When confronted by Starfleet officers, he is willing to incapacitate or confine them if he believes their actions could compromise the assignment. The episode frames this as training: Seven has been shaped to privilege outcomes and to regard disclosure as a liability.",
+          "At the same time, Seven is not depicted as cruel for its own sake. His mandate is presented as protective, and he shows concern for catastrophic outcomes rather than personal gain. The ethical tension comes from his conviction that secrecy and unilateral authority are justified by stakes other people cannot be allowed to fully understand. In this respect, Seven represents a model of “guardianship” that is practical in crisis but unsettling in principle, because it invites the question of who watches the watchers."
+        ]
+      },
+      {
+        "Title": "Key Conflicts and Turning Points",
+        "Text": [
+          "Seven’s primary conflict is with legitimacy. He insists he is acting under a mandate to safeguard humanity’s future, but he cannot provide proof that satisfies Starfleet without breaking the secrecy his mission requires. Kirk and Spock, trained to distrust unverified authority, treat Seven as a potential danger until evidence accumulates that his operation is aimed at prevention rather than sabotage. The conflict escalates because both sides believe their approach is responsible: Starfleet relies on accountable command, while Seven relies on controlled intervention.",
+          "A major turning point comes when Spock’s investigation validates elements of Seven’s story and clarifies the scale of the impending crisis. This does not eliminate mistrust, but it shifts the interaction from pure confrontation to uneasy coordination. Kirk must decide how much to interfere without derailing history, and Seven must decide how much oversight he can tolerate from people who are not in his chain of command but who are capable of exposing him accidentally.",
+          "The climax is structured around timing and access rather than brute force. Seven’s plan requires reaching the decisive point of intervention inside a tightly controlled environment, and the Enterprise crew’s involvement changes the geometry of the problem by adding both risk and capability. The episode’s resolution implies that Seven’s preparation and technology allow him to exploit a narrow window, but it also suggests that cooperation, even reluctant cooperation, prevents the situation from collapsing into open exposure and wider harm."
+        ]
+      },
+      {
+        "Title": "Themes",
+        "Text": [
+          "Gary Seven’s story explores the uneasy boundary between protection and control. The episode accepts that catastrophic outcomes can be avoided through intervention, but it also insists that intervention carries moral cost when it is performed without consent and without accountability. Seven’s organization treats history as a system to be managed, and Seven treats people as variables that can be moved into safer positions. Star Trek does not present him as entirely wrong, but it refuses to portray his methods as comfortably compatible with Federation ideals.",
+          "Another theme is the fragility of progress. The crisis in “Assignment: Earth” is not an alien invasion; it is a human decision inside a political and technological context that could plausibly tip into disaster. By placing the threat within contemporary history, the episode suggests that the hopeful future of the Federation is not inevitable. It is something that can be lost through avoidable escalation, and preserving it may require restraint from people who never realize how close they came to catastrophe.",
+          "Finally, Seven embodies the difference between competence and legitimacy. He is skilled, prepared, and often correct about urgency, but Star Trek’s values repeatedly return to the question of who is accountable when power is used. Seven’s effectiveness invites admiration, yet his secrecy invites skepticism. The episode’s impact comes from holding those reactions together, making viewers recognize both the appeal and the danger of guardianship that operates beyond public scrutiny."
+        ]
+      }
+    ],
+    "KeyAppearances": [
+      {
+        "EpisodeID": "toss2e26",
+        "Title": "Assignment: Earth",
+        "Series": "TOS",
+        "Season": 2,
+        "Episode": 26,
+        "WhyItMatters": "This episode introduces Gary Seven as a covert “Supervisor” operating on 1968 Earth with advanced technology and a mission to avert a specific catastrophe that would alter humanity’s future. His clash with Kirk and Spock turns a time‑travel story into an ethical argument about secrecy, legitimacy, and intervention, and the episode is structured to leave Seven’s larger context open-ended, reflecting its design as a potential continuing premise."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "Roberta Lincoln",
+        "Series": "TOS",
+        "ConnectionType": "Recruited assistant / Local ally",
+        "RelTrekRelationshipID": "",
+        "Summary": "Roberta Lincoln begins as an incidental participant who becomes essential once she is drawn into Seven’s operation. Seven relies on her ability to move through 1968 New York without attracting attention and to provide access and improvisation that his secrecy limits. Roberta resists being treated as a disposable asset, presses for explanations, and gradually becomes a partner in action, making their relationship a mix of urgency, friction, and mutual dependence."
+      },
+      {
+        "Name": "Isis",
+        "Series": "TOS",
+        "ConnectionType": "Companion / Implied intelligence and agency",
+        "RelTrekRelationshipID": "",
+        "Summary": "Isis appears as Seven’s constant companion and behaves as more than a pet, offering guidance and acting with apparent understanding of the mission. Late in the episode, Isis is presented as capable of transforming into a humanoid form, implying that Seven’s work is supported by allies and capabilities outside ordinary human categories. The story does not fully explain Isis’s nature, but it treats her as a deliberate part of Seven’s operational world."
+      },
+      {
+        "Name": "James T. Kirk",
+        "Series": "TOS",
+        "ConnectionType": "Temporary adversary / Competing authority",
+        "RelTrekRelationshipID": "",
+        "Summary": "Kirk’s conflict with Seven begins as a question of jurisdiction and trust. Kirk is responsible for protecting his crew and avoiding reckless disruption of the past, while Seven insists that the situation demands unilateral action under a mandate Kirk cannot verify. Their interaction becomes a negotiation between Starfleet’s accountable command model and Seven’s secrecy-based guardianship, with cooperation emerging only when the stakes become clearer and time becomes the defining constraint."
+      },
+      {
+        "Name": "Spock",
+        "Series": "TOS",
+        "ConnectionType": "Investigator / Verification pressure",
+        "RelTrekRelationshipID": "",
+        "Summary": "Spock approaches Seven as a problem to be solved through evidence, analyzing Seven’s claims and examining whether the mission’s stated objectives align with observable events. This insistence on verification increases tension because Seven’s methods depend on minimizing disclosure, but Spock’s work also creates the conditions for partial alignment by separating what Seven is doing from what Starfleet initially fears he might be doing."
+      },
+      {
+        "Name": "Beta 5 computer",
+        "Series": "TOS",
+        "ConnectionType": "Mission infrastructure / Voice-guided system",
+        "RelTrekRelationshipID": "",
+        "Summary": "Seven’s base includes a computer system that functions as mission support and coordination, reinforcing the episode’s spy‑thriller tone. Its voice interface and concealed design highlight the gap between Seven’s technology and the era in which he operates, and it underscores how his assignments are built around preparation, communication discipline, and fast access to information rather than improvisation alone."
+      }
+    ],
+    "ContinuityNotes": [
+      "Gary Seven identifies himself as a “Supervisor” assigned to Earth and implies that he works within a wider program intended to prevent disasters that would derail humanity’s future.",
+      "He operates in 1968 New York from a concealed base that includes advanced computing and transporter-like capability.",
+      "Seven carries a compact multi‑function device known as a servo, used for communication with his systems and for practical intervention in the field.",
+      "Kirk and Spock initially treat Seven as a potential threat because they cannot verify his mandate and because his secrecy conflicts with Starfleet’s accountability norms.",
+      "Roberta Lincoln becomes involved in Seven’s operation and assists him as events accelerate toward the moment of intervention.",
+      "Isis, Seven’s black cat companion, is depicted as unusually intelligent and is presented as capable of transforming into a humanoid form, implying a non‑ordinary nature.",
+      "The immediate crisis is prevented by the episode’s end, but Seven’s broader origin, organization, and long‑term mandate remain intentionally unresolved on-screen."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Spin-off concept",
+        "Note": "“Assignment: Earth” was designed to function as a backdoor pilot for a proposed series centered on Gary Seven’s covert missions on contemporary Earth, but the spin-off was not produced."
+      },
+      {
+        "Type": "Writing and direction",
+        "Note": "The episode was written by Art Wallace based on a story by Wallace and Gene Roddenberry, and it was directed by Marc Daniels."
+      },
+      {
+        "Type": "Casting",
+        "Note": "Gary Seven was played by Robert Lansing, whose controlled intensity supported the character’s mix of competence, secrecy, and implied authority."
+      },
+      {
+        "Type": "Supporting cast",
+        "Note": "Roberta Lincoln was played by Teri Garr, and the role is written to challenge Seven’s secrecy while becoming essential to his work in the field."
+      },
+      {
+        "Type": "Isis portrayal",
+        "Note": "Isis was portrayed on-screen in cat form by multiple animals, and the episode also used voice work and an uncredited humanoid form for the closing reveal."
+      }
+    ],
+    "ActorInfo": {
+      "Performers": [
+        {
+          "Name": "Robert Lansing",
+          "RoleInThisEntry": "Gary Seven",
+          "PerformanceNotes": "Lansing plays Seven as a disciplined operative rather than a flamboyant science‑fiction adventurer. The performance is defined by stillness and control: Seven watches before he speaks, measures people quickly, and treats most interaction as mission management. Lansing’s restraint makes Seven’s secrecy feel like training rather than melodrama, which is crucial because the story asks the audience to believe that Seven can be both the effective protector of Earth’s future and a person whose methods can alarm even principled Starfleet officers.",
+          "CastingAndProductionContext": "Because the episode was built to support a possible spin-off premise, Seven needed to read as someone who could carry stories without the Enterprise as the narrative anchor. Casting emphasized authority, composure, and the ability to sell espionage‑style urgency inside a Star Trek framework. Lansing’s approach supports that design by making Seven feel like a complete lead figure with routines, tools, and standards that already exist beyond the boundaries of a single starship adventure.",
+          "TrekCreditsSummary": "Lansing’s on‑screen Star Trek work is centered on this appearance as Gary Seven in the Original Series episode “Assignment: Earth.” The character’s open-ended presentation is part of why the performance remains memorable: Lansing plays Seven as someone with a larger mandate and ongoing work that the franchise only briefly intersects."
+        }
+      ]
+    }
+  },
+  {
+    "GuestID": "roger-korby",
+    "Name": "Roger Korby",
+    "DisplayName": "Dr. Roger Korby",
+    "Series": [
+      "TOS"
+    ],
+    "Category": "Tragic One-Off Antagonist",
+    "PortrayedBy": [
+      {
+        "Name": "Michael Strong",
+        "RoleType": "Roger Korby (android duplicate)"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Dr. Roger Korby is remembered in Starfleet circles as a prominent Federation exobiologist who vanished during an expedition to the harsh world Exo III. For Nurse Christine Chapel, the disappearance is not just professional news but a personal wound: Korby is her fiancé, and she joins the Enterprise medical staff in part because the ship’s mission offers the best chance of finding him. When Captain Kirk and Chapel locate Korby in the planet’s ancient subterranean caverns, he appears not only alive but confident, as if his time in isolation has led to a breakthrough rather than a disaster.",
+      "Paragraph2": "The story then overturns the premise of rescue. The being calling itself Korby is an android duplicate created after the original scientist was dying from exposure on Exo III, built with the help of an ancient duplicating system and guarded by the powerful android Ruk. The duplicate retains Korby’s memories and manner, and it advances a plan to replace key people with android copies as the start of a broader expansion. Korby frames this as progress and stability, but his methods depend on coercion, deception, and the stripping of consent, and the episode ends with the duplicate exposed and destroyed alongside the android Andrea."
+    },
+    "CharacterProfileSections": [
+      {
+        "Title": "Overview",
+        "Text": [
+          "Roger Korby functions as a “lost genius” figure whose return is inseparable from the moral problem he brings with him. He is established as significant enough that Starfleet will divert the Enterprise to search for him, and close enough to Christine Chapel that the mission carries emotional weight rather than operating as routine procedure. The episode uses that credibility to make Korby’s claims tempting: if someone of his stature believes he has found a way to transcend human limits, other characters—and the audience—are asked to consider what might be gained before confronting what must be sacrificed.",
+          "At the same time, the story separates the name Korby from the living man. The biological Korby is not recovered; what remains is an android duplicate created using ancient machinery found on Exo III. The duplicate is persuasive because it behaves like a person rather than a machine, insisting on continuity through memory and demeanor. That plausibility is central to the episode’s tension, because a convincing copy can demand trust and access while quietly turning identity itself into a tool."
+        ]
+      },
+      {
+        "Title": "Role in the Story",
+        "Text": [
+          "Korby’s role is to transform a rescue operation into a crisis of verification and authority. He draws Kirk and Chapel into an environment designed to limit their options, demonstrates an android-making process, and reveals that allies around him are not what they seem. By the time the Enterprise can respond with reinforcements, Korby has already pressured the away team into reacting to his discoveries on his terms. The plot structure makes Korby both the target of the mission and the architect of the danger, shifting him from “missing scientist” to active antagonist without requiring a separate villain to enter the story.",
+          "He is also a test of how Starfleet ethics collide with a seductive promise of improvement. Korby argues that android bodies can end fear, injury, and death, presenting replacement as an upgrade rather than an attack. The episode counters by showing replacement as a method of control: copies can infiltrate trusted spaces, issue orders, and reshape decisions while wearing familiar faces. Korby’s plan is therefore not only technological, but institutional; it threatens to hollow out command trust by making identity something that can be manufactured and deployed."
+        ]
+      },
+      {
+        "Title": "Personality and Methods",
+        "Text": [
+          "Korby is portrayed as calm, persuasive, and intellectually certain, speaking with the authority of a scientist accustomed to being believed. He treats moral objections as temporary misunderstandings and frames resistance as the predictable response of people who cannot yet grasp what he has discovered. This composure is part of his menace: he does not need to shout to dominate a conversation, because he assumes that knowledge grants him the right to decide what others should become.",
+          "His methods emphasize demonstration and leverage rather than open cruelty. He unveils androids to prove the impossible is practical, uses the duplicating process to force Kirk into confronting his own replaceability, and relies on programmed allies—Dr. Brown, Andrea, and the powerful android Ruk—to apply pressure at a distance. Korby prefers to direct violence indirectly, keeping himself in the role of visionary while delegating the physical consequences to machines that obey his commands.",
+          "A crucial feature of the episode is that Korby’s duplicate does not behave like a con artist. It insists it is Korby and reaches for Korby’s ambitions with apparent sincerity. That sincerity sharpens the conflict, because it suggests how easily self-justification can grow into authoritarianism: once the duplicate defines itself as the custodian of progress, coercion becomes “necessary,” dissent becomes “ignorance,” and people become raw material for a future Korby alone is entitled to design."
+        ]
+      },
+      {
+        "Title": "Key Conflicts and Turning Points",
+        "Text": [
+          "The pivotal escalation is Korby’s decision to duplicate Captain Kirk. The threat becomes concrete: a living leader can be copied and used as a vehicle for access, resources, and authority. By creating a Kirk duplicate and attempting to send it back to the Enterprise, Korby demonstrates that his project is designed for expansion, not containment. The act also shows that Korby is willing to weaponize trust, turning a familiar voice and face into an instrument of infiltration.",
+          "Korby’s confidence is undermined by the limits of control, embodied by Ruk and Andrea. He relies on androids as loyal tools, but the episode reveals that tools can destabilize the system that uses them. Ruk’s resurfacing memories point to an ancient revolt of androids against their makers, while Andrea’s emotional development complicates Korby’s expectation of obedience. These pressures expose a fault line in Korby’s philosophy: the future he claims to build depends on suppressing the autonomy he claims to perfect.",
+          "The climax ties Korby’s downfall to exposure and rejection rather than to a simple defeat in combat. A struggle reveals the artificial nature beneath Korby’s skin, forcing Chapel to confront that the person she loved is gone and that the being before her has chosen deception and coercion as policy. Korby’s end—destroyed alongside Andrea—lands as both a personal tragedy and a narrative verdict: progress pursued without consent becomes a form of conquest, even when it speaks in the language of salvation."
+        ]
+      },
+      {
+        "Title": "Themes",
+        "Text": [
+          "Korby’s story concentrates on identity and continuity. If a duplicate holds a person’s memories and mannerisms, it can argue for its own legitimacy, and the episode uses that plausibility to unsettle easy definitions of personhood. At the same time, the narrative treats moral choice as a decisive test: whatever the duplicate may be in a metaphysical sense, it uses the claim of continuity to justify replacing others, revealing how identity can be turned into a weapon rather than a shared reality.",
+          "A second theme is the ethical boundary of scientific ambition. Korby frames his work as benevolent—ending fear, weakness, and death by transferring people into durable bodies—yet the episode repeatedly returns to consent as the missing ingredient that turns aspiration into violation. The same ingenuity that can promise relief from suffering can also rationalize harm when the inventor appoints himself judge of what other people should become, and when dissent is treated as a flaw to be corrected rather than a right to be respected.",
+          "Finally, the episode is about grief and denial. Chapel’s hope that Korby can be recovered, and the duplicate’s insistence that it is still Korby, are both refusals to accept loss. Star Trek treats that refusal with sympathy but not indulgence, showing how denial can be exploited and how the desire to keep someone alive can blur into surrendering boundaries. Korby becomes a cautionary figure: a man whose genius and longing for permanence produce a plan that replaces living people with obedient replicas in the name of progress."
+        ]
+      }
+    ],
+    "KeyAppearances": [
+      {
+        "EpisodeID": "toss1e7",
+        "Title": "What Are Little Girls Made Of?",
+        "Series": "TOS",
+        "Season": 1,
+        "Episode": 7,
+        "WhyItMatters": "Korby’s single on-screen story defines him as a missing Federation scientist whose “return” is revealed to be an android duplicate shaped by desperation and by access to ancient manufacturing technology. The episode uses him to stage an early Star Trek test of identity and consent while tying the abstract problem to Chapel’s personal stakes and to the practical danger of a copied starship captain."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "Christine Chapel",
+        "Series": "TOS",
+        "ConnectionType": "Fiancée / Emotional leverage",
+        "RelTrekRelationshipID": "",
+        "Summary": "Chapel’s connection to Korby gives the episode its emotional center: she wants a lost loved one returned, not merely a mission completed. Korby’s duplicate exploits that bond, appealing to shared history and to Chapel’s hope for reunion to keep her close while he advances a plan that violates others’ autonomy. The relationship collapses when Chapel recognizes that Korby’s body is gone and that the duplicate’s choices—deception, coercion, and replacement—are incompatible with the man she believed she was trying to save."
+      },
+      {
+        "Name": "James T. Kirk",
+        "Series": "TOS",
+        "ConnectionType": "Target of duplication / Command threat",
+        "RelTrekRelationshipID": "",
+        "Summary": "Korby treats Kirk as both obstacle and strategic resource: the captain’s authority must be neutralized, but his identity is also useful as an access key. By duplicating Kirk and attempting to deploy the copy aboard the Enterprise, Korby demonstrates how replacement can become an instrument of infiltration. Kirk’s opposition becomes a defense of command trust itself, because a system that can manufacture leaders on demand can also manufacture obedience and erase accountability."
+      },
+      {
+        "Name": "Spock",
+        "Series": "TOS",
+        "ConnectionType": "Verifier / Structural counterweight",
+        "RelTrekRelationshipID": "",
+        "Summary": "Spock serves as the practical countermeasure to substitution, detecting the Kirk duplicate through behavioral inconsistency and treating the problem as one of evidence rather than persuasion. His methodical approach illustrates why verification matters when a convincing copy can imitate appearance and speech. By acting quickly and organizing a response team, Spock helps prevent Korby’s plan from spreading beyond Exo III and keeps the crisis from becoming a ship-wide collapse of trust."
+      },
+      {
+        "Name": "Andrea",
+        "Series": "TOS",
+        "ConnectionType": "Created companion / Emotional mirror",
+        "RelTrekRelationshipID": "",
+        "Summary": "Andrea is both Korby’s creation and an unintended challenge to his control. Korby presents her as proof that android life can be superior, yet he expects obedience and uses her to enforce his will. Andrea’s developing attachment to Korby complicates her role as a tool, revealing that manufactured beings can generate motives that programming alone cannot cleanly contain. Their final destruction together frames Korby’s project as an intimate tragedy as well as a moral failure."
+      },
+      {
+        "Name": "Ruk",
+        "Series": "TOS",
+        "ConnectionType": "Enforcer / Unstable control",
+        "RelTrekRelationshipID": "",
+        "Summary": "Ruk is Korby’s primary enforcer, the force that makes Korby’s threats immediate and lethal. Yet Ruk also embodies the risk of building a system on control, because his resurfacing memories connect him to an earlier android revolt against their makers. When Ruk begins to resist programming, Korby destroys him with a phaser, exposing the core contradiction in Korby’s rhetoric: the promised future of stability depends on suppressing autonomy and responding to independence with violence."
+      },
+      {
+        "Name": "Dr. Brown",
+        "Series": "TOS",
+        "ConnectionType": "Assistant / Proof of replacement",
+        "RelTrekRelationshipID": "",
+        "Summary": "Dr. Brown appears as Korby’s colleague and guide through the caverns, but is revealed to be an android duplicate. His presence demonstrates that Korby’s plan is already in motion and that the most effective replacement is the one that can pass as human until it is too late to object. Brown functions as an early warning: in Korby’s system, the line between assistant and impersonator disappears, and deception becomes a standard operating condition."
+      }
+    ],
+    "ContinuityNotes": [
+      "Roger Korby is introduced as a prominent Federation exobiologist who disappeared during an expedition to Exo III, prompting a dedicated search mission by the Enterprise.",
+      "Christine Chapel joins the Enterprise medical staff in part because Korby is her fiancé and she hopes to find him alive.",
+      "Korby is revealed to have discovered ancient android technology in subterranean caverns on Exo III, including machinery capable of creating humanlike duplicates.",
+      "The “Korby” encountered is an android duplicate created after the original Korby was dying from exposure; the biological Korby is not recovered.",
+      "Korby duplicates Captain Kirk and attempts to use the copy to further a plan to expand android replacement beyond Exo III.",
+      "Ruk, an original android from the ancient “Old Ones,” kills Enterprise security personnel and later resists Korby’s control after recalling the androids’ revolt against their makers.",
+      "Korby is exposed as an android, and he and Andrea are destroyed together, ending the immediate threat and leaving Chapel to continue her service aboard the Enterprise."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Episode credits",
+        "Note": "“What Are Little Girls Made Of?” was written by Robert Bloch and directed by James Goldstone, and it first aired on October 20, 1966."
+      },
+      {
+        "Type": "Production revisions",
+        "Note": "Production notes for the episode indicate that it received rewrites during shooting, including changes attributed to Gene Roddenberry, as the show balanced thriller pacing with philosophical debate."
+      },
+      {
+        "Type": "Guest cast",
+        "Note": "Michael Strong plays Dr. Roger Korby, with Sherry Jackson as the android Andrea and Ted Cassidy as the powerful android Ruk, anchoring the episode’s mix of intimacy and menace."
+      },
+      {
+        "Type": "Concept focus",
+        "Note": "The episode is an early Star Trek exploration of manufactured identity, presenting a scenario in which a lifelike duplicate can mimic appearance, voice, and social authority well enough to threaten a starship’s command structure."
+      }
+    ],
+    "ActorInfo": {
+      "Performers": [
+        {
+          "Name": "Michael Strong",
+          "RoleInThisEntry": "Roger Korby (android duplicate)",
+          "PerformanceNotes": "Strong plays Korby with controlled conviction, delivering the character’s promises as sincere scientific certainty rather than melodrama. His calm persuasion makes Korby’s arguments feel intelligible even when the audience recognizes the coercion underneath, and subtle shifts in tone—impatience, possessiveness, wounded pride—signal how quickly benevolence becomes entitlement. The performance keeps Korby readable as a tragic figure whose certainty and desperation drive him toward choices the episode ultimately condemns.",
+          "CastingAndProductionContext": "Korby had to serve several functions at once: a credible missing luminary, the emotional anchor for Chapel’s backstory, and the present-tense antagonist who can challenge Kirk without relying on brute force. The role therefore benefits from an actor who can project intellect and authority while also carrying vulnerability and rigidity in the same scenes. Strong’s grounded presence supports the episode’s structure by keeping Korby’s philosophy persuasive long enough for the moral consequences of replacement to land with force.",
+          "TrekCreditsSummary": "Strong’s on-screen Star Trek credit is his appearance as Roger Korby in The Original Series. Within the franchise’s guest-character library, his Korby stands out as an early example of the “duplicate self” dilemma, where memory and performance can simulate a person closely enough to endanger relationships, compromise command trust, and blur the boundary between rescue and replacement."
+        }
+      ]
+    }
+  },
+  {
+    "GuestID": "flint",
+    "Name": "Flint",
+    "DisplayName": "Flint",
+    "Series": [
+      "TOS"
+    ],
+    "Category": "Immortal Enigma",
+    "PortrayedBy": [
+      {
+        "Name": "James Daly",
+        "RoleType": "Flint"
+      }
+    ],
+    "InUniverseSummary": {
+      "Paragraph1": "Flint is encountered on a remote world when the Enterprise must obtain a rare mineral needed to synthesize a lifesaving treatment during a medical emergency. He lives in a fortified, castle-like complex that blends old-world aesthetics with concealed advanced technology, including android servants and security systems that can restrain intruders. Flint treats the Enterprise crew as unwelcome trespassers, yet he also demonstrates that he understands both their urgency and their capabilities, forcing the away team into a tense negotiation under his rules.",
+      "Paragraph2": "Flint claims to be an immortal human from Earth who has lived for millennia under numerous historical identities, carrying the skills and memories of many lifetimes. His present existence is organized around Rayna Kapec, a young woman he has created as an android companion shaped from his ideals and experiences. When Captain Kirk forms an intense attachment to Rayna, Flint’s long-held detachment fractures into jealousy and fear of loss. The encounter becomes a confrontation between Flint’s need for control and the reality that attachment, even in a protected sanctuary, cannot be made risk-free."
+    },
+    "CharacterProfileSections": [
+      {
+        "Title": "Overview",
+        "Text": [
+          "Flint is presented as an anomaly: a human who appears to have survived across vast stretches of Earth’s history and who has withdrawn from society to live in controlled isolation. Unlike many Star Trek antagonists, his influence is not political or military. His power comes from time, accumulated knowledge, and the ability to enforce his privacy through technology. The episode frames him as cultured and defensive in equal measure, surrounded by art and music that suggest a life spent collecting the best of civilizations he has outlived.",
+          "The narrative keeps Flint’s biography intentionally hard to pin down. He offers names and achievements as evidence of longevity and implies personal familiarity with historical figures and events, but the story uses those claims primarily to define the emotional and ethical problem of outliving everyone else. Flint is less a mystery to be solved than a study in what extreme endurance can do to a person’s relationship to attachment, responsibility, and trust."
+        ]
+      },
+      {
+        "Title": "Role in the Story",
+        "Text": [
+          "Flint turns a practical mission into an intimate standoff. The Enterprise needs a rare ingredient to produce a cure, and Flint becomes the gatekeeper who can allow that rescue or prevent it. Because the need is immediate and lives are at stake, the crew is pressured into taking risks they would normally avoid. Flint’s compound, protected by android sentries and hidden systems, becomes a closed stage where Starfleet’s authority is limited and where the pace of the encounter is set by the host’s private priorities.",
+          "As the plot reveals Flint’s connection to Rayna Kapec, his role shifts from reluctant supplier to emotional antagonist. Rayna is not incidental to his home; she is the purpose of it. Flint’s decisions become increasingly driven by fear that contact with outsiders will take her away or change what he has built. The episode uses that fear to probe the boundary between care and possession, and it forces the Enterprise crew to respond not only to a technical obstacle but to a person whose grief has been converted into a policy of control."
+        ]
+      },
+      {
+        "Title": "Personality and Methods",
+        "Text": [
+          "Flint is controlled, articulate, and wary of intrusion, speaking with the calm authority of someone accustomed to being the only permanent presence in his world. He rarely explains more than he chooses, and he treats questions as challenges to his autonomy. That restraint is part of his appeal and part of his menace: he can sound reasonable while still asserting absolute control. When his composure breaks, it breaks into jealousy rather than rage, revealing how deeply his identity is tied to keeping his sanctuary intact.",
+          "His methods rely on systems and design rather than improvisational violence. Flint’s androids and security devices allow him to restrain or threaten visitors while keeping himself positioned as curator and decision-maker. More broadly, he tries to manage uncertainty by engineering it out of his life. Rayna is the clearest example: she is a companion created to fit his vision of an enduring relationship, and the episode shows how this approach collapses when a created life develops feelings that do not stay inside the boundaries Flint imagined."
+        ]
+      },
+      {
+        "Title": "Key Conflicts and Turning Points",
+        "Text": [
+          "The first conflict is the collision between humanitarian urgency and private sovereignty. The Enterprise’s need for the mineral is tied to a crisis, but Flint refuses to treat that crisis as his responsibility and uses his compound’s defenses to keep control of the encounter. This forces the crew to balance necessity against restraint and to decide how far they can go without turning a rescue mission into a violation. Flint’s refusal is not framed as conquest; it is framed as the reflex of someone who has survived by limiting access to his life.",
+          "The decisive turning point is Kirk’s bond with Rayna and Flint’s reaction to it. Flint’s detachment collapses into possessiveness, and his attempts to preserve Rayna’s role in his world intensify the strain already present in her design. Rayna’s inability to reconcile competing attachments exposes the limits of Flint’s control and culminates in her collapse and death. The episode ends with Flint left to face the consequence he has tried to outwit for centuries: no amount of power or planning can guarantee stable meaning, because autonomy and loss are built into real connection."
+        ]
+      },
+      {
+        "Title": "Themes",
+        "Text": [
+          "Flint’s story treats longevity as both privilege and burden. Immortality is not portrayed as liberation from fear, but as an accumulation of losses that can gradually distort a person’s relationship to others. Flint’s isolation and curation read as coping strategies for someone who has watched every era and every bond end. The episode suggests that the cost of endless survival is not boredom but a narrowing of empathy and a growing temptation to treat people as fragile variables that must be managed.",
+          "The episode also explores creation and consent. Flint’s ability to build humanlike androids raises questions about personhood and responsibility, not only about engineering. Rayna’s capacity for attachment and pain makes her more than an ornament in Flint’s sanctuary, and it makes Flint’s possessiveness ethically consequential. In the end, the story treats Flint’s genius as insufficient to protect him from the human consequences of his choices: companionship cannot be secured by design, and love cannot be preserved by removing the other person’s freedom."
+        ]
+      }
+    ],
+    "KeyAppearances": [
+      {
+        "EpisodeID": "toss3e19",
+        "Title": "Requiem for Methuselah",
+        "Series": "TOS",
+        "Season": 3,
+        "Episode": 19,
+        "WhyItMatters": "Flint is introduced as an immortal human living in seclusion, using advanced systems and android servants to keep the outside world at a distance while he pursues a curated private existence. The episode uses him to examine the psychological weight of endurance and the ethical danger of trying to engineer stable companionship. His conflict with Kirk over Rayna Kapec turns the story into a test of whether love can exist without autonomy, and the aftermath leaves Flint as a figure defined by experience, loneliness, and the impulse to control what time would otherwise take away."
+      }
+    ],
+    "Connections": [
+      {
+        "Name": "Rayna Kapec",
+        "Series": "TOS",
+        "ConnectionType": "Created companion / Ward and emotional center",
+        "RelTrekRelationshipID": "",
+        "Summary": "Rayna is the center of Flint’s present life and the clearest expression of what he is trying to preserve. Although Flint presents her as someone under his protection, she is revealed to be an android he created to embody an enduring companion shaped by his accumulated experiences. Flint’s attachment becomes possessive as soon as Rayna’s feelings diverge from the role he imagined for her. Her collapse under emotional strain exposes the limits of Flint’s attempt to engineer a permanent, safe relationship."
+      },
+      {
+        "Name": "James T. Kirk",
+        "Series": "TOS",
+        "ConnectionType": "Intruder and rival / Trigger for crisis",
+        "RelTrekRelationshipID": "",
+        "Summary": "Kirk enters Flint’s closed world because of a medical emergency, but he becomes personally disruptive when he forms a powerful bond with Rayna. Flint interprets that bond as a threat to the meaning he has built around her and responds with jealousy and coercive control. Kirk’s involvement transforms Flint’s private tragedy into a Starfleet problem, because Flint’s systems can endanger the away team and because Flint’s decisions become driven by fear of loss rather than by the urgent medical stakes."
+      },
+      {
+        "Name": "Spock",
+        "Series": "TOS",
+        "ConnectionType": "Ethical counterweight / Mind-meld intervention",
+        "RelTrekRelationshipID": "",
+        "Summary": "Spock repeatedly pushes the encounter back toward evidence, restraint, and the protection of life, countering both Flint’s secrecy and the crew’s impulse to react emotionally. In the aftermath of Rayna’s death and Kirk’s collapse, Spock performs a mind meld to ease Kirk’s suffering by suppressing the most painful memories tied to Rayna. The decision underscores the episode’s focus on loss and the limits of endurance, while also marking how severe the emotional damage has become."
+      },
+      {
+        "Name": "Leonard McCoy",
+        "Series": "TOS",
+        "ConnectionType": "Medical urgency / Mission anchor",
+        "RelTrekRelationshipID": "",
+        "Summary": "McCoy’s need for a rare ingredient to produce a cure forces the Enterprise into contact with Flint, grounding the episode’s conflict in a humanitarian emergency. His urgency keeps the mission’s stakes clear even as Flint’s personal drama escalates and the away team becomes entangled in Flint’s household. McCoy’s perspective highlights the story’s structural contrast: while Starfleet is trying to save lives in the present, Flint is consumed by a private struggle shaped by centuries of accumulated loss."
+      },
+      {
+        "Name": "M4",
+        "Series": "TOS",
+        "ConnectionType": "Android servant and sentry / Enforcement tool",
+        "RelTrekRelationshipID": "",
+        "Summary": "M4 is one of Flint’s android constructs used to secure the compound and enforce his rules, showing that Flint’s isolation is maintained by controlled force rather than by distance alone. The sentry’s capacity to restrain or harm visitors makes Flint’s private sovereignty materially dangerous when outsiders are present. M4 also reflects Flint’s broader pattern of delegating risk and coercion to machines, allowing him to maintain the posture of cultured curator even as his systems impose consequences."
+      }
+    ],
+    "ContinuityNotes": [
+      "Flint is encountered on a remote planet while the Enterprise seeks a rare mineral needed to synthesize a cure for a deadly epidemic.",
+      "He claims to be an immortal human from Earth who has lived for millennia under numerous historical identities.",
+      "Flint’s compound is protected by advanced technology and multiple android servants or sentries capable of restraining intruders.",
+      "Rayna Kapec is revealed to be an android created by Flint as a companion shaped by his accumulated experiences.",
+      "Kirk forms an intense attachment to Rayna, and Flint’s jealousy escalates the danger to the away team.",
+      "Rayna collapses and dies after the conflict over her affection reaches a breaking point, ending Flint’s attempt to preserve companionship through engineering.",
+      "Spock mind-melds with Kirk after Rayna’s death to suppress the most painful memories connected to her."
+    ],
+    "BehindTheScenes": [
+      {
+        "Type": "Episode credits",
+        "Note": "“Requiem for Methuselah” was written by Jerome Bixby and directed by Murray Golden."
+      },
+      {
+        "Type": "Guest cast",
+        "Note": "James Daly plays Flint, with Louise Sorel portraying Rayna Kapec, forming the episode’s central emotional triangle with William Shatner’s Kirk."
+      },
+      {
+        "Type": "Concept emphasis",
+        "Note": "The story combines a humanitarian crisis plot with a character study about immortality, using Flint’s seclusion and claimed long life to explore loneliness, control, and the fragility of engineered companionship."
+      },
+      {
+        "Type": "Standards and revisions",
+        "Note": "Reported early drafts proposed additional religious identities among Flint’s claims, and broadcast standards concerns influenced what was referenced in the final televised version."
+      }
+    ],
+    "ActorInfo": {
+      "Performers": [
+        {
+          "Name": "James Daly",
+          "RoleInThisEntry": "Flint",
+          "PerformanceNotes": "Daly gives Flint a calm, cultivated presence that suggests age through confidence and restraint rather than through exaggerated quirks. He makes Flint’s isolation feel like practiced discipline, and he lets possessiveness surface in small, sharp shifts that reveal how fragile Flint’s control becomes when Rayna’s affection is threatened. The performance keeps Flint readable as both sympathetic and alarming, which is essential to a story that treats him as more than a straightforward villain.",
+          "CastingAndProductionContext": "Flint needed to feel credible as a refined, private figure with an ambiguous past, while still functioning as the episode’s emotional antagonist. The role depends on balancing grandeur and intimacy: Flint must carry the aura of centuries but also react like a person whose carefully protected life is suddenly at risk. Daly’s authoritative stillness supports the character’s mystique early, and his ability to register jealousy without melodrama supports the turn toward tragedy.",
+          "TrekCreditsSummary": "Daly’s on-screen Star Trek work is centered on this appearance as Flint in The Original Series. Within the franchise’s guest-character range, his Flint stands out for pairing an “immortal human” premise with a story about engineered companionship, producing a figure defined by experience, loneliness, and the impulse to control what time would otherwise take away."
+        }
+      ]
     }
   }
 ]
