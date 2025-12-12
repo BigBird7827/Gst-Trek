@@ -362,6 +362,15 @@
       header{position:static}
       .content{grid-template-rows: auto 320px;}
     }
+  
+    .section.fontPlus1 .sectionTitle{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .p{font-size:calc(14px + 1pt)}
+    .section.fontPlus1 .kname{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .kmeta{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .kwhy{font-size:calc(13px + 1pt)}
+    .section.fontPlus1 .actorName{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .actorMeta{font-size:calc(13px + 1pt)}
+
   </style>
 </head>
 <body>
@@ -605,14 +614,20 @@
       `;
       els.profile.appendChild(hero);
 
-      els.profile.appendChild(section("In-Universe Summary", `
+      const sInUniverse = section("In-Universe Summary", `
         ${p1 ? '<div class="p">'+escapeHtml(p1)+'</div>' : '<div class="p muted">Paragraph 1 pending.</div>'}
         ${p2 ? '<div class="p">'+escapeHtml(p2)+'</div>' : '<div class="p muted">Paragraph 2 pending.</div>'}
-      `));
+      `);
+      sInUniverse.classList.add("fontPlus1");
+      els.profile.appendChild(sInUniverse);
 
-      els.profile.appendChild(section("Key Appearances", renderKeyAppearances(safeArr(g.KeyAppearances))));
+      const sKeyApps = section("Key Appearances", renderKeyAppearances(safeArr(g.KeyAppearances)));
+      sKeyApps.classList.add("fontPlus1");
+      els.profile.appendChild(sKeyApps);
 
-      els.profile.appendChild(section("Connections", renderConnections(safeArr(g.Connections))));
+      const sConnections = section("Connections", renderConnections(safeArr(g.Connections)));
+      sConnections.classList.add("fontPlus1");
+      els.profile.appendChild(sConnections);
 
       els.profile.appendChild(section("Continuity Notes", renderBullets(safeArr(g.ContinuityNotes), "No continuity notes yet.")));
     };
@@ -644,13 +659,17 @@
       els.actor.appendChild(top);
 
       if (!portrayed.length){
-        els.actor.appendChild(section("Portrayed By", '<div class="p muted">Casting pending.</div>'));
+        const sPortrayed = section("Portrayed By", '<div class="p muted">Casting pending.</div>');
+        sPortrayed.classList.add("fontPlus1");
+        els.actor.appendChild(sPortrayed);
       }else{
         const rows = portrayed.map(p=>{
           const meta = p.RoleType ? ('Role: ' + p.RoleType) : 'Role: —';
           return '<div class="actorRow"><div class="actorName">'+escapeHtml(p.Name)+'</div><div class="actorMeta">'+escapeHtml(meta)+'</div></div>';
         }).join("");
-        els.actor.appendChild(section("Portrayed By", '<div class="actorGrid">'+rows+'</div>'));
+        const sPortrayed = section("Portrayed By", '<div class="actorGrid">'+rows+'</div>');
+        sPortrayed.classList.add("fontPlus1");
+        els.actor.appendChild(sPortrayed);
       }
 
       els.actor.appendChild(section("Behind the Scenes", renderBullets(bts, "No behind-the-scenes notes yet.")));
