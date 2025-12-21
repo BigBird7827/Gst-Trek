@@ -1,828 +1,733 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gst-Trek</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --bg0: #050611;
-        --bg1: #0b0e1e;
-        --panel: #10152a;
-        --panel2: #0c1021;
-        --line: rgba(178, 148, 51, .85);
-        --line2: rgba(118, 165, 175, .55);
-        --gold1: #f0d27a;
-        --gold2: #b29433;
-        --gold3: #7c6114;
-        --text: #e9eef7;
-        --muted: #a9b6cf;
-        --danger: #ff6b6b;
-        --shadow: rgba(0, 0, 0, .55);
-        --radius: 18px;
-        --radius2: 26px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gst-Trek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg0:#050611;
+      --bg1:#0b0e1e;
+      --panel:#10152a;
+      --panel2:#0c1021;
+      --line:rgba(178,148,51,.85);
+      --line2:rgba(118,165,175,.55);
+      --gold1:#f0d27a;
+      --gold2:#b29433;
+      --gold3:#7c6114;
+      --text:#e9eef7;
+      --muted:#a9b6cf;
+      --danger:#ff6b6b;
+      --shadow:rgba(0,0,0,.55);
+      --radius:18px;
+      --radius2:26px;
+    }
 
-      * {
-        box-sizing: border-box
-      }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(118,165,175,.12), transparent 55%),
+        radial-gradient(900px 500px at 85% 20%, rgba(178,148,51,.10), transparent 60%),
+        radial-gradient(1200px 700px at 60% 120%, rgba(93,128,194,.10), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      color:var(--text);
+      overflow-x:hidden;
+    }
 
-      html,
-      body {
-        height: 100%
-      }
+    .wrap{
+      width:min(1400px, calc(100% - 28px));
+      margin:18px auto 40px;
+    }
 
-      body {
-        margin: 0;
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        background:
-          radial-gradient(1200px 600px at 20% 10%, rgba(118, 165, 175, .12), transparent 55%),
-          radial-gradient(900px 500px at 85% 20%, rgba(178, 148, 51, .10), transparent 60%),
-          radial-gradient(1200px 700px at 60% 120%, rgba(93, 128, 194, .10), transparent 60%),
-          linear-gradient(180deg, var(--bg0), var(--bg1));
-        color: var(--text);
-        overflow-x: hidden;
-      }
+    header{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      padding:18px 18px 16px;
+      border-radius:var(--radius2);
+      background:linear-gradient(180deg, rgba(16,21,42,.92), rgba(12,16,33,.86));
+      border:2px solid rgba(178,148,51,.55);
+      box-shadow:0 18px 45px var(--shadow);
+      position:sticky;
+      top:14px;
+      z-index:10;
+      backdrop-filter: blur(10px);
+    }
 
-      .wrap {
-        width: min(1400px, calc(100% - 28px));
-        margin: 18px auto 40px;
-      }
+    .titleBlock{display:flex; flex-direction:column; gap:6px; min-width:320px}
+    h1{
+      margin:0;
+      font-family:Orbitron,system-ui,sans-serif;
+      letter-spacing:1px;
+      font-weight:800;
+      font-size:34px;
+      line-height:1.05;
+      background:linear-gradient(180deg, var(--gold1), var(--gold2), var(--gold3));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      -webkit-text-stroke:2px rgba(0,0,0,.75);
+      text-shadow:0 0 14px rgba(178,148,51,.18);
+      position:relative;
+      padding-bottom:10px;
+    }
+    h1::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:0;
+      width:280px;
+      height:4px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(178,148,51,.95), rgba(240,210,122,.65), rgba(178,148,51,.2));
+      box-shadow:0 0 14px rgba(178,148,51,.22);
+    }
+    .subtitle{
+      color:var(--muted);
+      font-size:13px;
+      letter-spacing:.3px;
+    }
 
-      header {
-        display: flex;
-        gap: 14px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 18px 18px 16px;
-        border-radius: var(--radius2);
-        background: linear-gradient(180deg, rgba(16, 21, 42, .92), rgba(12, 16, 33, .86));
-        border: 2px solid rgba(178, 148, 51, .55);
-        box-shadow: 0 18px 45px var(--shadow);
-        position: sticky;
-        top: 14px;
-        z-index: 10;
-        backdrop-filter: blur(10px);
-      }
+    .metaRight{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
+    }
 
-      .titleBlock {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        min-width: 320px
-      }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:6px 12px;
+      border-radius:999px;
+      border:1px solid rgba(118,165,175,.55);
+      background:rgba(8,10,20,.55);
+      color:rgba(233,238,247,.92);
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.25px;
+      white-space:nowrap;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      text-transform:uppercase;
+    }
 
-      h1 {
-        margin: 0;
-        font-family: Orbitron, system-ui, sans-serif;
-        letter-spacing: 1px;
-        font-weight: 800;
-        font-size: 34px;
-        line-height: 1.05;
-        background: linear-gradient(180deg, var(--gold1), var(--gold2), var(--gold3));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        -webkit-text-stroke: 2px rgba(0, 0, 0, .75);
-        text-shadow: 0 0 14px rgba(178, 148, 51, .18);
-        position: relative;
-        padding-bottom: 10px;
-      }
+    .panel{
+      margin-top:16px;
+      background:linear-gradient(180deg, rgba(16,21,42,.92), rgba(12,16,33,.86));
+      border-radius:var(--radius2);
+      border:2px solid rgba(178,148,51,.5);
+      box-shadow:0 18px 45px var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(10px);
+    }
 
-      h1::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 280px;
-        height: 4px;
-        border-radius: 999px;
-        background: linear-gradient(90deg, rgba(178, 148, 51, .95), rgba(240, 210, 122, .65), rgba(178, 148, 51, .2));
-        box-shadow: 0 0 14px rgba(178, 148, 51, .22);
-      }
+    .panelHeader{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px 14px 12px;
+      border-bottom:1px solid rgba(178,148,51,.22);
+      background:linear-gradient(180deg, rgba(18,24,48,.95), rgba(14,18,36,.88));
+    }
 
-      .subtitle {
-        color: var(--muted);
-        font-size: 13px;
-        letter-spacing: .3px;
-      }
+    .panelTitle{
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-weight:900;
+      letter-spacing:.6px;
+      text-transform:uppercase;
+      font-size:13px;
+      color:rgba(240,210,122,.95);
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
 
-      .metaRight {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-      }
+    .roster{
+      padding:14px 14px 8px;
+      border-bottom:1px solid rgba(118,165,175,.18);
+      background:linear-gradient(180deg, rgba(12,16,33,.65), rgba(12,16,33,.25));
+    }
 
-      .badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 6px 12px;
-        border-radius: 999px;
-        border: 1px solid rgba(118, 165, 175, .55);
-        background: rgba(8, 10, 20, .55);
-        color: rgba(233, 238, 247, .92);
-        font-size: 11px;
-        font-weight: 800;
-        letter-spacing: .25px;
-        white-space: nowrap;
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        text-transform: uppercase;
-      }
+    .rosterGrid{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
 
-      .panel {
-        margin-top: 16px;
-        background: linear-gradient(180deg, rgba(16, 21, 42, .92), rgba(12, 16, 33, .86));
-        border-radius: var(--radius2);
-        border: 2px solid rgba(178, 148, 51, .5);
-        box-shadow: 0 18px 45px var(--shadow);
-        overflow: hidden;
-        backdrop-filter: blur(10px);
-      }
+    .chip{
+      border:2px solid rgba(178,148,51,.28);
+      background:linear-gradient(180deg, rgba(10,14,30,.60), rgba(7,9,20,.38));
+      color:rgba(233,238,247,.96);
+      padding:10px 12px;
+      border-radius:18px;
+      cursor:pointer;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+      transition:filter .12s ease, transform .08s ease, border-color .12s ease;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-size:12px;
+      letter-spacing:.35px;
+      text-transform:uppercase;
+      user-select:none;
+    }
+    .chip:hover{filter:brightness(1.08); border-color:rgba(178,148,51,.45)}
+    .chip:active{transform:translateY(1px)}
+    .chip.active{
+      border-color:rgba(178,148,51,.9);
+      box-shadow:0 0 0 1px rgba(0,0,0,.6), 0 0 0 3px rgba(178,148,51,.18), inset 0 0 0 1px rgba(255,255,255,.06);
+    }
 
-      .panelHeader {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 14px 14px 12px;
-        border-bottom: 1px solid rgba(178, 148, 51, .22);
-        background: linear-gradient(180deg, rgba(18, 24, 48, .95), rgba(14, 18, 36, .88));
-      }
+    .content{
+      display:grid;
+      grid-template-rows: auto 290px;
+    }
 
-      .panelTitle {
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        font-weight: 900;
-        letter-spacing: .6px;
-        text-transform: uppercase;
-        font-size: 13px;
-        color: rgba(240, 210, 122, .95);
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
+    .pane{
+      padding:16px;
+      overflow:auto;
+    }
 
-      .roster {
-        padding: 14px 14px 8px;
-        border-bottom: 1px solid rgba(118, 165, 175, .18);
-        background: linear-gradient(180deg, rgba(12, 16, 33, .65), rgba(12, 16, 33, .25));
-      }
+    .divider{
+      height:1px;
+      background:rgba(118,165,175,.18);
+    }
 
-      .rosterGrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-      }
+    .hero{
+      border-radius:24px;
+      border:2px solid rgba(178,148,51,.55);
+      background:linear-gradient(180deg, rgba(10,14,30,.60), rgba(7,9,20,.40));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+      padding:16px 16px 14px;
+      margin-bottom:14px;
+    }
+    .heroTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .name{
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-weight:900;
+      letter-spacing:.55px;
+      font-size:22px;
+      text-transform:uppercase;
+      margin:0;
+      color:rgba(240,210,122,.98);
+      text-shadow:0 0 12px rgba(178,148,51,.12);
+    }
+    .submeta{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:10px;
+    }
 
-      .chip {
-        border: 2px solid rgba(178, 148, 51, .28);
-        background: linear-gradient(180deg, rgba(10, 14, 30, .60), rgba(7, 9, 20, .38));
-        color: rgba(233, 238, 247, .96);
-        padding: 10px 12px;
-        border-radius: 18px;
-        cursor: pointer;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04);
-        transition: filter .12s ease, transform .08s ease, border-color .12s ease;
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        font-size: 12px;
-        letter-spacing: .35px;
-        text-transform: uppercase;
-        user-select: none;
-      }
+    .section{
+      margin-top:14px;
+      border-radius:24px;
+      border:2px solid rgba(118,165,175,.18);
+      background:linear-gradient(180deg, rgba(12,16,33,.55), rgba(7,9,20,.30));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+      overflow:hidden;
+    }
+    .sectionHead{
+      padding:12px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      border-bottom:1px solid rgba(118,165,175,.14);
+      background:linear-gradient(180deg, rgba(15,22,44,.70), rgba(12,16,33,.30));
+    }
+    .sectionTitle{
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-weight:900;
+      letter-spacing:.5px;
+      text-transform:uppercase;
+      font-size:12px;
+      color:rgba(233,238,247,.92);
+    }
+    .sectionBody{padding:12px 14px 14px}
+    .p{
+      margin:0 0 10px 0;
+      line-height:1.55;
+      color:rgba(233,238,247,.92);
+      font-size:14px;
+    }
+    .muted{color:rgba(169,182,207,.92)}
+    .ul{margin:0; padding-left:18px}
+    .ul li{margin:7px 0; line-height:1.45; color:rgba(233,238,247,.92)}
 
-      .chip:hover {
-        filter: brightness(1.08);
-        border-color: rgba(178, 148, 51, .45)
-      }
+    .klist{display:flex; flex-direction:column; gap:10px}
+    .kcard{
+      border-radius:20px;
+      border:2px solid rgba(178,148,51,.22);
+      background:linear-gradient(180deg, rgba(10,14,30,.55), rgba(7,9,20,.38));
+      padding:12px 12px 10px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+    }
+    .krow{display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap}
+    .kname{
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-weight:900;
+      letter-spacing:.35px;
+      text-transform:uppercase;
+      font-size:12px;
+      color:rgba(240,210,122,.92);
+    }
+    .kmeta{color:rgba(169,182,207,.92); font-size:12px}
+    .kwhy{margin-top:8px; color:rgba(233,238,247,.92); font-size:13px; line-height:1.5}
 
-      .chip:active {
-        transform: translateY(1px)
-      }
+    .actorGrid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+    }
+    .actorRow{
+      border-radius:20px;
+      border:2px solid rgba(118,165,175,.18);
+      background:linear-gradient(180deg, rgba(10,14,30,.55), rgba(7,9,20,.38));
+      padding:12px 12px 10px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+    }
+    .actorName{
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-weight:900;
+      letter-spacing:.35px;
+      text-transform:uppercase;
+      font-size:12px;
+      color:rgba(240,210,122,.92);
+    }
+    .actorMeta{
+      margin-top:6px;
+      color:rgba(169,182,207,.92);
+      font-size:13px;
+      line-height:1.45;
+    }
 
-      .chip.active {
-        border-color: rgba(178, 148, 51, .9);
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, .6), 0 0 0 3px rgba(178, 148, 51, .18), inset 0 0 0 1px rgba(255, 255, 255, .06);
-      }
+    .err{
+      padding:12px 14px;
+      border-radius:18px;
+      border:2px solid rgba(255,107,107,.45);
+      background:rgba(255,107,107,.08);
+      color:rgba(255,220,220,.95);
+      margin:16px;
+    }
 
-      .content {
-        display: grid;
-        grid-template-rows: auto 290px;
-      }
+    .footer{
+      margin-top:16px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-end;
+    }
 
-      .pane {
-        padding: 16px;
-        overflow: auto;
-      }
+    .btn{
+      border:2px solid rgba(178,148,51,.8);
+      background:linear-gradient(180deg, rgba(19,26,52,.95), rgba(10,14,30,.9));
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:16px;
+      font-weight:700;
+      letter-spacing:.25px;
+      cursor:pointer;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), 0 10px 26px rgba(0,0,0,.35);
+      transition:transform .08s ease, filter .12s ease;
+      font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+      font-size:12px;
+      text-transform:uppercase;
+    }
+    .btn:hover{filter:brightness(1.08)}
+    .btn:active{transform:translateY(1px)}
+    .btn.secondary{
+      border-color:rgba(118,165,175,.65);
+      background:linear-gradient(180deg, rgba(15,22,44,.92), rgba(10,14,30,.9));
+    }
 
-      .divider {
-        height: 1px;
-        background: rgba(118, 165, 175, .18);
-      }
+    @media (max-width: 980px){
+      header{position:static}
+      .content{grid-template-rows: auto 320px;}
+    }
+  
+    .section.fontPlus1 .sectionTitle{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .p{font-size:calc(14px + 1pt)}
+    .section.fontPlus1 .kname{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .kmeta{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .kwhy{font-size:calc(13px + 1pt)}
+    .section.fontPlus1 .actorName{font-size:calc(12px + 1pt)}
+    .section.fontPlus1 .actorMeta{font-size:calc(13px + 1pt)}
 
-      .hero {
-        border-radius: 24px;
-        border: 2px solid rgba(178, 148, 51, .55);
-        background: linear-gradient(180deg, rgba(10, 14, 30, .60), rgba(7, 9, 20, .40));
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05);
-        padding: 16px 16px 14px;
-        margin-bottom: 14px;
-      }
+  </style>
+<style id="mainConsoleInlineStyle">
+  .main-console-inline{
+    display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 0;
+  margin-right: auto;
 
-      .heroTop {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-
-      .name {
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        font-weight: 900;
-        letter-spacing: .55px;
-        font-size: 22px;
-        text-transform: uppercase;
-        margin: 0;
-        color: rgba(240, 210, 122, .98);
-        text-shadow: 0 0 12px rgba(178, 148, 51, .12);
-      }
-
-      .submeta {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 10px;
-      }
-
-      .section {
-        margin-top: 14px;
-        border-radius: 24px;
-        border: 2px solid rgba(118, 165, 175, .18);
-        background: linear-gradient(180deg, rgba(12, 16, 33, .55), rgba(7, 9, 20, .30));
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04);
-        overflow: hidden;
-      }
-
-      .sectionHead {
-        padding: 12px 14px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        border-bottom: 1px solid rgba(118, 165, 175, .14);
-        background: linear-gradient(180deg, rgba(15, 22, 44, .70), rgba(12, 16, 33, .30));
-      }
-
-      .sectionTitle {
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        font-weight: 900;
-        letter-spacing: .5px;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: rgba(233, 238, 247, .92);
-      }
-
-      .sectionBody {
-        padding: 12px 14px 14px
-      }
-
-      .p {
-        margin: 0 0 10px 0;
-        line-height: 1.55;
-        color: rgba(233, 238, 247, .92);
-        font-size: 14px;
-      }
-
-      .muted {
-        color: rgba(169, 182, 207, .92)
-      }
-
-      .ul {
-        margin: 0;
-        padding-left: 18px
-      }
-
-      .ul li {
-        margin: 7px 0;
-        line-height: 1.45;
-        color: rgba(233, 238, 247, .92)
-      }
-
-      .klist {
-        display: flex;
-        flex-direction: column;
-        gap: 10px
-      }
-
-      .kcard {
-        border-radius: 20px;
-        border: 2px solid rgba(178, 148, 51, .22);
-        background: linear-gradient(180deg, rgba(10, 14, 30, .55), rgba(7, 9, 20, .38));
-        padding: 12px 12px 10px;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04);
-      }
-
-      .krow {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap
-      }
-
-      .kname {
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        font-weight: 900;
-        letter-spacing: .35px;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: rgba(240, 210, 122, .92);
-      }
-
-      .kmeta {
-        color: rgba(169, 182, 207, .92);
-        font-size: 12px
-      }
-
-      .kwhy {
-        margin-top: 8px;
-        color: rgba(233, 238, 247, .92);
-        font-size: 13px;
-        line-height: 1.5
-      }
-
-      .actorGrid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-
-      .actorRow {
-        border-radius: 20px;
-        border: 2px solid rgba(118, 165, 175, .18);
-        background: linear-gradient(180deg, rgba(10, 14, 30, .55), rgba(7, 9, 20, .38));
-        padding: 12px 12px 10px;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04);
-      }
-
-      .actorName {
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        font-weight: 900;
-        letter-spacing: .35px;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: rgba(240, 210, 122, .92);
-      }
-
-      .actorMeta {
-        margin-top: 6px;
-        color: rgba(169, 182, 207, .92);
-        font-size: 13px;
-        line-height: 1.45;
-      }
-
-      .err {
-        padding: 12px 14px;
-        border-radius: 18px;
-        border: 2px solid rgba(255, 107, 107, .45);
-        background: rgba(255, 107, 107, .08);
-        color: rgba(255, 220, 220, .95);
-        margin: 16px;
-      }
-
-      .footer {
-        margin-top: 16px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-      }
-
-      .btn {
-        border: 2px solid rgba(178, 148, 51, .8);
-        background: linear-gradient(180deg, rgba(19, 26, 52, .95), rgba(10, 14, 30, .9));
-        color: var(--text);
-        padding: 10px 12px;
-        border-radius: 16px;
-        font-weight: 700;
-        letter-spacing: .25px;
-        cursor: pointer;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .06), 0 10px 26px rgba(0, 0, 0, .35);
-        transition: transform .08s ease, filter .12s ease;
-        font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-        font-size: 12px;
-        text-transform: uppercase;
-      }
-
-      .btn:hover {
-        filter: brightness(1.08)
-      }
-
-      .btn:active {
-        transform: translateY(1px)
-      }
-
-      .btn.secondary {
-        border-color: rgba(118, 165, 175, .65);
-        background: linear-gradient(180deg, rgba(15, 22, 44, .92), rgba(10, 14, 30, .9));
-      }
-
-      @media (max-width: 980px) {
-        header {
-          position: static
-        }
-
-        .content {
-          grid-template-rows: auto 320px;
-        }
-      }
-
-      .section.fontPlus1 .sectionTitle {
-        font-size: calc(12px + 1pt)
-      }
-
-      .section.fontPlus1 .p {
-        font-size: calc(14px + 1pt)
-      }
-
-      .section.fontPlus1 .kname {
-        font-size: calc(12px + 1pt)
-      }
-
-      .section.fontPlus1 .kmeta {
-        font-size: calc(12px + 1pt)
-      }
-
-      .section.fontPlus1 .kwhy {
-        font-size: calc(13px + 1pt)
-      }
-
-      .section.fontPlus1 .actorName {
-        font-size: calc(12px + 1pt)
-      }
-
-      .section.fontPlus1 .actorMeta {
-        font-size: calc(13px + 1pt)
-      }
-    </style>
-    <style id="mainConsoleInlineStyle">
-      .main-console-inline {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
-        align-self: flex-start;
-        margin-left: 0;
-        margin-right: auto;
-      }
-
-      .main-console-inline a {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <header>
-        <div class="titleBlock">
-          <h1>GST-TREK</h1>
-          <div class="main-console-inline" style="margin: 10px 0 14px;">
-            <a class="btn" href="https://bigbird7827.github.io/Main-Console/">MAIN CONSOLE</a>
-          </div>
-          <div class="subtitle">Guest character profiles • profile + actor panes • no images</div>
-        </div>
-        <div class="metaRight">
-          <span class="badge" id="countBadge">0 Guests</span>
-          <span class="badge" id="activeBadge">Active: —</span>
-        </div>
-      </header>
-      <div class="panel">
-        <div class="panelHeader">
-          <div class="panelTitle">Guest Selection</div>
-          <span class="badge" id="dataBadge">Source: Gst-Guests.json</span>
-        </div>
-        <div class="roster">
-          <div class="rosterGrid" id="roster"></div>
-        </div>
-        <div class="content">
-          <div class="pane" id="profilePane"></div>
-          <div class="divider"></div>
-          <div class="pane" id="actorPane"></div>
-        </div>
+}
+  .main-console-inline a{
+    text-decoration:none;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="titleBlock">
+        <h1>GST-TREK</h1>
+        
+        <div class="main-console-inline" style="margin: 10px 0 14px;"><a class="btn" href="https://bigbird7827.github.io/Main-Console/">MAIN CONSOLE</a></div>
+<div class="subtitle">Guest character profiles • profile + actor panes • no images</div>
       </div>
-      <div class="footer">
-        <button class="btn secondary" id="btnToRel">Go to Rel-Trek</button>
-        <button class="btn secondary" id="btnToEpi">Go to Epi-Trek</button>
-        <button class="btn secondary" id="btnTop">Back to Top</button>
+      <div class="metaRight">
+        <span class="badge" id="countBadge">0 Guests</span>
+        <span class="badge" id="activeBadge">Active: —</span>
+      </div>
+    </header>
+
+    <div class="panel">
+      <div class="panelHeader">
+        <div class="panelTitle">Guest Selection</div>
+        <span class="badge" id="dataBadge">Source: Gst-Guests.json</span>
+      </div>
+
+      <div class="roster">
+        <div class="rosterGrid" id="roster"></div>
+      </div>
+
+      <div class="content">
+        <div class="pane" id="profilePane"></div>
+        <div class="divider"></div>
+        <div class="pane" id="actorPane"></div>
       </div>
     </div>
-    <script>
-      const DATA_URL = "https://raw.githubusercontent.com/BigBird7827/Gst-Trek/main/Guests.json";
-      const STATE_KEY = "gst-trek-state-v2";
-      const els = {
-        roster: document.getElementById("roster"),
-        profile: document.getElementById("profilePane"),
-        actor: document.getElementById("actorPane"),
-        count: document.getElementById("countBadge"),
-        active: document.getElementById("activeBadge"),
-        data: document.getElementById("dataBadge"),
-        btnRel: document.getElementById("btnToRel"),
-        btnEpi: document.getElementById("btnToEpi"),
-        btnTop: document.getElementById("btnTop")
-      };
-      let allGuests = [];
-      let activeId = "";
-      const safeArr = (v) => Array.isArray(v) ? v : [];
-      const safeStr = (v) => typeof v === "string" ? v : "";
-      const normalize = (g) => {
-        if (!g || typeof g !== "object") return null;
-        const GuestID = safeStr(g.GuestID);
-        const Name = safeStr(g.DisplayName || g.Name);
-        const Series = safeArr(g.Series).filter(Boolean);
-        const Category = safeStr(g.Category);
-        const PortrayedBy = safeArr(g.PortrayedBy).filter(Boolean);
-        const InUniverseSummary = g.InUniverseSummary && typeof g.InUniverseSummary === "object" ? g.InUniverseSummary : {
-          Paragraph1: "",
-          Paragraph2: ""
-        };
-        const KeyAppearances = safeArr(g.KeyAppearances).filter(Boolean);
-        const Connections = safeArr(g.Connections).filter(Boolean);
-        const ContinuityNotes = safeArr(g.ContinuityNotes).filter(Boolean);
-        const BehindTheScenes = safeArr(g.BehindTheScenes).filter(Boolean);
-        return {
-          GuestID,
-          Name,
-          Series,
-          Category,
-          PortrayedBy,
-          InUniverseSummary,
-          KeyAppearances,
-          Connections,
-          ContinuityNotes,
-          BehindTheScenes
-        };
-      };
-      const escapeHtml = (s) => String(s).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
-      const fetchJson = async (url) => {
-        const res = await fetch(url, {
-          cache: "no-store"
+
+    <div class="footer">
+      <button class="btn secondary" id="btnToRel">Go to Rel-Trek</button>
+      <button class="btn secondary" id="btnToEpi">Go to Epi-Trek</button>
+      <button class="btn secondary" id="btnTop">Back to Top</button>
+    </div>
+  </div>
+
+  <script>
+    const DATA_URL = "https://raw.githubusercontent.com/BigBird7827/Gst-Trek/main/Guests.json";
+    const STATE_KEY = "gst-trek-state-v2";
+
+    const els = {
+      roster: document.getElementById("roster"),
+      profile: document.getElementById("profilePane"),
+      actor: document.getElementById("actorPane"),
+      count: document.getElementById("countBadge"),
+      active: document.getElementById("activeBadge"),
+      data: document.getElementById("dataBadge"),
+      btnRel: document.getElementById("btnToRel"),
+      btnEpi: document.getElementById("btnToEpi"),
+      btnTop: document.getElementById("btnTop")
+    };
+
+    let allGuests = [];
+    let activeId = "";
+
+    const safeArr = (v) => Array.isArray(v) ? v : [];
+    const safeStr = (v) => typeof v === "string" ? v : "";
+
+    const normalize = (g) => {
+      if (!g || typeof g !== "object") return null;
+      const GuestID = safeStr(g.GuestID);
+      const Name = safeStr(g.DisplayName || g.Name);
+      const Series = safeArr(g.Series).filter(Boolean);
+      const Category = safeStr(g.Category);
+      const PortrayedBy = safeArr(g.PortrayedBy).filter(Boolean);
+      const InUniverseSummary = g.InUniverseSummary && typeof g.InUniverseSummary === "object" ? g.InUniverseSummary : { Paragraph1:"", Paragraph2:"" };
+      const KeyAppearances = safeArr(g.KeyAppearances).filter(Boolean);
+      const Connections = safeArr(g.Connections).filter(Boolean);
+      const ContinuityNotes = safeArr(g.ContinuityNotes).filter(Boolean);
+      const BehindTheScenes = safeArr(g.BehindTheScenes).filter(Boolean);
+      return { GuestID, Name, Series, Category, PortrayedBy, InUniverseSummary, KeyAppearances, Connections, ContinuityNotes, BehindTheScenes };
+    };
+
+    const escapeHtml = (s) => String(s)
+      .replaceAll("&","&amp;")
+      .replaceAll("<","&lt;")
+      .replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;")
+      .replaceAll("'","&#039;");
+
+    const fetchJson = async (url) => {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return await res.json();
+    };
+
+    const loadState = () => {
+      try{
+        const raw = localStorage.getItem(STATE_KEY);
+        if (!raw) return null;
+        return JSON.parse(raw);
+      }catch{
+        return null;
+      }
+    };
+
+    const saveState = () => {
+      const s = { activeId: activeId || "" };
+      try{ localStorage.setItem(STATE_KEY, JSON.stringify(s)); }catch{}
+    };
+
+    const section = (title, bodyHtml) => {
+      const div = document.createElement("div");
+      div.className = "section";
+      div.innerHTML = `
+        <div class="sectionHead">
+          <div class="sectionTitle">${escapeHtml(title)}</div>
+          <span class="badge"></span>
+        </div>
+        <div class="sectionBody">${bodyHtml}</div>
+      `;
+      return div;
+    };
+
+    const renderBullets = (arr, emptyMsg) => {
+      if (!arr.length) return '<div class="p muted">'+escapeHtml(emptyMsg)+'</div>';
+      const li = arr.map(x=>{
+        if (typeof x === "string") return '<li>'+escapeHtml(x)+'</li>';
+        if (x && typeof x === "object"){
+          if (typeof x.Note === "string" && typeof x.Type === "string") return '<li><span class="muted">'+escapeHtml(x.Type)+':</span> '+escapeHtml(x.Note)+'</li>';
+          if (typeof x.Note === "string") return '<li>'+escapeHtml(x.Note)+'</li>';
+          if (typeof x.Text === "string") return '<li>'+escapeHtml(x.Text)+'</li>';
+        }
+        return '';
+      }).filter(Boolean).join("");
+      return '<ul class="ul">'+li+'</ul>';
+    };
+
+    const renderKeyAppearances = (apps) => {
+      if (!apps.length) return '<div class="p muted">No key appearances yet.</div>';
+      const cards = apps.map(a=>{
+        const title = safeStr(a.Title);
+        const eid = safeStr(a.EpisodeID);
+        const series = safeStr(a.Series);
+        const season = a.Season ?? "";
+        const ep = a.Episode ?? "";
+        const why = safeStr(a.WhyItMatters);
+        const meta = [series, season !== "" ? ("S" + season) : "", ep !== "" ? ("E" + ep) : "", eid ? eid : ""].filter(Boolean).join(" • ");
+        return `
+          <div class="kcard">
+            <div class="krow">
+              <div class="kname">${escapeHtml(title || "Untitled appearance")}</div>
+              <div class="kmeta">${escapeHtml(meta)}</div>
+            </div>
+            <div class="kwhy">${why ? escapeHtml(why) : '<span class="muted">Why it matters pending.</span>'}</div>
+          </div>
+        `;
+      }).join("");
+      return '<div class="klist">'+cards+'</div>';
+    };
+
+    const renderConnections = (conns) => {
+      if (!conns.length) return '<div class="p muted">No connections yet.</div>';
+      const cards = conns.map(c=>{
+        const name = safeStr(c.Name);
+        const series = safeStr(c.Series);
+        const type = safeStr(c.ConnectionType);
+        const rel = safeStr(c.RelTrekRelationshipID);
+        const sum = safeStr(c.Summary);
+        const meta = [series, type, rel].filter(Boolean).join(" • ");
+        return `
+          <div class="kcard">
+            <div class="krow">
+              <div class="kname">${escapeHtml(name || "Unnamed connection")}</div>
+              <div class="kmeta">${escapeHtml(meta)}</div>
+            </div>
+            <div class="kwhy">${sum ? escapeHtml(sum) : '<span class="muted">Summary pending.</span>'}</div>
+          </div>
+        `;
+      }).join("");
+      return '<div class="klist">'+cards+'</div>';
+    };
+
+    const renderPortrayedBy = (arr) => {
+      return arr.map(p=>{
+        if (typeof p === "string") return { Name: p, RoleType: "" };
+        if (p && typeof p === "object"){
+          return { Name: safeStr(p.Name), RoleType: safeStr(p.RoleType) };
+        }
+        return { Name: "", RoleType: "" };
+      }).filter(x=>x.Name);
+    };
+
+    const renderRoster = () => {
+      els.roster.innerHTML = "";
+      if (!allGuests.length){
+        els.roster.innerHTML = '<div class="err">No guests loaded.</div>';
+        return;
+      }
+
+      const frag = document.createDocumentFragment();
+      for (const g of allGuests){
+        const b = document.createElement("button");
+        b.className = "chip" + (g.GuestID === activeId ? " active" : "");
+        b.type = "button";
+        b.textContent = g.Name;
+        b.addEventListener("click", ()=>{
+          activeId = g.GuestID;
+          saveState();
+          renderRoster();
+          renderProfile();
+          renderActor();
         });
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        return await res.json();
-      };
-      const loadState = () => {
-        try {
-          const raw = localStorage.getItem(STATE_KEY);
-          if (!raw) return null;
-          return JSON.parse(raw);
-        } catch {
-          return null;
-        }
-      };
-      const saveState = () => {
-        const s = {
-          activeId: activeId || ""
-        };
-        try {
-          localStorage.setItem(STATE_KEY, JSON.stringify(s));
-        } catch {}
-      };
-      const section = (title, bodyHtml) => {
-        const div = document.createElement("div");
-        div.className = "section";
-        div.innerHTML = `
-        
-						<div class="sectionHead">
-							<div class="sectionTitle">${escapeHtml(title)}</div>
-							<span class="badge"></span>
-						</div>
-						<div class="sectionBody">${bodyHtml}</div>
+        frag.appendChild(b);
+      }
+      els.roster.appendChild(frag);
+
+      const active = allGuests.find(g=>g.GuestID===activeId);
+      els.active.textContent = "Active: " + (active ? active.Name : "—");
+    };
+
+    const renderProfile = () => {
+      els.profile.innerHTML = "";
+      if (!activeId){
+        els.profile.innerHTML = '<div class="err">No guest selected.</div>';
+        return;
+      }
+      const g = allGuests.find(x=>x.GuestID===activeId);
+      if (!g){
+        els.profile.innerHTML = '<div class="err">Selected guest not found.</div>';
+        return;
+      }
+
+      const seriesBadges = g.Series.map(s=>'<span class="badge">'+escapeHtml(s)+'</span>').join("");
+      const catBadge = g.Category ? '<span class="badge">'+escapeHtml(g.Category)+'</span>' : '';
+
+      const p1 = safeStr(g.InUniverseSummary.Paragraph1);
+      const p2 = safeStr(g.InUniverseSummary.Paragraph2);
+
+      const hero = document.createElement("div");
+      hero.className = "hero";
+      hero.innerHTML = `
+        <div class="heroTop">
+          <h2 class="name">${escapeHtml(g.Name)}</h2>
+          <span class="badge">${escapeHtml(g.GuestID)}</span>
+        </div>
+        <div class="submeta">${seriesBadges} ${catBadge}</div>
       `;
-        return div;
-      };
-      const renderBullets = (arr, emptyMsg) => {
-        if (!arr.length) return ' < div class = "p muted" > '+escapeHtml(emptyMsg)+' < /div>';
-        const li = arr.map(x => {
-          if (typeof x === "string") return ' < li > '+escapeHtml(x)+' < /li>';
-          if (x && typeof x === "object") {
-            if (typeof x.Note === "string" && typeof x.Type === "string") return ' < li > < span class = "muted" > '+escapeHtml(x.Type)+': < /span> '+escapeHtml(x.Note)+' < /li>';
-            if (typeof x.Note === "string") return ' < li > '+escapeHtml(x.Note)+' < /li>';
-            if (typeof x.Text === "string") return ' < li > '+escapeHtml(x.Text)+' < /li>';
-          }
-          return '';
-        }).filter(Boolean).join("");
-        return ' < ul class = "ul" > '+li+' < /ul>';
-      };
-      const renderKeyAppearances = (apps) => {
-        if (!apps.length) return ' < div class = "p muted" > No key appearances yet. < /div>';
-        const cards = apps.map(a => {
-          const title = safeStr(a.Title);
-          const eid = safeStr(a.EpisodeID);
-          const series = safeStr(a.Series);
-          const season = a.Season ?? "";
-          const ep = a.Episode ?? "";
-          const why = safeStr(a.WhyItMatters);
-          const meta = [series, season !== "" ? ("S" + season) : "", ep !== "" ? ("E" + ep) : "", eid ? eid : ""].filter(Boolean).join(" • ");
-          return `
-          
-						<div class="kcard">
-							<div class="krow">
-								<div class="kname">${escapeHtml(title || "Untitled appearance")}</div>
-								<div class="kmeta">${escapeHtml(meta)}</div>
-							</div>
-							<div class="kwhy">${why ? escapeHtml(why) : '
-								<span class="muted">Why it matters pending.</span>'}
-							</div>
-						</div>
-        `;
-        }).join("");
-        return ' < div class = "klist" > '+cards+' < /div>';
-      };
-      const renderConnections = (conns) => {
-        if (!conns.length) return ' < div class = "p muted" > No connections yet. < /div>';
-        const cards = conns.map(c => {
-          const name = safeStr(c.Name);
-          const series = safeStr(c.Series);
-          const type = safeStr(c.ConnectionType);
-          const rel = safeStr(c.RelTrekRelationshipID);
-          const sum = safeStr(c.Summary);
-          const meta = [series, type, rel].filter(Boolean).join(" • ");
-          return `
-          
-						<div class="kcard">
-							<div class="krow">
-								<div class="kname">${escapeHtml(name || "Unnamed connection")}</div>
-								<div class="kmeta">${escapeHtml(meta)}</div>
-							</div>
-							<div class="kwhy">${sum ? escapeHtml(sum) : '
-								<span class="muted">Summary pending.</span>'}
-							</div>
-						</div>
-        `;
-        }).join("");
-        return ' < div class = "klist" > '+cards+' < /div>';
-      };
-      const renderPortrayedBy = (arr) => {
-        return arr.map(p => {
-          if (typeof p === "string") return {
-            Name: p,
-            RoleType: ""
-          };
-          if (p && typeof p === "object") {
-            return {
-              Name: safeStr(p.Name),
-              RoleType: safeStr(p.RoleType)
-            };
-          }
-          return {
-            Name: "",
-            RoleType: ""
-          };
-        }).filter(x => x.Name);
-      };
-      const renderRoster = () => {
-        els.roster.innerHTML = "";
-        if (!allGuests.length) {
-          els.roster.innerHTML = ' < div class = "err" > No guests loaded. < /div>';
-          return;
-        }
-        const frag = document.createDocumentFragment();
-        for (const g of allGuests) {
-          const b = document.createElement("button");
-          b.className = "chip" + (g.GuestID === activeId ? " active" : "");
-          b.type = "button";
-          b.textContent = g.Name;
-          b.addEventListener("click", () => {
-            activeId = g.GuestID;
-            saveState();
-            renderRoster();
-            renderProfile();
-            renderActor();
-          });
-          frag.appendChild(b);
-        }
-        els.roster.appendChild(frag);
-        const active = allGuests.find(g => g.GuestID === activeId);
-        els.active.textContent = "Active: " + (active ? active.Name : "—");
-      };
-      const renderProfile = () => {
-          els.profile.innerHTML = "";
-          if (!activeId) {
-            els.profile.innerHTML = ' < div class = "err" > No guest selected. < /div>';
-            return;
-          }
-          const g = allGuests.find(x => x.GuestID === activeId);
-          if (!g) {
-            els.profile.innerHTML = ' < div class = "err" > Selected guest not found. < /div>';
-            return;
-          }
-          const seriesBadges = g.Series.map(s => ' < span class = "badge" > '+escapeHtml(s)+' < /span>').join("");
-            const catBadge = g.Category ? ' < span class = "badge" > '+escapeHtml(g.Category)+' < /span>' : '';
-            const p1 = safeStr(g.InUniverseSummary.Paragraph1);
-            const p2 = safeStr(g.InUniverseSummary.Paragraph2);
-            const hero = document.createElement("div"); hero.className = "hero"; hero.innerHTML = `
-        
-						<div class="heroTop">
-							<h2 class="name">${escapeHtml(g.Name)}</h2>
-							<span class="badge">${escapeHtml(g.GuestID)}</span>
-						</div>
-						<div class="submeta">${seriesBadges} ${catBadge}</div>
-      `; els.profile.appendChild(hero);
-            const sInUniverse = section("In-Universe Summary", `
-        ${p1 ? '
-						<div class="p">'+escapeHtml(p1)+'</div>' : '
-						<div class="p muted">Paragraph 1 pending.</div>'}
-        ${p2 ? '
-						<div class="p">'+escapeHtml(p2)+'</div>' : '
-						<div class="p muted">Paragraph 2 pending.</div>'}
-      `); sInUniverse.classList.add("fontPlus1"); els.profile.appendChild(sInUniverse);
-            const sKeyApps = section("Key Appearances", renderKeyAppearances(safeArr(g.KeyAppearances))); sKeyApps.classList.add("fontPlus1"); els.profile.appendChild(sKeyApps);
-            const sConnections = section("Connections", renderConnections(safeArr(g.Connections))); sConnections.classList.add("fontPlus1"); els.profile.appendChild(sConnections); els.profile.appendChild(section("Continuity Notes", renderBullets(safeArr(g.ContinuityNotes), "No continuity notes yet.")));
-          };
-          const renderActor = () => {
-              els.actor.innerHTML = "";
-              if (!activeId) {
-                els.actor.innerHTML = ' < div class = "err" > No guest selected. < /div>';
-                return;
-              }
-              const g = allGuests.find(x => x.GuestID === activeId);
-              if (!g) {
-                els.actor.innerHTML = ' < div class = "err" > Selected guest not found. < /div>';
-                return;
-              }
-              const portrayed = renderPortrayedBy(safeArr(g.PortrayedBy));
-              const bts = safeArr(g.BehindTheScenes);
-              const top = document.createElement("div");
-              top.className = "hero";
-              top.innerHTML = `
-        
-						<div class="heroTop">
-							<h2 class="name">Actor Information</h2>
-							<span class="badge">No bio</span>
-						</div>
-						<div class="submeta">
-							<span class="badge">From Gst-Guests.json</span>
-						</div>
+      els.profile.appendChild(hero);
+
+      const sInUniverse = section("In-Universe Summary", `
+        ${p1 ? '<div class="p">'+escapeHtml(p1)+'</div>' : '<div class="p muted">Paragraph 1 pending.</div>'}
+        ${p2 ? '<div class="p">'+escapeHtml(p2)+'</div>' : '<div class="p muted">Paragraph 2 pending.</div>'}
+      `);
+      sInUniverse.classList.add("fontPlus1");
+      els.profile.appendChild(sInUniverse);
+
+      const sKeyApps = section("Key Appearances", renderKeyAppearances(safeArr(g.KeyAppearances)));
+      sKeyApps.classList.add("fontPlus1");
+      els.profile.appendChild(sKeyApps);
+
+      const sConnections = section("Connections", renderConnections(safeArr(g.Connections)));
+      sConnections.classList.add("fontPlus1");
+      els.profile.appendChild(sConnections);
+
+      els.profile.appendChild(section("Continuity Notes", renderBullets(safeArr(g.ContinuityNotes), "No continuity notes yet.")));
+    };
+
+    const renderActor = () => {
+      els.actor.innerHTML = "";
+      if (!activeId){
+        els.actor.innerHTML = '<div class="err">No guest selected.</div>';
+        return;
+      }
+      const g = allGuests.find(x=>x.GuestID===activeId);
+      if (!g){
+        els.actor.innerHTML = '<div class="err">Selected guest not found.</div>';
+        return;
+      }
+
+      const portrayed = renderPortrayedBy(safeArr(g.PortrayedBy));
+      const bts = safeArr(g.BehindTheScenes);
+
+      const top = document.createElement("div");
+      top.className = "hero";
+      top.innerHTML = `
+        <div class="heroTop">
+          <h2 class="name">Actor Information</h2>
+          <span class="badge">No bio</span>
+        </div>
+        <div class="submeta"><span class="badge">From Gst-Guests.json</span></div>
       `;
-              els.actor.appendChild(top);
-              if (!portrayed.length) {
-                const sPortrayed = section("Portrayed By", ' < div class = "p muted" > Casting pending. < /div>');
-                  sPortrayed.classList.add("fontPlus1"); els.actor.appendChild(sPortrayed);
-                }
-                else {
-                  const rows = portrayed.map(p => {
-                    const meta = p.RoleType ? ('Role: ' + p.RoleType) : 'Role: —';
-                    return ' < div class = "actorRow" > < div class = "actorName" > '+escapeHtml(p.Name)+' < /div> < div class = "actorMeta" > '+escapeHtml(meta)+' < /div> < /div>';
-                  }).join("");
-                  const sPortrayed = section("Portrayed By", ' < div class = "actorGrid" > '+rows+' < /div>');
-                    sPortrayed.classList.add("fontPlus1"); els.actor.appendChild(sPortrayed);
-                  }
-                  els.actor.appendChild(section("Behind the Scenes", renderBullets(bts, "No behind-the-scenes notes yet.")));
-                };
-                const init = async () => {
-                  els.roster.innerHTML = "";
-                  els.profile.innerHTML = "";
-                  els.actor.innerHTML = "";
-                  els.count.textContent = "0 Guests";
-                  els.active.textContent = "Active: —";
-                  els.data.textContent = "Loading…";
-                  const raw = await fetchJson(DATA_URL);
-                  els.data.textContent = "Source: Guests.json";
-                  const arr = Array.isArray(raw) ? raw : [];
-                  allGuests = arr.map(normalize).filter((x) => x && x.GuestID && x.Name).sort((a, b) => a.Name.localeCompare(b.Name));
-                  els.count.textContent = allGuests.length + " Guests";
-                  const saved = loadState();
-                  if (saved && typeof saved.activeId === "string") activeId = saved.activeId;
-                  if (!activeId && allGuests[0]) activeId = allGuests[0].GuestID;
-                  if (activeId && !allGuests.find(g => g.GuestID === activeId)) {
-                    activeId = allGuests[0] ? allGuests[0].GuestID : "";
-                  }
-                  renderRoster();
-                  renderProfile();
-                  renderActor();
-                  saveState();
-                };
-                els.btnRel.addEventListener("click", () => {
-                  window.location.href = "Rel-Trek.html";
-                });
-                els.btnEpi.addEventListener("click", () => {
-                  window.location.href = "Epi-Trek.html";
-                });
-                els.btnTop.addEventListener("click", () => {
-                  window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                  });
-                });
-                init();
-    </script>
-  </body>
+      els.actor.appendChild(top);
+
+      if (!portrayed.length){
+        const sPortrayed = section("Portrayed By", '<div class="p muted">Casting pending.</div>');
+        sPortrayed.classList.add("fontPlus1");
+        els.actor.appendChild(sPortrayed);
+      }else{
+        const rows = portrayed.map(p=>{
+          const meta = p.RoleType ? ('Role: ' + p.RoleType) : 'Role: —';
+          return '<div class="actorRow"><div class="actorName">'+escapeHtml(p.Name)+'</div><div class="actorMeta">'+escapeHtml(meta)+'</div></div>';
+        }).join("");
+        const sPortrayed = section("Portrayed By", '<div class="actorGrid">'+rows+'</div>');
+        sPortrayed.classList.add("fontPlus1");
+        els.actor.appendChild(sPortrayed);
+      }
+
+      els.actor.appendChild(section("Behind the Scenes", renderBullets(bts, "No behind-the-scenes notes yet.")));
+    };
+
+    const init = async () => {
+      els.roster.innerHTML = "";
+      els.profile.innerHTML = "";
+      els.actor.innerHTML = "";
+      els.count.textContent = "0 Guests";
+      els.active.textContent = "Active: —";
+      els.data.textContent = "Loading…";
+
+      const raw = await fetchJson(DATA_URL);
+
+      els.data.textContent = "Source: Guests.json";
+
+      const arr = Array.isArray(raw) ? raw : [];
+      allGuests = arr.map(normalize).filter((x)=>x && x.GuestID && x.Name).sort((a,b)=>a.Name.localeCompare(b.Name));
+
+      els.count.textContent = allGuests.length + " Guests";
+
+      const saved = loadState();
+      if (saved && typeof saved.activeId === "string") activeId = saved.activeId;
+
+      if (!activeId && allGuests[0]) activeId = allGuests[0].GuestID;
+      if (activeId && !allGuests.find(g=>g.GuestID===activeId)){
+        activeId = allGuests[0] ? allGuests[0].GuestID : "";
+      }
+
+      renderRoster();
+      renderProfile();
+      renderActor();
+      saveState();
+    };
+
+    els.btnRel.addEventListener("click", ()=>{ window.location.href = "Rel-Trek.html"; });
+    els.btnEpi.addEventListener("click", ()=>{ window.location.href = "Epi-Trek.html"; });
+    els.btnTop.addEventListener("click", ()=>{ window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+    init();
+  </script>
+</body>
 </html>
